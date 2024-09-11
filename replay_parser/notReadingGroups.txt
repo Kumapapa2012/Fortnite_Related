@@ -1,0 +1,7169 @@
+/Script/FortniteGame.FortPickupAthena:
+  RemoteRole: 4
+  Role: 13
+  StateValuesConstObject: 53
+  ObjectData: 55
+  WeaponModSlots: 63
+  WeaponMod: 64
+  bIsDynamic: 65
+
+/Script/FortniteGame.FortProjectileMovementComponent:
+  bIsActive: 1
+  HomingStyle: 2
+  MinTurnSpeed: 3
+  MaxTurnSpeed: 4
+  RampTimeFromMinToMaxTurnSpeed: 5
+  LockTargetDistanceThreshold: 6
+  LockedOnTarget: 8
+  TargetOffset: 11
+  DesiredDirection: 16
+
+/Game/Athena/Apollo/Environments/BuildingActors/Intangible/IntangibleWallSolid.IntangibleWallSolid_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  bIsInitiallyBuilding: 61
+  ReplicatedDrawScale3D: 63
+
+/Game/Athena/BuildingActors/Prop/Athena_BeachBall.Athena_BeachBall_C:
+  RemoteRole: 4
+  ReplicatedMovement: 11
+  Role: 13
+
+/Script/FortniteGame.FortAbilitySystemComponent:
+  OwnerActor: 11
+  AvatarActor: 12
+  Handle: 14
+  ability: 15
+  Level: 16
+  InputID: 17
+  SourceObject: 18
+  DynamicAbilityTags: 19
+  ReplicatedInstances: 20
+  Def: 26
+  ModifiedAttributes: 27
+  duration: 33
+  Period: 34
+  ChanceToApplyToTarget: 35
+  DynamicGrantedTags: 36
+  DynamicAssetTags: 37
+  Modifiers: 38
+  EvaluatedMagnitude: 39
+  StackCount: 41
+  GrantedAbilitySpecs: 42
+  EffectContext: 45
+  Level: 46
+  PredictionKey: 47
+  GrantedAbilityHandles: 48
+  Handle: 49
+  StartServerWorldTime: 51
+  GameplayCueTag: 54
+  PredictionKey: 55
+  Parameters: 56
+  GameplayCueTag: 59
+  PredictionKey: 60
+  Parameters: 61
+  MinimalReplicationTags: 66
+  SpawnedAttributes: 67
+  SpawnedAttributes: 68
+  ReplicatedLooseTags: 70
+  PredictionKey: 72
+
+/Game/Environments/Blockout/Blueprints/Floors/BP_Blockout_Floor_A_A.BP_Blockout_Floor_A_A_C:
+  bHidden: 1
+  bCanBeDamaged: 3
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  ResourceType: 51
+  bMirrored: 53
+  bAttachmentPlacementBlockedFront: 57
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Sets/Palace/Blueprints/Floors/BP_Palace_BrokenFloor_A.BP_Palace_BrokenFloor_A_C:
+  bCanBeDamaged: 3
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+
+/Game/Environments/Helios/Sets/GenericSet/Blueprints/Riviera/Floors/BP_GenericSet_Riviera_Floor_A_A.BP_GenericSet_Riviera_Floor_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  bAttachmentPlacementBlockedFront: 57
+  Health: 64
+  MaxHealth: 65
+
+/Game/Athena/Items/Traps/Launchpad/BluePrint/Floor_Player_Launch_Pad_Child_RF.Floor_Player_Launch_Pad_Child_RF_C:
+  bCanBeDamaged: 3
+  RemoteRole: 4
+  Role: 13
+  AttachedTo: 77
+  LaunchServerTime: 81
+  LaunchedPawn: 82
+  LaunchServerTime: 83
+  LaunchedPawn: 84
+
+/Script/FortniteGame.FortBuildingTrapSet:
+  BaseValue: 0
+  CurrentValue: 1
+  Maximum: 3
+  UnclampedBaseValue: 7
+  UnclampedCurrentValue: 8
+  BaseValue: 10
+  CurrentValue: 11
+  UnclampedCurrentValue: 18
+
+FortAbilitySystemComponent_ClassNetCache:
+  ActivatableAbilities: 1
+  ActiveGameplayEffects: 2
+  ActiveGameplayCues: 3
+  MinimalReplicationGameplayCues: 4
+  NetMulticast_InvokeGameplayCueAdded_WithParams: 15
+  NetMulticast_InvokeGameplayCueExecuted_FromSpec: 19
+  NetMulticast_InvokeGameplayCueExecuted_WithParams: 20
+
+/Game/Athena/PlayerPawn_Athena.PlayerPawn_Athena_C:
+  BaseID: 18
+  Animation: 35
+  bRelativePosition: 37
+  AuthoritativeRootMotion: 44
+  bIsSliding: 60
+  bShouldUseCharacterMovementIdleFastPath: 78
+  DeathTags: 87
+  JumpFlashCountPacked: 132
+  LandingFlashCountPacked: 133
+  VocalChords: 139
+  FeedbackAudioComponent: 140
+  RepActiveMovementModeExtension: 239
+  CapsuleRadiusFortPawn: 240
+  CapsuleHalfHeightFortPawn: 241
+  MeshHeightAdjustFortPawn: 242
+  bIsReversing: 247
+  bUsingGamepad: 252
+  bIsTacticalSprinting: 255
+  bIsTargetingConsumableThrow: 260
+  StasisModes: 263
+  StasisModes: 264
+  AccelerationZPack: 267
+  StasisAbilityHandles: 303
+  Handle: 304
+  InteractComponent: 308
+  bReachedEnd: 311
+  AuthoritativeValue: 312
+  SocketOffset: 313
+  CharacterVariantChannels: 323
+  VariantChannelTag: 324
+  ActiveVariantTag: 325
+  OwnedVariantTags: 326
+  ItemVariantIsUsedFor: 327
+  CustomData: 328
+  AppliedSwaps: 346
+  A: 347
+  B: 348
+  C: 349
+  D: 350
+  SwapState: 351
+  SwapData: 352
+  Item: 353
+  ServerLoadoutChangeSync: 363
+  RepAnimMontageInfo: 405
+  SprintSpeed: 430
+  CrouchedRunSpeed: 432
+  GravityZScale: 435
+  JumpZVelocity: 436
+  ReplayRepAnimMontageInfo: 439
+  SimulatedProxyActiveGameplayCues: 440
+  SimulatedProxyMinimalReplicationGameplayCues: 441
+  FastReplicationMinimalReplicationTags: 442
+  FastReplicationReplicatedLooseTags: 443
+
+/Script/FortniteGame.FortClientObservedStat:
+  StatName: 0
+  StatValue: 1
+
+PlayerPawn_Athena_C_ClassNetCache:
+  ClientObservedStats: 17
+  MulticastUpdateVehicleInputStateReliable: 30
+  NetMulticast_Athena_BatchedDamageCues: 68
+
+/Script/FortniteGame.FortHoldingObjectComponent:
+  bIsActive: 1
+
+/Script/FortniteGame.FortPawnComponent_Convert:
+  bCanConvert: 2
+  bCanBeConverted: 3
+  ConverterPlayerState: 5
+  LastUnconvertReason: 6
+  ConvertedPawnComponents: 7
+  ConvertedType: 8
+  ConvertedComponentList: 9
+  ConvertedComponentList: 10
+  PreviousConverters: 13
+  PreviousConverters: 14
+
+/Script/FortniteGame.FortActorComponent_Affiliation:
+  bHasSpecificRelations: 2
+  AffiliationUID: 3
+  CurrentFactions: 4
+
+/Script/FortniteGame.FortCosmeticLoadoutComponent:
+  Slots: 2
+  SlotTemplate: 3
+  EquippedItemDefinitionObject: 4
+  CustomizationInfo: 5
+  ChannelTag: 6
+  VariantTag: 7
+  AdditionalData: 8
+
+/Game/Athena/Items/Components/MultiInteractActorComponent.MultiInteractActorComponent_C:
+  bIsActive: 1
+  Time: 2
+  ID: 3
+  ServerWorldTime: 4
+  Value: 7
+  CurveTable: 8
+  RowName: 9
+  Name: 10
+  InteractingPlayers: 15
+  InteractingPlayers: 16
+  CachedInterpSpeed: 19
+
+/ClamberingContent/Components/PlayerClamberingComponent.PlayerClamberingComponent_C:
+  bIsActive: 1
+  ReplicatedClamberingState: 2
+  LastTeleportTime: 9
+
+/DynamicCapsuleContent/Component/PlayerDynamicCapsuleComponent.PlayerDynamicCapsuleComponent_C:
+  bIsActive: 1
+  CapsuleRadius: 8
+  CapsuleHalfHeight: 9
+  RelativeMeshHeight: 10
+
+/Game/Weapons/FORT_Melee/Blueprints/B_Athena_Pickaxe_DualWield_Generic.B_Athena_Pickaxe_DualWield_Generic_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  WeaponData: 20
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+  AppliedAlterations: 42
+  AppliedAlterations: 43
+  BannerIconId: 49
+  BannerColorId: 50
+  Pickaxe: 53
+  CharacterVariantChannels: 55
+  VariantChannelTag: 56
+  ActiveVariantTag: 57
+  OwnedVariantTags: 58
+  ItemVariantIsUsedFor: 59
+  CustomData: 60
+
+/Game/Weapons/FORT_Melee/Blueprints/Impact/B_Athena_Pickaxe_Sythe1H.B_Athena_Pickaxe_Sythe1H_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  WeaponData: 20
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+  AppliedAlterations: 42
+  AppliedAlterations: 43
+  BannerIconId: 49
+  BannerColorId: 50
+  Pickaxe: 53
+
+/Game/Spectating/BP_ReplayPC_Athena.BP_ReplayPC_Athena_C:
+  RemoteRole: 4
+  Role: 13
+  PlayerState: 15
+  SpawnLocation: 18
+
+/Script/FortniteGame.AthenaMarkerComponent:
+  bIsActive: 1
+
+/Script/FMJamContentResolver.JamControllerComponent_ContentResolver:
+  bIsActive: 1
+
+/Script/WeaponModsCodeRuntime.FortPickupInteractOverrideComponent_WeaponMods:
+  bIsActive: 1
+
+/Script/FortniteGame.FortWorldManager:
+  RemoteRole: 4
+  Role: 13
+  FinalNumChosenBuildingFoundations: 17
+
+/Script/FortniteGame.FortSpecialActorReplicationInfo:
+  RemoteRole: 4
+  Role: 13
+  SpecialActorID: 16
+  CategoryTag: 17
+  SpecialActor: 18
+  PlayerState: 19
+  ReplicatedTransformIndex: 20
+  MinimapIconBrushIndex: 21
+  MinimapScaleIndex: 22
+  FullScreenMapIconBrushIndex: 23
+  FullScreenMapScaleIndex: 24
+  CompassIconBrushIndex: 25
+  CompassScaleIndex: 26
+  bDrawCompassIcon: 27
+  bDrawCompassDistanceText: 28
+  bDrawRotated: 29
+  YawOffset: 30
+  bShowElevationArrow: 31
+  bOverrideDefaultBehavior: 32
+  ElevationDifferenceZ: 33
+  MaxDistanceToDisplay: 34
+  R: 35
+  G: 36
+  B: 37
+  A: 38
+  RenderOnMapDuringPhases: 39
+  CurrentHealth: 40
+  MaxHealth: 41
+  CurrentShield: 42
+  MaxShield: 43
+  DisplayName: 44
+  RenderDistance: 45
+  RenderTags: 46
+  DrawLayer: 47
+  SeasonItemTag: 48
+  R: 49
+  G: 50
+  B: 51
+  A: 52
+  ColorUseRule: 53
+  DrawAs: 54
+  Tiling: 55
+  Mirroring: 56
+  ImageType: 57
+  X: 58
+  Y: 59
+  Left: 60
+  Top: 61
+  Right: 62
+  Bottom: 63
+  ResourceObject: 64
+  X: 65
+  Y: 66
+  Z: 67
+  W: 68
+  R: 69
+  G: 70
+  B: 71
+  A: 72
+  ColorUseRule: 73
+  Width: 74
+  RoundingType: 75
+  bUseBrushTransparency: 76
+  Min: 77
+  Max: 78
+  bIsValid: 79
+  bHasUObject: 80
+  bIsDynamicallyLoaded: 81
+  ResourceName: 82
+  Priority: 83
+  InitialRepLocation: 84
+  InitialRepYaw: 85
+  SpecialActorTransforms: 87
+  Location: 88
+  Yaw: 89
+  SlateBrushes: 91
+  R: 92
+  G: 93
+  B: 94
+  A: 95
+  ColorUseRule: 96
+  DrawAs: 97
+  Tiling: 98
+  Mirroring: 99
+  ImageType: 100
+  X: 101
+  Y: 102
+  Left: 103
+  Top: 104
+  Right: 105
+  Bottom: 106
+  ResourceObject: 107
+  X: 108
+  Y: 109
+  Z: 110
+  W: 111
+  R: 112
+  G: 113
+  B: 114
+  A: 115
+  ColorUseRule: 116
+  Width: 117
+  RoundingType: 118
+  bUseBrushTransparency: 119
+  Min: 120
+  Max: 121
+  bIsValid: 122
+  bHasUObject: 123
+  bIsDynamicallyLoaded: 124
+  ResourceName: 125
+  BrushScales: 127
+  BrushScales: 128
+
+FortSpecialActorReplicationInfo_ClassNetCache:
+  SpecialActorRepList: 0
+
+/Script/FortniteGame.FortClientAnnouncementManager:
+  RemoteRole: 4
+  Role: 13
+
+/Script/FortniteGame.FortInventory:
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  OrderIndex: 19
+  bIsDirty: 20
+  bIsReplicatedCopy: 21
+  bUpdateStatsOnCollection: 22
+  bWasGifted: 23
+  inventory_overflow_date: 24
+  Durability: 25
+  Level: 26
+  PhantomReserveAmmo: 28
+  PickupVariantIndex: 29
+  A: 30
+  B: 31
+  C: 32
+  D: 33
+  A: 34
+  B: 35
+  C: 36
+  D: 37
+  A: 38
+  B: 39
+  C: 40
+  D: 41
+  DurabilityCooldownStartTime: 42
+  StateValues: 43
+  IntValue: 44
+  NameValue: 45
+  StateType: 46
+  StateValuesConstObject: 48
+  StateType: 49
+  ObjectData: 50
+  ParentInventory: 52
+  Handle: 53
+  ItemVariantDataMappingIndex: 54
+  AlterationInstances: 55
+  WeaponModSlots: 58
+  WeaponMod: 59
+  bIsDynamic: 60
+  WrapOverride: 62
+  GenericAttributeValues: 63
+  GenericAttributeValues: 64
+
+/Game/Athena/Athena_GameState.Athena_GameState_C:
+  RemoteRole: 4
+  Role: 13
+  GameModeClass: 15
+  SpectatorClass: 16
+  FortTimeOfDayManager: 22
+  Mnemonic: 29
+  MatchmakingLinkType: 31
+  PoiManager: 32
+  MatchStartTime: 36
+  RealMatchStartTime: 37
+  ReplicatedWorldRealTimeSecondsDouble: 39
+  AnnouncementManager: 47
+  WorldManager: 48
+  PawnForReplayRelevancy: 53
+  RecorderPlayerState: 54
+  ItemId: 125
+  ItemId: 126
+  Payload: 128
+  Payload: 129
+  SpecialActorData: 177
+  PlayersLoaded: 183
+  ClientItemDefsToLoad: 187
+  ClientItemDefsToLoad: 188
+  PlayerId: 199
+  bEjectPlayersAtDropZoneExit: 216
+  bVisiblePostAthenaAircraftPhase: 217
+  MapInfo: 247
+  AICharacterPartsPreloadData: 249
+  Priority: 250
+  CharacterPart: 251
+  AIPawnCustomizationPreloadData: 256
+  Priority: 257
+  Customization: 258
+  SignalInStormLostSpeed: 291
+  bDamageComboHUDEnabled: 312
+  MatchesProxyMatchId: 314
+  bCraftingEnabled: 316
+
+Athena_GameState_C_ClassNetCache:
+  GameMemberInfoArray: 0
+  MutatorObjectDataArray: 2
+  ManagedObjectData: 5
+
+/Script/FortniteGame.GameMemberInfo:
+  SquadID: 0
+  TeamIndex: 1
+  MemberUniqueId: 2
+
+/Script/FortniteGame.FortGameStateComponent_AffiliationManager:
+  FactionInfos: 2
+  FactionTag: 3
+  DefaultAttitude: 4
+  bAreFactionMemberAllies: 5
+  bHasSpecificRelations: 6
+  bMembersCanResetSpecificRelation: 7
+  bShouldSpecificRelationsApplyToEntireFaction: 8
+  ResetSpecificRelationUnawareDelay: 9
+  ResetSpecificRelationNoDamageDelay: 10
+  bConditionallyApplyRelationsToAdditionalFactionMembers: 11
+  MaxDistanceCondition: 12
+  FactionRelations: 13
+  FactionRelations: 14
+  FactionRelations: 15
+  AllowFriendlyFireAgainstFactions: 16
+  AffiliationComponentUIDs: 23
+  AffiliationComponentUIDs: 24
+
+/Script/FortniteGame.FortMutatorListComponent:
+  OverrideMode: 6
+
+/Game/Athena/Athena_GamePhaseLogic.Athena_GamePhaseLogic_C:
+  SafeZoneIndicator: 2
+  Aircrafts_GameState: 3
+  Aircrafts_GameState: 4
+  GamePhase: 6
+  StormCapState: 8
+  bAircraftIsLocked: 13
+  WarmupCountdownStartTime: 16
+  WarmupCountdownEndTime: 17
+  AircraftStartTime: 18
+  AircraftRealStartTime: 19
+  SafeZonesStartTime: 20
+  SafeZonePauseTime: 21
+
+/Script/PlayspaceSystem.PlayspaceManagerComponent:
+  bIsActive: 1
+  RootPlayspace: 2
+
+FortGameStateComponentAthena_Quests_ClassNetCache:
+  GrantedQuestDataArray: 0
+  UpdatedQuestObjectivesArray: 1
+
+FortGameStateComponent_PartyQuests_ClassNetCache:
+  GrantedQuestDataArray: 0
+  UpdatedQuestObjectivesArray: 1
+
+/Lager/Lager/LagerManager.LagerManager_C:
+  ActorClassToPreloadOnClient: 2
+  ActorClassToPreloadOnClient: 3
+
+/Game/Blueprints/Components/GSC_MiniMapDataOverride.GSC_MiniMapDataOverride_C:
+  bIsActive: 1
+  MiniMapDataOverrideRepDatas: 2
+  ContextTags: 3
+  LocationTags: 4
+
+/Script/FortniteGame.FortGameStateComponent_Reboot:
+  Location: 3
+  SpawnMachineState: 4
+  SpawnMachineCooldownStartTime: 5
+  SpawnMachineCooldownEndTime: 6
+  SpawnMachineRepDataHandle: 7
+  Team: 8
+  Class: 9
+  bAllowAnyClass: 10
+  bIsEnabled: 11
+  bInvertTeamSelection: 12
+  bInvertClassSelection: 13
+
+FortGameStateComponent_Reboot_ClassNetCache:
+  SpawnMachineRepData: 0
+
+/Game/Sounds/Fort_Audio_Blueprints/MusicParty/MusicPartyManagerComponent.MusicPartyManagerComponent_C:
+  ControllerActors: 3
+  ControllerActors: 4
+
+/Game/Curie/Managers/BP_FortCurieManagerAthena.BP_FortCurieManagerAthena_C:
+  ValidStateIdentifiers: 2
+  ValidStateIdentifiers: 3
+
+/Script/FortniteGame.FortVehicleOverrideManager:
+  bIsActive: 1
+
+FortVehicleOverrideManager_ClassNetCache:
+  ReplicatedVehicleOverrides: 0
+
+/Script/FortniteGame.FortTeamPrivateInfo:
+  RemoteRole: 4
+  Role: 13
+  Value: 16
+  PlayerId: 17
+  PlayerState: 20
+  LastRepLocation: 21
+  LastRepYaw: 22
+  PawnStateMask: 23
+  CurieStateBitfield: 24
+
+FortTeamPrivateInfo_ClassNetCache:
+  RepData: 0
+  LatentTeamRepData: 1
+
+/Game/Athena/AI/Phoebe/BP_PlayerPawn_Athena_Phoebe.BP_PlayerPawn_Athena_Phoebe_C:
+  bReplicateMovement: 0
+  bTearOff: 2
+  RemoteRole: 4
+  ReplicatedMovement: 11
+  Role: 13
+  Instigator: 14
+  PlayerState: 16
+  BaseID: 18
+  bRelativeRotation: 19
+  bServerHasBaseComponent: 20
+  bServerHasVelocity: 21
+  MovementBase: 23
+  Location: 24
+  Rotation: 25
+  ReplayLastTransformUpdateTimeStamp: 27
+  bIsCrouched: 30
+  bProxyIsJumpForceApplied: 31
+  ReplicatedMovementMode: 32
+  bIsActive: 36
+  Location: 40
+  Rotation: 41
+  MovementBase: 42
+  AuthoritativeRootMotion: 44
+  Acceleration: 45
+  LinearVelocity: 46
+  bIgnoreNextFallingDamage: 47
+  bIsDying: 48
+  bMovingEmote: 52
+  bWeaponActivated: 58
+  bIsSliding: 60
+  bWeaponHolstered: 75
+  bShouldUseCharacterMovementIdleFastPath: 78
+  CurrentMovementStyle: 79
+  TeleportCounter: 80
+  bIsSlopeSliding: 81
+  PackedReplicatedSlopeAngles: 82
+  bIsJumping: 84
+  PawnUniqueID: 85
+  CurrentWeapon: 86
+  DeathTags: 87
+  ReplicatedWaterBody: 89
+  JumpFlashCountPacked: 132
+  LandingFlashCountPacked: 133
+  LastReplicatedEmoteExecuted: 134
+  EmoteWalkSpeed: 135
+  VocalChords: 139
+  FeedbackAudioComponent: 140
+  bInterruptCurrentLine: 147
+  bCanBeInterrupted: 148
+  bCanQue: 149
+  RepActiveMovementModeExtension: 239
+  CapsuleRadiusFortPawn: 240
+  CapsuleHalfHeightFortPawn: 241
+  MeshHeightAdjustFortPawn: 242
+  bIsTacticalSprinting: 255
+  bIsWaterJump: 256
+  bIsWaterSprintBoost: 257
+  bIsWaterSprintBoostPending: 258
+  bIsTargeting: 259
+  AccelerationZPack: 267
+  bIsSkydiving: 273
+  bIsParachuteOpen: 274
+  bIsParachuteForcedOpen: 275
+  bIsSkydivingFromBus: 276
+  bStartedInteractSearch: 281
+  bIsPlayingEmote: 283
+  bIsInAnyStorm: 301
+  bIsInsideSafeZone: 302
+  Zipline: 307
+  InteractComponent: 308
+  bIsZiplining: 309
+  bReachedEnd: 311
+  AuthoritativeValue: 312
+  SocketOffset: 313
+  BannerIconId: 317
+  BannerColorId: 318
+  SkyDiveContrail: 319
+  Glider: 320
+  Pickaxe: 321
+  Character: 322
+  CharacterVariantChannels: 323
+  VariantChannelTag: 324
+  ActiveVariantTag: 325
+  OwnedVariantTags: 326
+  ItemVariantIsUsedFor: 327
+  CustomData: 328
+  Backpack: 330
+  Dances: 333
+  Dances: 334
+  PawnMontage: 386
+  bPlayBit: 387
+  AccelerationPack: 404
+  RepAnimMontageInfo: 405
+  RepAnimMontageStartSection: 406
+  bNetMovementPrioritized: 407
+  RemoteViewData32: 420
+  WalkSpeed: 428
+  RunSpeed: 429
+  SprintSpeed: 430
+  FlySpeed: 431
+  CrouchedRunSpeed: 432
+  CrouchedSprintSpeed: 433
+  GravityZScale: 435
+  JumpZVelocity: 436
+  ReplayRepAnimMontageInfo: 439
+  SimulatedProxyActiveGameplayCues: 440
+  SimulatedProxyMinimalReplicationGameplayCues: 441
+  FastReplicationMinimalReplicationTags: 442
+  FastReplicationReplicatedLooseTags: 443
+  EncryptedPawnReplayData: 444
+
+BP_PlayerPawn_Athena_Phoebe_C_ClassNetCache:
+  ClientObservedStats: 17
+  NetMulticast_Athena_BatchedDamageCues: 68
+
+/Game/Weapons/FORT_Melee/Blueprints/B_Athena_Pickaxe_Generic.B_Athena_Pickaxe_Generic_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  WeaponData: 20
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+  AppliedAlterations: 42
+  AppliedAlterations: 43
+  BannerIconId: 49
+  BannerColorId: 50
+  Pickaxe: 53
+  CharacterVariantChannels: 55
+  VariantChannelTag: 56
+  ActiveVariantTag: 57
+  OwnedVariantTags: 58
+  ItemVariantIsUsedFor: 59
+  CustomData: 60
+
+/Script/FortniteGame.FortPlayerStateAthena:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  PlayerId: 16
+  CompressedPing: 17
+  StartTime: 23
+  UniqueID: 24
+  bHasFinishedLoading: 30
+  bHasStartedPlaying: 31
+  bRepFlag1: 32
+  PlayerRole: 33
+  WorldPlayerId: 34
+  PartyOwnerUniqueId: 35
+  HeroType: 37
+  Platform: 53
+  IconId: 54
+  ColorId: 55
+  Level: 56
+  CachedLoadoutCharacterUngated: 57
+  GatingRandomHash: 58
+  EOSProductUserId: 60
+  CharacterGender: 61
+  CharacterBodyType: 62
+  WasPartReplicatedFlags: 63
+  RequiredVariantPartFlags: 64
+  Parts: 65
+  Parts: 66
+  Parts: 67
+  Parts: 68
+  Parts: 69
+  Parts: 70
+  Parts: 71
+  VariantRequiredCharacterParts: 72
+  VariantRequiredCharacterParts: 73
+  PlayerTeamPrivate: 85
+  PlatformUniqueNetId: 229
+  bOvershieldBarVisible: 247
+  AttributeName: 253
+  Attribute: 254
+  AttributeOwner: 255
+  CurrentValue: 256
+  bInAircraft: 258
+  bHasEverSkydivedFromBus: 259
+  bHasEverSkydivedFromBusAndLanded: 260
+  TeamKillScore: 266
+  TeamIndex: 267
+  Place: 270
+  SeasonLevelUIDisplay: 273
+  SquadID: 286
+  bThankedBusDriver: 287
+  bUsingAnonymousMode: 289
+  bShowingSeasonLevel: 291
+  PlayerNameCustomOverride: 292
+  FinisherOrDowner: 318
+  bDBNO: 319
+  Distance: 322
+  DeathServerTime: 323
+  DeathLocation: 324
+  bInitialized: 325
+  ResurrectionExpirationTime: 333
+  bIsAnAthenaGameParticipant: 341
+  BotUniqueId: 343
+  KeepPlayingTogetherVotingStatus: 345
+  KeepPlayingTogetherMatchmakingRegion: 346
+  InitialSquadSize: 347
+
+FortPlayerStateAthena_ClassNetCache:
+  SimulatedAttributes: 15
+
+/Script/FortniteGame.FortAbilitySystemComponentAthena:
+  SimulatedTasks: 2
+  SimulatedTasks: 3
+  OwnerActor: 11
+  AvatarActor: 12
+  Handle: 14
+  ability: 15
+  Level: 16
+  InputID: 17
+  SourceObject: 18
+  DynamicAbilityTags: 19
+  ReplicatedInstances: 20
+  ReplicatedInstances: 21
+  Def: 26
+  ModifiedAttributes: 27
+  AttributeName: 28
+  Attribute: 29
+  AttributeOwner: 30
+  TotalMagnitude: 31
+  duration: 33
+  Period: 34
+  ChanceToApplyToTarget: 35
+  DynamicGrantedTags: 36
+  DynamicAssetTags: 37
+  Modifiers: 38
+  EvaluatedMagnitude: 39
+  StackCount: 41
+  GrantedAbilitySpecs: 42
+  EffectContext: 45
+  Level: 46
+  PredictionKey: 47
+  GrantedAbilityHandles: 48
+  Handle: 49
+  StartServerWorldTime: 51
+  GameplayCueTag: 54
+  PredictionKey: 55
+  Parameters: 56
+  SpawnedAttributes: 67
+  SpawnedAttributes: 68
+  ReplicatedLooseTags: 70
+  PredictionKey: 72
+
+/Script/FortniteGame.FortPoiManager:
+  WorldGridStart: 15
+  WorldGridEnd: 16
+  WorldGridSpacing: 17
+  GridCountX: 18
+  GridCountY: 19
+  WorldGridTotalSize: 20
+  PoiTagContainerTable: 21
+  PoiTagContainerTable: 22
+  PoiTagContainerTableSize: 24
+
+/Script/Engine.WorldPartitionReplay:
+  RemoteRole: 4
+  Role: 13
+  StreamingSourceNames: 15
+  StreamingSourceNames: 16
+
+/Script/FortniteGame.FortMovementSet:
+  BaseValue: 0
+  CurrentValue: 1
+  UnclampedBaseValue: 7
+  UnclampedCurrentValue: 8
+  BaseValue: 10
+  CurrentValue: 11
+  UnclampedBaseValue: 17
+  UnclampedCurrentValue: 18
+  BaseValue: 20
+  CurrentValue: 21
+  UnclampedBaseValue: 27
+  UnclampedCurrentValue: 28
+  BaseValue: 30
+  CurrentValue: 31
+  UnclampedBaseValue: 37
+  UnclampedCurrentValue: 38
+  BaseValue: 40
+  CurrentValue: 41
+  UnclampedBaseValue: 47
+  UnclampedCurrentValue: 48
+  BaseValue: 50
+  CurrentValue: 51
+  UnclampedBaseValue: 57
+  UnclampedCurrentValue: 58
+  BaseValue: 60
+  CurrentValue: 61
+  UnclampedBaseValue: 67
+  UnclampedCurrentValue: 68
+  BaseValue: 70
+  CurrentValue: 71
+  UnclampedBaseValue: 77
+  UnclampedCurrentValue: 78
+  BaseValue: 80
+  CurrentValue: 81
+  UnclampedBaseValue: 87
+  UnclampedCurrentValue: 88
+  CurrentValue: 101
+  UnclampedBaseValue: 107
+  UnclampedCurrentValue: 108
+  CurrentValue: 131
+  Maximum: 133
+  UnclampedBaseValue: 137
+  UnclampedCurrentValue: 138
+  Maximum: 143
+  UnclampedBaseValue: 147
+
+/Script/FortniteGame.FortBroadcastRemoteClientInfo:
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+
+/Script/FortniteGame.FortAdvancedMovementSet:
+  BaseValue: 0
+  CurrentValue: 1
+  UnclampedBaseValue: 7
+  UnclampedCurrentValue: 8
+  BaseValue: 10
+  CurrentValue: 11
+  UnclampedBaseValue: 17
+  UnclampedCurrentValue: 18
+  BaseValue: 30
+  CurrentValue: 31
+  UnclampedCurrentValue: 38
+  BaseValue: 40
+  CurrentValue: 41
+  UnclampedBaseValue: 47
+  UnclampedCurrentValue: 48
+  BaseValue: 50
+  CurrentValue: 51
+  UnclampedCurrentValue: 58
+  BaseValue: 60
+  CurrentValue: 61
+  UnclampedBaseValue: 67
+  UnclampedCurrentValue: 68
+  BaseValue: 70
+  CurrentValue: 71
+  UnclampedBaseValue: 77
+  UnclampedCurrentValue: 78
+  CurrentValue: 91
+  UnclampedCurrentValue: 98
+  BaseValue: 100
+  CurrentValue: 101
+  UnclampedBaseValue: 107
+  UnclampedCurrentValue: 108
+
+/Script/Engine.WorldDataLayers:
+  RemoteRole: 4
+  Role: 13
+  RepActiveDataLayerNames: 15
+  RepActiveDataLayerNames: 16
+  RepLoadedDataLayerNames: 18
+  RepLoadedDataLayerNames: 19
+  RepEffectiveActiveDataLayerNames: 21
+  RepEffectiveActiveDataLayerNames: 22
+  RepEffectiveLoadedDataLayerNames: 24
+  RepEffectiveLoadedDataLayerNames: 25
+
+/Script/FortniteGame.FortAthenaMutator_PawnMovementOverrides:
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+
+/Script/FortniteGame.FortPlayerAttrSet:
+  BaseValue: 120
+  CurrentValue: 121
+  UnclampedCurrentValue: 128
+
+/Script/FortniteGame.FortHomebaseSet:
+  BaseValue: 110
+  CurrentValue: 111
+  UnclampedCurrentValue: 118
+
+FortAbilitySystemComponentAthena_ClassNetCache:
+  NetMulticast_RefreshActiveGameplayEffectCueEvents: 0
+  ActivatableAbilities: 1
+  ActiveGameplayEffects: 2
+  ActiveGameplayCues: 3
+
+/AshtonGameplay/Gameplay/CaptainAmerica/Shield/B_FortAthenaMutator_WeaponTraceIgnoreFriendlyActors.B_FortAthenaMutator_WeaponTraceIgnoreFriendlyActors_C:
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+
+/Script/FortniteGame.FortPlayspace:
+  RemoteRole: 4
+  Role: 13
+  UserId: 16
+  LeafPlayspace: 17
+  bIsInitialized: 23
+  MatchStartTime: 25
+
+FortPlayspace_ClassNetCache:
+  PlayspaceUsers: 0
+
+/FinalCountdownGameplay/FortAthenaMutator_FinalCountdown.FortAthenaMutator_FinalCountdown_C:
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  WarnCountdownStartingSoonThreshold: 16
+  CountdownStartThreshold: 17
+  WarnMultiplePlayersEliminatedThreshold: 18
+  MultiplePlayersEliminatedDetectionCount: 19
+  MultiplePlayersEliminatedDetectionWindow: 20
+  bEnabled: 21
+
+/Game/Athena/Playlists/NoBuildBR/Modifiers/NoBuildBR_ResourceVisibilityMutator.NoBuildBR_ResourceVisibilityMutator_C:
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+
+/MidMatchRadioTowerGameplay/Gameplay/Mutators/B_Mutator_RadioTowerDrawKeyCarrier.B_Mutator_RadioTowerDrawKeyCarrier_C:
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+
+/Script/ClamberingCodeRuntime.FortAthenaMutator_LedgeLaunch:
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+
+/Cave/Blueprints/Laptop/BP_Cave_MeshNetworkBridge.BP_Cave_MeshNetworkBridge_C:
+  RemoteRole: 4
+  Role: 13
+
+/LodeSwanGameplay/FX/B_DoomSmoke_Head.B_DoomSmoke_Head_C:
+  RemoteRole: 4
+  Role: 13
+  DoomSmokeState: 44
+
+/Script/LevelSequence.LevelSequenceActor:
+  RemoteRole: 4
+  Role: 13
+  SequencePlayer: 15
+  LevelSequenceAsset: 16
+
+/Script/LevelSequence.LevelSequencePlayer:
+  DurationFrames: 3
+
+/GoldenPOI/Gameplay/B_GoldenPOI_Manager_V2.B_GoldenPOI_Manager_V2_C:
+  RemoteRole: 4
+  Role: 13
+  GoldenPOITags: 15
+  GoldenPOITags: 16
+
+/Game/Environments/Helios/FX/Hades/BP/BP_Hades_Waterfall_SlowAndThin.BP_Hades_Waterfall_SlowAndThin_C:
+  RemoteRole: 4
+  Role: 13
+
+/Game/Environments/Helios/FX/Hades/BP/BP_Hades_Waterfall_Thin.BP_Hades_Waterfall_Thin_C:
+  RemoteRole: 4
+  Role: 13
+
+/Game/Environments/Helios/FX/Castle/BP/BP_Castle_LavaFall.BP_Castle_LavaFall_C:
+  RemoteRole: 4
+  Role: 13
+
+/Game/Environments/Helios/FX/Hades/BP/BP_Hades_Waterfall_Thin_SharpBend.BP_Hades_Waterfall_Thin_SharpBend_C:
+  RemoteRole: 4
+  Role: 13
+
+/MidMatchWeaponBunkerGameplay/Items/WeaponBunkerDoor/B_WeaponBunkerMapIconActor.B_WeaponBunkerMapIconActor_C:
+  RemoteRole: 4
+  Role: 13
+
+/VehicleServiceStation/UI/B_ServicePump_AutoRefuel_MapIconActor.B_ServicePump_AutoRefuel_MapIconActor_C:
+  RemoteRole: 4
+  Role: 13
+
+/Script/FortniteGame.FortMiniMapComponent_AutoPump:
+  bIsActive: 1
+  CachedMapViewableDistance: 52
+  CachedMiniMapViewableDistance: 53
+
+/Game/Environments/Helios/FX/Megalodon/BP_Helios_Megalodon_Flare.BP_Helios_Megalodon_Flare_C:
+  RemoteRole: 4
+  Role: 13
+
+/FlamingHoopsGameplay/Gameplay/Actors/BP_Moonflax_FlamingHoop_PersistentFX.BP_Moonflax_FlamingHoop_PersistentFX_C:
+  RemoteRole: 4
+  Role: 13
+
+/Train/Cars/HeliosCargoAltCar_MMO_Version.HeliosCargoAltCar_MMO_Version_C:
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  RepNotifyDestroyContainerOne: 15
+  RepNotifyDestroyContainerTwo: 16
+  RepNotifyForceUpdateTrainTakeoverVisuals: 17
+
+/Script/FortniteGame.FortMiniMapComponent:
+  bIsActive: 1
+  MiniMapIcon: 2
+  bIsVisible: 9
+
+/Game/Sounds/Asteria/POI/CastleDoom/B_MusicParty_Ch6_TrophyRoom.B_MusicParty_Ch6_TrophyRoom_C:
+  RemoteRole: 4
+  Role: 13
+
+/Train/Cars/HeliosCar.HeliosCar_C:
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+
+/Train/Cars/HeliosCarLoco.HeliosCarLoco_C:
+  RemoteRole: 4
+  Role: 13
+  WhistleCount: 15
+
+/Train/BP_DefaultTrainManager.BP_DefaultTrainManager_C:
+  bIsActive: 1
+  DefaultConnectorLength: 2
+  BaseMoveSpeed: 3
+  Rail: 4
+  Cars: 5
+  Actor: 6
+  Length: 7
+  ConnectorLength: 8
+  Timestamp: 10
+  DistanceAlongRail: 11
+  TimeAlongRail: 12
+
+/Train/Cars/HeliosCargoAltCar.HeliosCargoAltCar_C:
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  RepNotifyDestroyContainerOne: 15
+  RepNotifyDestroyContainerTwo: 16
+
+/Game/Environments/Helios/FX/Hades/BP/BP_Hades_Waterfall_Thinner_Child.BP_Hades_Waterfall_Thinner_Child_C:
+  RemoteRole: 4
+  Role: 13
+
+/Game/TimeOfDay/DaySequence/DaySequenceActors/BR_Ch5/DSA_BR_Ch5S3.DSA_BR_Ch5S3_C:
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  SequencePlayer: 16
+
+/Script/DaySequence.DaySequencePlayer:
+  DurationFrames: 3
+  bAutoPlay: 5
+  Value: 6
+  TickIntervalSeconds: 7
+  EvaluationBudgetMicroseconds: 8
+  StartTime: 12
+  bDisableCameraCuts: 13
+  bInheritTickIntervalFromOwner: 21
+  Value: 23
+  SubFrame: 24
+  LastKnownStatus: 25
+  LastKnownNumLoops: 26
+  LastKnownSerialNumber: 27
+
+/Game/Sounds/Helios/POI/BoatDock/B_MusicParty_MS_Helios_SushiBar.B_MusicParty_MS_Helios_SushiBar_C:
+  RemoteRole: 4
+  Role: 13
+
+/Game/Sounds/Helios/POI/ForestLodge/B_MusicParty_MS_Helios_ForestLodge.B_MusicParty_MS_Helios_ForestLodge_C:
+  RemoteRole: 4
+  Role: 13
+
+/Game/Environments/Helios/FX/Hades/BP/BP_Hades_Waterfall_Cerebus_Gate_Short_02_Child.BP_Hades_Waterfall_Cerebus_Gate_Short_02_Child_C:
+  bCanBeDamaged: 3
+  RemoteRole: 4
+  Role: 13
+
+/Game/Sounds/Fort_Audio_Blueprints/MusicParty/B_MusicPartyRadio.B_MusicPartyRadio_C:
+  RemoteRole: 4
+  Role: 13
+  MediaStartTimeFromInit: 15
+
+/Game/TimeOfDay/TODM_Sequence/Blueprint/Volume/B_DaySequenceVolume_Storm.B_DaySequenceVolume_Storm_C:
+  RemoteRole: 4
+  Role: 13
+  EnableVolume: 15
+
+/Game/Sounds/Helios/POI/GrandGlacierHotel/B_MusicParty_MS_Helios_Hotel.B_MusicParty_MS_Helios_Hotel_C:
+  RemoteRole: 4
+  Role: 13
+
+/Game/Sounds/Helios/POI/TennisClub/B_MusicParty_MS_Helios_TennisClub.B_MusicParty_MS_Helios_TennisClub_C:
+  RemoteRole: 4
+  Role: 13
+
+/Game/Sounds/Helios/POI/SteppedTown/B_MusicParty_MS_Helios_SteppedTown.B_MusicParty_MS_Helios_SteppedTown_C:
+  RemoteRole: 4
+  Role: 13
+
+/Game/Athena/Aircraft/AthenaAircraft.AthenaAircraft_C:
+  RemoteRole: 4
+  Role: 13
+  JumpFlashCount: 15
+  FlightStartLocation: 16
+  FlightStartRotation: 17
+  FlightSpeed: 18
+  TimeTillFlightEnd: 19
+  TimeTillDropStart: 20
+  TimeTillDropEnd: 21
+  FlightStartTime: 24
+  FlightEndTime: 25
+  DropStartTime: 26
+  DropEndTime: 27
+  ReplicatedFlightTimestamp: 28
+
+/PaprikaCoreWeapons/Items/Weapons/PaprikaSMG_DPS/B_SMG_Paprika_DPS_Athena.B_SMG_Paprika_DPS_Athena_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  bIsReloadingWeapon: 17
+  WeaponData: 20
+  LastFireTimeVerified: 23
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+  AmmoCount: 33
+  AppliedAlterations: 42
+  AppliedAlterations: 43
+  WeaponModSlots: 45
+  WeaponMod: 46
+  bIsDynamic: 47
+  RepCounter: 49
+  CueEventType: 50
+  Parameters: 51
+  bIsMuzzleTraceNearWall: 57
+
+/Script/NetworkPrediction.NetworkPredictionReplicatedManager:
+  RemoteRole: 4
+  Role: 13
+
+/Script/FortniteGame.FortPawn:NetMulticast_InvokeGameplayCueAdded_WithParams:
+  PredictionKey: 1
+  Parameters: 2
+
+/Script/FortniteGame.FortPawn:NetMulticast_Athena_BatchedDamageCues:
+  Location: 0
+  Normal: 1
+  LocalSpaceImpactPoint: 2
+  LocalSpaceImpactNormal: 3
+  Magnitude: 4
+  bWeaponActivate: 5
+  bIsFatal: 6
+  bIsCritical: 7
+  bIsShield: 8
+  bIsShieldDestroyed: 9
+  bIsShieldApplied: 10
+  bIsBallistic: 11
+  bIsBeam: 12
+  NonPlayerbIsFatal: 13
+  NonPlayerbIsCritical: 14
+  HitActor: 15
+  NonPlayerHitActor: 16
+  HitComponent: 17
+
+/Script/FortniteGame.FortWeaponRanged:MulticastProjectileRequestUnreliable:
+  StartPosition: 0
+  StartDirection: 1
+  Timestamp: 2
+
+B_SMG_Paprika_DPS_Athena_C_ClassNetCache:
+  MulticastLWProjectile_EndActiveAbility: 5
+  MulticastProjectileRequestUnreliable: 6
+
+/Game/Environments/Helios/Rocks/Boulders/Blueprints/ChapCoast/RockPile_Boulder_Medium_B_Disp_ChapCoast.RockPile_Boulder_Medium_B_Disp_ChapCoast_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/LightSource/Lightsource_Blacklight_A/Blueprints/BP_Lightsource_Blacklight_A.BP_Lightsource_Blacklight_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/Audio/Audio_SpeakerSet_B/Blueprints/BP_Audio_OutdoorSpeaker_A.BP_Audio_OutdoorSpeaker_A_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/Commerce/Commerce_TastingRoomBar_A/Blueprints/BP_Commerce_TastingRoomBar_A_A.BP_Commerce_TastingRoomBar_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/Outdoor/Outdoor_ResortCabana_A/Blueprints/BP_Outdoor_ResortCabana_A_C.BP_Outdoor_ResortCabana_A_C_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Script/FortniteGame.FortWeaponRanged:MulticastLWProjectile_EndActiveAbility:
+  FiringTimestamp: 0
+
+/Game/Environments/Asteria/Props/Outdoor/Outdoor_ResortLounger_A/Blueprints/BP_Outdoor_ResortLounger_A_A_B.BP_Outdoor_ResortLounger_A_A_B_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/FlexLegendWeaponGameplay/Gameplay/RATT_Pistol/B_Pistol_RATT.B_Pistol_RATT_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  bIsReloadingWeapon: 17
+  WeaponData: 20
+  LastFireTimeVerified: 23
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+  AmmoCount: 33
+  AppliedAlterations: 42
+  AppliedAlterations: 43
+  WeaponModSlots: 45
+  WeaponMod: 46
+  bIsDynamic: 47
+  OnStartFiring: 62
+
+/WeaponsUpdated/Gameplay/CombatAR/B_Assault_MoonFlax_CombatAR_Athena.B_Assault_MoonFlax_CombatAR_Athena_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  bIsReloadingWeapon: 17
+  WeaponData: 20
+  LastFireTimeVerified: 23
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+  AmmoCount: 33
+  AppliedAlterations: 42
+  AppliedAlterations: 43
+  WeaponModSlots: 45
+  WeaponMod: 46
+  bIsDynamic: 47
+
+B_Assault_MoonFlax_CombatAR_Athena_C_ClassNetCache:
+  MulticastLWProjectile_EndActiveAbility: 5
+  MulticastProjectileRequestUnreliable: 6
+
+B_Pistol_RATT_C_ClassNetCache:
+  MulticastProjectileRequestUnreliable: 6
+
+/Script/FortniteGame.FortPawn:NetMulticast_InvokeGameplayCueExecuted_WithParams:
+  PredictionKey: 1
+  GameplayCueParameters: 2
+
+/Game/Environments/Helios/Props/Outdoor/Outdoor_Benches_A/Blueprints/BP_Outdoor_Bench_B.BP_Outdoor_Bench_B_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Foliage/Trees/CypressTree/Blueprints/BP_Tree_Asteria_CypressTree_alt.BP_Tree_Asteria_CypressTree_alt_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/GenericSet/Blueprints/Riviera/Railings/BP_GenericSet_Riviera_Railing_A_A.BP_GenericSet_Riviera_Railing_A_A_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+
+/Game/Building/ActorBlueprints/Prop/Car_PartyBus.Car_PartyBus_C:
+  bCanBeDamaged: 3
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Weapons/FORT_Melee/Blueprints/Impact/B_Athena_Pickaxe_DualWield_Generic_Candor.B_Athena_Pickaxe_DualWield_Generic_Candor_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  WeaponData: 20
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+  AppliedAlterations: 42
+  AppliedAlterations: 43
+  BannerIconId: 49
+  BannerColorId: 50
+  Pickaxe: 53
+  CharacterVariantChannels: 55
+  VariantChannelTag: 56
+  ActiveVariantTag: 57
+  OwnedVariantTags: 58
+  ItemVariantIsUsedFor: 59
+  CustomData: 60
+  CurrentWieldStance: 78
+
+/Game/Environments/Helios/Sets/MarinaBay/Blueprints/Railings/BP_MarinaBay_Railings_A_A.BP_MarinaBay_Railings_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/Transit/Transit_Trailer_A/Blueprints/BP_Transit_Trailer_A.BP_Transit_Trailer_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Blockout/Blueprints/Walls/BP_Blockout_Wall_A_A.BP_Blockout_Wall_A_A_C:
+  bHidden: 1
+  bCanBeDamaged: 3
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  TextureData: 44
+  TextureData: 45
+  ResourceType: 51
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Props/Audio/Audio_IntercomSpeakers_A/Blueprints/BP_Audio_IntercomSpeaker_B.BP_Audio_IntercomSpeaker_B_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/GenericSet/Blueprints/Villa/Floors/BP_GenericSet_Floor_A_A.BP_GenericSet_Floor_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Foliage/Trees/StonePine/Blueprint/BP_Tree_Asteria_StonePine.BP_Tree_Asteria_StonePine_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/Palace/Blueprints/Trims/BP_Palace_EndCap_B_A.BP_Palace_EndCap_B_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/Audio/Audio_SpeakerSet_B/Blueprints/BP_Audio_OutdoorSpeaker_B.BP_Audio_OutdoorSpeaker_B_C:
+  RemoteRole: 4
+  Role: 13
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Rocks/Boulders/Blueprints/ChapCoast/Rock_Boulder_Large_C_Disp_ChapCoast.Rock_Boulder_Large_C_Disp_ChapCoast_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/Fences/Wooden_Fence/Blueprints/BP_Wooden_Fence_A_E_NoSnap.BP_Wooden_Fence_A_E_NoSnap_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  Health: 64
+  MaxHealth: 65
+
+/PaprikaCoreWeapons/Items/Weapons/PaprikaAR_DPS/B_Assault_Paprika_DPS_Athena.B_Assault_Paprika_DPS_Athena_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  bIsReloadingWeapon: 17
+  WeaponData: 20
+  LastFireTimeVerified: 23
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+  AmmoCount: 33
+  AppliedAlterations: 42
+  AppliedAlterations: 43
+  WeaponModSlots: 45
+  WeaponMod: 46
+  bIsDynamic: 47
+  RepCounter: 49
+  CueEventType: 50
+  Parameters: 51
+  bIsMuzzleTraceNearWall: 57
+
+/VictoryCrownsGameplay/Items/VictoryCrownGameStateComponent.VictoryCrownGameStateComponent_C:
+  CrownBearerPlayerStates: 2
+  CrownBearerPlayerStates: 3
+
+/Script/FortniteGame.FortCurieComponent:
+  LastFireFXRelatedStateTime: 4
+  ActiveStateBitfield: 5
+
+/Game/Environments/Helios/Sets/GenericSet/Blueprints/Villa/Props/BP_GenericSet_Corner_A_A.BP_GenericSet_Corner_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Script/MotionWarping.MotionWarpingComponent:
+  WarpTargets: 2
+  Name: 3
+  Location: 4
+  Rotation: 5
+  Component: 6
+  BoneName: 7
+  bFollowComponent: 8
+  LocationOffset: 9
+  RotationOffset: 10
+
+/Game/Environments/Helios/Rocks/Common/Blueprints/ChapCoast/Rock_Common_Large_C_Disp_ChapCoast.Rock_Common_Large_C_Disp_ChapCoast_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+
+/PaprikaCoreWeapons/Items/Weapons/PaprikaPistol/B_Pistol_Paprika_Auto_Athena.B_Pistol_Paprika_Auto_Athena_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  bIsReloadingWeapon: 17
+  WeaponData: 20
+  LastFireTimeVerified: 23
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+  AmmoCount: 33
+  AppliedAlterations: 42
+  AppliedAlterations: 43
+  WeaponModSlots: 45
+  WeaponMod: 46
+  bIsDynamic: 47
+
+/Game/Environments/Asteria/Foliage/Trees/PalmTree/Blueprint/BP_Asteria_PalmTree_01.BP_Asteria_PalmTree_01_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Sets/Dojo/Blueprints/Foundations/BP_Asteria_Dojo_Foundation_OuterCrn_A_A.BP_Asteria_Dojo_Foundation_OuterCrn_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Foliage/Trees/CypressTree/Blueprints/BP_Tree_Asteria_CypressTree_Small.BP_Tree_Asteria_CypressTree_Small_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Asteria/Props/Fences/Wooden_Fence/Blueprints/BP_Wooden_Fence_B_C_NoSnap.BP_Wooden_Fence_B_C_NoSnap_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/GenericSet/Blueprints/Riviera/Stairs/BP_GenericSet_Riviera_Stairs_Rail_C_D.BP_GenericSet_Riviera_Stairs_Rail_C_D_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  TextureData: 44
+  TextureData: 45
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+B_Pistol_Paprika_Auto_Athena_C_ClassNetCache:
+  MulticastLWProjectile_EndActiveAbility: 5
+  MulticastProjectileRequestUnreliable: 6
+
+/Game/Environments/Helios/Rocks/Boulders/Blueprints/ChapCoast/Rock_Boulder_Small_A_Disp_ChapCoast.Rock_Boulder_Small_A_Disp_ChapCoast_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/GenericSet/Blueprints/Villa/Archway/BP_GenericSet_Arch_D_A_A.BP_GenericSet_Arch_D_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/GenericSet/Blueprints/Villa/Stairs/BP_GenericSet_Stairs_Rail_C_B.BP_GenericSet_Stairs_Rail_C_B_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  Health: 64
+  MaxHealth: 65
+
+B_Assault_Paprika_DPS_Athena_C_ClassNetCache:
+  MulticastLWProjectile_EndActiveAbility: 5
+  MulticastProjectileRequestUnreliable: 6
+
+/Game/Environments/Asteria/Sets/Dojo/Blueprints/Foundations/BP_Asteria_Dojo_Foundation_Str_A_A.BP_Asteria_Dojo_Foundation_Str_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  Health: 64
+  MaxHealth: 65
+
+/Game/Weapons/FORT_Melee/Blueprints/Impact/B_Athena_Pickaxe_Backspin_SingleWield.B_Athena_Pickaxe_Backspin_SingleWield_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  WeaponData: 20
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+  AppliedAlterations: 42
+  AppliedAlterations: 43
+  BannerIconId: 49
+  BannerColorId: 50
+  Pickaxe: 53
+  CharacterVariantChannels: 55
+  VariantChannelTag: 56
+  ActiveVariantTag: 57
+  OwnedVariantTags: 58
+  ItemVariantIsUsedFor: 59
+  CustomData: 60
+
+/Game/Weapons/FORT_Melee/Blueprints/Impact/B_Athena_Pickaxe_Backspin_SingleWield_MysticMale.B_Athena_Pickaxe_Backspin_SingleWield_MysticMale_C:
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  WeaponData: 20
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+  AppliedAlterations: 42
+  AppliedAlterations: 43
+  BannerIconId: 49
+  BannerColorId: 50
+  Pickaxe: 53
+
+/Game/Environments/Helios/Sets/GenericSet/Blueprints/Villa/Walls/Doorway/BP_GenericSet_Doorway_Side_A_A_A.BP_GenericSet_Doorway_Side_A_A_A_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  DoorMesh: 73
+  bDoorOpen: 76
+  bDoorCollisionDisabled: 77
+
+/Script/FortniteGame.FortBuildingWallDoorComponent:
+  DoorDesiredLocation: 22
+  DoorDesiredRotOffset: 23
+
+/Game/Weapons/FORT_Melee/Blueprints/Impact/B_Athena_Pickaxe_FuchsiaFemale.B_Athena_Pickaxe_FuchsiaFemale_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  WeaponData: 20
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+  AppliedAlterations: 42
+  AppliedAlterations: 43
+  BannerIconId: 49
+  BannerColorId: 50
+  Pickaxe: 53
+  CharacterVariantChannels: 55
+  VariantChannelTag: 56
+  ActiveVariantTag: 57
+  OwnedVariantTags: 58
+  ItemVariantIsUsedFor: 59
+  CustomData: 60
+
+/Game/Environments/Asteria/Props/Fences/Wooden_Fence/Blueprints/BP_Wooden_Fence_A_Skew_A_NoSnap.BP_Wooden_Fence_A_Skew_A_NoSnap_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  bInstantDeath: 31
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/GenericSet/Blueprints/Stone/Walls/BP_GenericSet_Stone_Wall_A_B.BP_GenericSet_Stone_Wall_A_B_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  Health: 64
+  MaxHealth: 65
+
+/WeaponsUpdated/Gameplay/StrikerBurstAR/B_Assault_Update_StrikerBurst_Athena.B_Assault_Update_StrikerBurst_Athena_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  bIsReloadingWeapon: 17
+  WeaponData: 20
+  LastFireTimeVerified: 23
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+  AmmoCount: 33
+  AppliedAlterations: 42
+  AppliedAlterations: 43
+  WeaponModSlots: 45
+  WeaponMod: 46
+  bIsDynamic: 47
+  RepCounter: 49
+  CueEventType: 50
+  Parameters: 51
+  bIsMuzzleTraceNearWall: 57
+
+B_Assault_Update_StrikerBurst_Athena_C_ClassNetCache:
+  MulticastLWProjectile_EndActiveAbility: 5
+  MulticastProjectileRequestUnreliable: 6
+
+/BRCosmetics/Weapons/FORT_Melee/Pickaxe_SnapFreeze/FX/B_Athena_Pickaxe_Snapfreeze.B_Athena_Pickaxe_Snapfreeze_C:
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  WeaponData: 20
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+  AppliedAlterations: 42
+  AppliedAlterations: 43
+  BannerIconId: 49
+  BannerColorId: 50
+  Pickaxe: 53
+  CharacterVariantChannels: 55
+  VariantChannelTag: 56
+  ActiveVariantTag: 57
+  OwnedVariantTags: 58
+  ItemVariantIsUsedFor: 59
+  CustomData: 60
+
+/Game/Weapons/FORT_Melee/Blueprints/Impact/B_Athena_Pickaxe_HighTower_Squash_1H.B_Athena_Pickaxe_HighTower_Squash_1H_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  WeaponData: 20
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+  AppliedAlterations: 42
+  AppliedAlterations: 43
+  BannerIconId: 49
+  BannerColorId: 50
+  Pickaxe: 53
+
+/Game/Environments/Helios/Rocks/Common/Blueprints/ChapCoast/Rock_Common_Medium_D_Disp_ChapCoast.Rock_Common_Medium_D_Disp_ChapCoast_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+
+/Script/FortniteGame.FortPlayerPetRepState:
+  RemoteRole: 4
+  AttachParent: 5
+  RelativeScale3D: 7
+  AttachComponent: 10
+  Owner: 12
+  Role: 13
+  LookAtTarget: 15
+  PetItemDef: 16
+
+/Game/Weapons/FORT_Melee/Blueprints/DualWield/B_Athena_Pickaxe_DualWield_Generic_FearlessFlight_Menace_Universal.B_Athena_Pickaxe_DualWield_Generic_FearlessFlight_Menace_Universal_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  WeaponData: 20
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+  AppliedAlterations: 42
+  AppliedAlterations: 43
+  BannerIconId: 49
+  BannerColorId: 50
+  Pickaxe: 53
+
+/Game/Environments/Asteria/Props/Fences/Wooden_Fence/Blueprints/BP_Wooden_Fence_B_A.BP_Wooden_Fence_B_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/GenericSet/Blueprints/Villa/Railings/BP_GenericSet_Railing_A_A.BP_GenericSet_Railing_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 46
+  Health: 64
+  MaxHealth: 65
+
+/SunRoseWeaponsGameplay/Items/Weapons/CerberusSG/B_Shotgun_Break_Cerberus_Athena.B_Shotgun_Break_Cerberus_Athena_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  bIsReloadingWeapon: 17
+  WeaponData: 20
+  LastFireTimeVerified: 23
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+  AmmoCount: 33
+  AppliedAlterations: 42
+  AppliedAlterations: 43
+  WeaponModSlots: 45
+  WeaponMod: 46
+  bIsDynamic: 47
+  RepCounter: 49
+  RepCounter: 52
+  Parameters: 54
+  bIsMuzzleTraceNearWall: 57
+
+/Game/Environments/Helios/Props/Commerce/Commerce_TastingRoomBar_A/Blueprints/BP_Commerce_TastingRoomBar_Corner.BP_Commerce_TastingRoomBar_Corner_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Weapons/FORT_Melee/Blueprints/B_Athena_Pickaxe_DualWield_Generic_Pipershelf.B_Athena_Pickaxe_DualWield_Generic_Pipershelf_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  WeaponData: 20
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+  AppliedAlterations: 42
+  AppliedAlterations: 43
+  BannerIconId: 49
+  BannerColorId: 50
+  Pickaxe: 53
+
+/Game/Environments/Helios/Sets/GenericSet/Blueprints/Riviera/Walls/Window/BP_GenericSet_Riviera_Window_A_A_A.BP_GenericSet_Riviera_Window_A_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  Health: 64
+  MaxHealth: 65
+
+/Script/Entity.EntityReplicator_AlwaysRelevant:
+  RemoteRole: 4
+  Role: 13
+  EntityPtr: 15
+  PackageName: 17
+  AssetName: 18
+  SubPathString: 19
+
+EntityReplicator_AlwaysRelevant_ClassNetCache:
+  NonDynamicEntityComponents: 0
+
+/Valet/SportsCar/Valet_SportsCar_Vehicle.Valet_SportsCar_Vehicle_C:
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  CustomOwnerName: 31
+  CustomOwnerAccountId: 33
+  CustomName: 34
+  SquadID: 36
+  TeamID: 37
+  bMoveStickAcceleratesVehicles: 45
+  SurfaceTypeVehicleOn: 67
+  SelfDestructTime: 72
+  MaxTimeExplosion: 73
+  MaxTimeZeroHealth: 74
+  MaxTimeSelfDestructCleanup: 75
+  DamageableParts: 87
+  ConfigIndex: 88
+  BoneName: 89
+  ShapeName: 90
+  bConsideredCriticalHit: 92
+  bStayDisabledDuringTireMod: 93
+  UpVector: 99
+  ForwardVector: 100
+  bExploded: 108
+  bPendingDeath: 109
+  bOnFire: 110
+  TireStates: 111
+  TireStates: 112
+  bIsRefuelingCosmeticsActive: 115
+  RechargeableBoostPercent: 120
+  bCanBoost: 121
+  bUsesRechargeableBoost: 122
+  BoostPushForce: 123
+  BoostTopSpeedForceMultiplier: 124
+  BoostTopSpeedMultiplier: 125
+  RechargeableBoostRateOfRegen: 126
+  RechargeableBoostRateOfUse: 127
+  MaxFuel: 128
+  FuelPerSecondDriving: 129
+  FuelPerSecondBoosting: 130
+  WheelRadiusF: 137
+  WheelRadiusB: 138
+  bDamageFriendlyVehicles: 139
+  bDamageOtherVehicles: 140
+  bDamageOwnVehicle: 141
+  bDamageAllowedFromOtherVehicle: 142
+  GravityMultiplier: 143
+  GearInfos: 146
+  GearIndex: 147
+  TopSpeed: 148
+  MinSpeed: 149
+  PushForce: 150
+  ServerTireModVersion: 153
+  ReplicatedPoppedTireReaction: 163
+  RandomSeed: 165
+  RandomMatInt: 166
+
+/Script/FortniteGame.FortHealthSet:
+  BaseValue: 0
+  CurrentValue: 1
+  Maximum: 3
+  bIsCurrentClamped: 4
+  bIsBaseClamped: 5
+  UnclampedBaseValue: 7
+  UnclampedCurrentValue: 8
+  BaseValue: 10
+  CurrentValue: 11
+  UnclampedCurrentValue: 18
+
+/Script/FortniteGame.FortVehiclePontoonsComponent:
+  OverridePontoonRadiuses: 2
+  OverridePontoonRadiuses: 3
+
+/Script/ValetRuntime.DagwoodNetworkPhysicsComponent:
+  bIsActive: 1
+
+/Script/FortniteGame.FortVehicleFuelComponent:
+  ServerFuel: 2
+
+/VehicleCosmetics/Components/BP_VehicleCosmeticsAMUC.BP_VehicleCosmeticsAMUC_C:
+  bIsActive: 1
+  MeshParts: 2
+  MeshParts: 3
+  Slots: 5
+  SlotTemplate: 6
+  EquippedItemDefinitionObject: 7
+  CustomizationInfo: 8
+  ChannelTag: 9
+  VariantTag: 10
+  AdditionalData: 11
+  PrimaryArchetype: 14
+
+/SrirachaRanchValet/Components/SR_Valet.SR_Valet_C:
+  bAutostartOnEntry: 2
+  State: 4
+  PlayingIndex: 5
+  FadeoutSeconds: 6
+  MediaStartTimeFromInit: 17
+
+/HighTower/Items/Containers/Tiered_Chest_Athena_FactionChest_Date.Tiered_Chest_Athena_FactionChest_Date_C:
+  bReplicateMovement: 0
+  RemoteRole: 4
+  ReplicatedMovement: 11
+  Role: 13
+  bDestroyOnPlayerBuildingPlacement: 34
+  bIsInitiallyBuilding: 61
+  Health: 64
+  MaxHealth: 65
+  ReplicatedLootTier: 74
+  bAlreadySearched: 76
+  BounceNormal: 77
+  SearchAnimationCount: 78
+  SearchingPawn: 79
+
+/Script/FortniteGame.FortPhysicsObjectComponent:
+  bIsActive: 1
+  PhysicsObjectPresetTag: 2
+  PhysicsObjectPhysicalDataTag: 3
+  PhysicsObjectBuoyancyDataTag: 4
+  PhysicsObjectImpactDamageDataTag: 5
+  ActivationType: 7
+  PhysicsObjectAwakeState: 8
+  bServerHasSetupPhysicsObject: 9
+
+/FlexLegendWeaponGameplay/Gameplay/LeverShotgun/B_Shotgun_Lever_FlexLegend_Athena.B_Shotgun_Lever_FlexLegend_Athena_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  bIsReloadingWeapon: 17
+  WeaponData: 20
+  LastFireTimeVerified: 23
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+  AmmoCount: 33
+  AppliedAlterations: 42
+  AppliedAlterations: 43
+  WeaponModSlots: 45
+  WeaponMod: 46
+  bIsDynamic: 47
+  RepCounter: 49
+  RepCounter: 52
+  Parameters: 54
+  bIsMuzzleTraceNearWall: 57
+
+/FlexLegend_Minions/NPCs/Base/Pawns/BP_PlayerPawn_FlexLegend_Base.BP_PlayerPawn_FlexLegend_Base_C:
+  bReplicateMovement: 0
+  bTearOff: 2
+  RemoteRole: 4
+  ReplicatedMovement: 11
+  Role: 13
+  Instigator: 14
+  PlayerState: 16
+  BaseID: 18
+  bServerHasBaseComponent: 20
+  MovementBase: 23
+  Location: 24
+  Rotation: 25
+  ReplayLastTransformUpdateTimeStamp: 27
+  bIsCrouched: 30
+  bProxyIsJumpForceApplied: 31
+  ReplicatedMovementMode: 32
+  bIsDying: 48
+  bWeaponHolstered: 75
+  bIsDBNO: 76
+  bWasDBNOOnDeath: 77
+  bShouldUseCharacterMovementIdleFastPath: 78
+  CurrentMovementStyle: 79
+  bIsJumping: 84
+  PawnUniqueID: 85
+  CurrentWeapon: 86
+  DeathTags: 87
+  JumpFlashCountPacked: 132
+  LandingFlashCountPacked: 133
+  VocalChords: 139
+  FeedbackAudioComponent: 140
+  CurveTable: 167
+  RowName: 168
+  Value: 170
+  CurveTable: 171
+  RowName: 172
+  Value: 174
+  CurveTable: 175
+  RowName: 176
+  Value: 178
+  CurveTable: 179
+  RowName: 180
+  CurveTable: 183
+  RowName: 184
+  Value: 186
+  CurveTable: 187
+  RowName: 188
+  CurveTable: 191
+  RowName: 192
+  Value: 194
+  CurveTable: 195
+  RowName: 196
+  Value: 198
+  CurveTable: 199
+  RowName: 200
+  Value: 202
+  CurveTable: 203
+  RowName: 204
+  Value: 206
+  CurveTable: 207
+  RowName: 208
+  Value: 210
+  CurveTable: 211
+  RowName: 212
+  Value: 214
+  CurveTable: 215
+  RowName: 216
+  Value: 218
+  CurveTable: 219
+  RowName: 220
+  CurveTable: 223
+  RowName: 224
+  RepActiveMovementModeExtension: 239
+  CapsuleRadiusFortPawn: 240
+  CapsuleHalfHeightFortPawn: 241
+  bIsTargeting: 259
+  bStartedInteractSearch: 281
+  bCanShowDefaultSkin: 286
+  bDisabledTetheringSupport: 287
+  bIsInAnyStorm: 301
+  bIsInsideSafeZone: 302
+  SkyDiveContrail: 319
+  Glider: 320
+  Pickaxe: 321
+  Character: 322
+  Dances: 333
+  Dances: 334
+  PawnMontage: 386
+  bPlayBit: 387
+  AccelerationPack: 404
+  RepAnimMontageInfo: 405
+  RepAnimMontageStartSection: 406
+  RemoteViewData32: 420
+  ServerWorldTimeRevivalTime: 425
+  WalkSpeed: 428
+  RunSpeed: 429
+  SprintSpeed: 430
+  FlySpeed: 431
+  CrouchedRunSpeed: 432
+  CrouchedSprintSpeed: 433
+  GravityZScale: 435
+  JumpZVelocity: 436
+  ReplayRepAnimMontageInfo: 439
+  SimulatedProxyActiveGameplayCues: 440
+  SimulatedProxyMinimalReplicationGameplayCues: 441
+  FastReplicationMinimalReplicationTags: 442
+  FastReplicationReplicatedLooseTags: 443
+  EncryptedPawnReplayData: 444
+  DBNORevivingActorsCount: 450
+  AlertLevel: 461
+
+BP_PlayerPawn_FlexLegend_Base_C_ClassNetCache:
+  ClientObservedStats: 18
+  NetMulticast_Athena_BatchedDamageCues: 69
+  NetMulticast_InvokeGameplayCueAdded_WithParams: 71
+  NetMulticast_InvokeGameplayCueExecuted_FromSpec: 75
+  NetMulticast_InvokeGameplayCueExecuted_WithParams: 76
+
+/Game/Sounds/Fort_Audio_Blueprints/VoiceComponent/NPC_VoiceComponent.NPC_VoiceComponent_C:
+  VoiceSoundBank: 2
+
+/Script/FortniteAI.FortPawnComponent_AIPatrol:
+  bIsPatrolling: 2
+
+/NPCLibrary/SpeechBubble/NPCSpeechBubbleWidgetComponent.NPCSpeechBubbleWidgetComponent_C:
+  AttachParent: 2
+  bShouldBeAttached: 14
+
+/SpitefulChemistryGameplay/Gameplay/SpawnManager_SpitefulChemistry.SpawnManager_SpitefulChemistry_C:
+  RemoteRole: 4
+  Role: 13
+
+/Game/Athena/Items/Consumables/ZipLine/SplineZipline/BP_Athena_Environmental_ZipLine_Spline.BP_Athena_Environmental_ZipLine_Spline_C:
+  RemoteRole: 4
+  Role: 13
+  StartPosition: 44
+  EndPosition: 45
+  bInitialized: 46
+
+/Game/Athena/Items/EnvironmentalItems/SCMachine/BGA_Athena_SCMachine_Redux.BGA_Athena_SCMachine_Redux_C:
+  RemoteRole: 4
+  Role: 13
+  SpawnMachineState: 44
+  HandleIntoGameState: 45
+
+/Game/Athena/Items/QuestInteractables/BigPinkTeddyBear/BGA_HeldObject_Quest_BigPinkTeddyBear.BGA_HeldObject_Quest_BigPinkTeddyBear_C:
+  bHidden: 1
+  RemoteRole: 4
+  ReplicatedMovement: 11
+  Role: 13
+
+/Script/FortniteGame.FortHeldObjectComponent:
+  bIsActive: 1
+
+/Script/FortniteGame.FortBuildingActorSet:
+  BaseValue: 0
+  CurrentValue: 1
+  Maximum: 3
+  UnclampedBaseValue: 7
+  UnclampedCurrentValue: 8
+  BaseValue: 10
+  CurrentValue: 11
+  UnclampedBaseValue: 17
+  UnclampedCurrentValue: 18
+
+/Script/FortniteGame.FortPawn:NetMulticast_InvokeGameplayCueExecuted_FromSpec:
+  Def: 0
+  ModifiedAttributes: 1
+  AttributeName: 2
+  Attribute: 3
+  AttributeOwner: 4
+  TotalMagnitude: 5
+  EffectContext: 7
+  AggregatedSourceTags: 8
+  AggregatedTargetTags: 9
+  Level: 10
+  AbilityLevel: 11
+  PredictionKey: 12
+
+/Game/Gadgets/Zipline/Meshes/ZipLine_Pole_Capsules.ZipLine_Pole_Capsules_C:
+  RemoteRole: 4
+  Role: 13
+  ZiplinePole: 73
+
+/Game/Athena/Items/EnvironmentalItems/ExplosiveProps/Apollo_GasPump_Valet.Apollo_GasPump_Valet_C:
+  RemoteRole: 4
+  Role: 13
+
+/PaprikaWeaponCases/Gameplay/Actors/PaprikaWeaponCase_Container.PaprikaWeaponCase_Container_C:
+  RemoteRole: 4
+  Role: 13
+  bDestroyOnPlayerBuildingPlacement: 34
+  bIsInitiallyBuilding: 61
+  Health: 64
+  MaxHealth: 65
+  ReplicatedLootTier: 74
+  bAlreadySearched: 76
+  ItemDefinition: 80
+  Loot: 81
+  Count: 82
+  ItemDefinition: 83
+  OrderIndex: 84
+  bIsDirty: 85
+  bIsReplicatedCopy: 86
+  bUpdateStatsOnCollection: 87
+  bWasGifted: 88
+  inventory_overflow_date: 89
+  Durability: 90
+  Level: 91
+  LoadedAmmo: 92
+  PhantomReserveAmmo: 93
+  PickupVariantIndex: 94
+  A: 95
+  B: 96
+  C: 97
+  D: 98
+  A: 99
+  B: 100
+  C: 101
+  D: 102
+  A: 103
+  B: 104
+  C: 105
+  D: 106
+  DurabilityCooldownStartTime: 107
+  StateValuesConstObject: 113
+  StateType: 114
+  ObjectData: 115
+  ParentInventory: 117
+  Handle: 118
+  ItemVariantDataMappingIndex: 119
+  WeaponModSlots: 123
+  WeaponMod: 124
+  bIsDynamic: 125
+  WrapOverride: 127
+  DisableInteraction: 132
+  AlreadyLooted: 133
+  WeponModSetData: 134
+  InteractUsesWeaponString: 136
+
+/PaprikaWeaponCases/Gameplay/Actors/PaprikaWeaponCase_Container_Child_Small.PaprikaWeaponCase_Container_Child_Small_C:
+  RemoteRole: 4
+  Role: 13
+  bDestroyOnPlayerBuildingPlacement: 34
+  bIsInitiallyBuilding: 61
+  Health: 64
+  MaxHealth: 65
+  ReplicatedLootTier: 74
+  bAlreadySearched: 76
+  ItemDefinition: 80
+  Loot: 81
+  Count: 82
+  ItemDefinition: 83
+  OrderIndex: 84
+  bIsDirty: 85
+  bIsReplicatedCopy: 86
+  bUpdateStatsOnCollection: 87
+  bWasGifted: 88
+  inventory_overflow_date: 89
+  Durability: 90
+  Level: 91
+  LoadedAmmo: 92
+  PhantomReserveAmmo: 93
+  PickupVariantIndex: 94
+  A: 95
+  B: 96
+  C: 97
+  D: 98
+  A: 99
+  B: 100
+  C: 101
+  D: 102
+  A: 103
+  B: 104
+  C: 105
+  D: 106
+  DurabilityCooldownStartTime: 107
+  StateValuesConstObject: 113
+  StateType: 114
+  ObjectData: 115
+  ParentInventory: 117
+  Handle: 118
+  ItemVariantDataMappingIndex: 119
+  WeaponModSlots: 123
+  WeaponMod: 124
+  bIsDynamic: 125
+  WrapOverride: 127
+  DisableInteraction: 132
+  AlreadyLooted: 133
+  WeponModSetData: 134
+  InteractUsesWeaponString: 136
+
+/Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C:
+  RemoteRole: 4
+  Role: 13
+  StartPosition: 44
+  EndPosition: 45
+  bInitialized: 46
+  InitialSplineEndLocation: 47
+  TargetSplineEndLocation: 48
+  PawnUsingHandle: 49
+
+/Game/Athena/Items/EnvironmentalItems/HidingProps/Props/B_HidingProp_Portapotty_V2.B_HidingProp_Portapotty_V2_C:
+  bCanBeDamaged: 3
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+  IsTeleporter: 76
+
+/HighTower/Items/Containers/AvengersChest/BP_AvengersChest.BP_AvengersChest_C:
+  bReplicateMovement: 0
+  bHidden: 1
+  RemoteRole: 4
+  ReplicatedMovement: 11
+  Role: 13
+  bDestroyed: 28
+  bInstantDeath: 31
+  bDestroyOnPlayerBuildingPlacement: 34
+  bIsInitiallyBuilding: 61
+  Health: 64
+  MaxHealth: 65
+  ReplicatedLootTier: 74
+  bAlreadySearched: 76
+  BounceNormal: 77
+  SearchAnimationCount: 78
+  SearchingPawn: 79
+
+/BattlePassS31_Quests/Items/QuestActors/Story/BP_S31_MomLog.BP_S31_MomLog_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+
+/PaprikaWeaponCases/Gameplay/Actors/PaprikaWeaponCase_Container_Child_Large.PaprikaWeaponCase_Container_Child_Large_C:
+  RemoteRole: 4
+  Role: 13
+  bIsInitiallyBuilding: 61
+  Health: 64
+  MaxHealth: 65
+  ReplicatedLootTier: 74
+  ItemDefinition: 80
+  Loot: 81
+  Count: 82
+  ItemDefinition: 83
+  OrderIndex: 84
+  bIsDirty: 85
+  bIsReplicatedCopy: 86
+  bUpdateStatsOnCollection: 87
+  bWasGifted: 88
+  inventory_overflow_date: 89
+  Durability: 90
+  Level: 91
+  LoadedAmmo: 92
+  PhantomReserveAmmo: 93
+  PickupVariantIndex: 94
+  A: 95
+  B: 96
+  C: 97
+  D: 98
+  A: 99
+  B: 100
+  C: 101
+  D: 102
+  A: 103
+  B: 104
+  C: 105
+  D: 106
+  DurabilityCooldownStartTime: 107
+  StateValuesConstObject: 113
+  StateType: 114
+  ObjectData: 115
+  ParentInventory: 117
+  Handle: 118
+  ItemVariantDataMappingIndex: 119
+  WeaponModSlots: 123
+  WeaponMod: 124
+  bIsDynamic: 125
+  WrapOverride: 127
+  WeponModSetData: 134
+  InteractUsesWeaponString: 136
+
+/Game/Athena/Items/ForagedItems/ShieldsSmall/CBGA_ShieldsSmall.CBGA_ShieldsSmall_C:
+  RemoteRole: 4
+  Role: 13
+  ItemDefinition: 44
+
+/Game/Environments/Helios/Props/Commerce/Commerce_CoveredProps_A/Blueprints/BP_Commerce_CoveredProp_A_I.BP_Commerce_CoveredProp_A_I_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  bInstantDeath: 31
+  ReplicatedDrawScale3D: 63
+
+/Game/Environments/Helios/Props/Commerce/Commerce_CoveredProps_A/Blueprints/BP_Commerce_CoveredProp_A_G.BP_Commerce_CoveredProp_A_G_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  bInstantDeath: 31
+  ReplicatedDrawScale3D: 63
+
+/Game/Environments/Helios/Props/Commerce/Commerce_CoveredProps_A/Blueprints/BP_Commerce_CoveredProp_A_E.BP_Commerce_CoveredProp_A_E_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  bInstantDeath: 31
+
+/Game/Athena/Apollo/Environments/BuildingActors/Foliage/Apollo_BigBush.Apollo_BigBush_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  bInstantDeath: 31
+  ReplicatedDrawScale3D: 63
+
+/Game/Athena/Apollo/Environments/BuildingActors/Foliage/Apollo_BigBush.Apollo_BigBush_C:MaterialWobble:
+  Player: 0
+
+Apollo_BigBush_C_ClassNetCache:
+  MaterialWobble: 0
+
+/Game/Environments/Helios/Sets/Estate/Blueprints/Walls/Window/BP_Estate_Window_A_A.BP_Estate_Window_A_A_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  TextureData: 44
+  TextureData: 45
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/GoldenPOI/Components/PawnComponent_GoldenPOI.PawnComponent_GoldenPOI_C:
+  IsInGoldenPOI: 2
+
+/Game/Environments/Apollo/Foliage/Hedges/Meshes/BP_Apollo_Hedge_Straight.BP_Apollo_Hedge_Straight_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/CrateBarrel/Kit_CrateBarrel_Barrel_Oil_C/Blueprints/Asteria_CrateBarrel_Barrel_Oil_C.Asteria_CrateBarrel_Barrel_Oil_C_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Blockout/Blueprints/Walls/Doorway/BP_Blockout_Doorway_A_A_A.BP_Blockout_Doorway_A_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  ResourceType: 51
+  Health: 64
+  MaxHealth: 65
+  DoorMesh: 73
+  bDoorOpen: 76
+  bDoorCollisionDisabled: 77
+
+/ChapWormGameplay/Items/ChapWorm/B_Weapon_ChapWorm.B_Weapon_ChapWorm_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  WeaponData: 20
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+  AmmoCount: 33
+  AppliedAlterations: 42
+  AppliedAlterations: 43
+
+/PaprikaConsumables/Gameplay/ShieldRefresh/B_ConsumableSmall_HalfShield_Paprika.B_ConsumableSmall_HalfShield_Paprika_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  WeaponData: 20
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+
+/Game/Environments/Asteria/Props/CrateBarrel/Kit_CrateBarrel_Crate_A/Blueprints/Asteria_CrateBarrel_Crate_Medium_A.Asteria_CrateBarrel_Crate_Medium_A_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+
+/Game/Building/ActorBlueprints/Containers/AlwaysSpawn_NormalChest.AlwaysSpawn_NormalChest_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  bInstantDeath: 31
+  bDestroyOnPlayerBuildingPlacement: 34
+  Health: 64
+  MaxHealth: 65
+  ReplicatedLootTier: 74
+  bAlreadySearched: 76
+  BounceNormal: 77
+  SearchAnimationCount: 78
+  SearchingPawn: 79
+
+/Game/Building/ActorBlueprints/Containers/Tiered_Ammo_Athena.Tiered_Ammo_Athena_C:
+  bDestroyed: 28
+  bInstantDeath: 31
+  Health: 64
+  MaxHealth: 65
+  BounceNormal: 77
+  SearchAnimationCount: 78
+
+/Game/Environments/Helios/Props/GreenTown/GreenTown_Benches_A/Blueprints/BP_GreenTown_Bench_B.BP_GreenTown_Bench_B_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Script/FortniteGame.FortVehicleSeatComponent:
+  PlayerSlots: 2
+  AnimInstanceOverride: 15
+  AnimLayerOverride: 16
+  bCanCarryDBNOPlayer: 17
+  bCanEmote: 18
+  bForceCrouch: 19
+  bUseGroundMotion: 22
+  bUsePerSeatAnimInstanceOverride: 23
+  bCanOnlyFireWhenTargeting: 26
+  bIsOccupantEnclosed: 27
+  Player: 36
+  PlayerEntryTime: 37
+  ReservingActor: 45
+  ActionDefForUI: 47
+  InputAction: 48
+  GamepadInputAction: 49
+  ActionLabel: 50
+  EnvironmentExposure: 52
+  SeatTags: 53
+  VehicleApexZ: 87
+  SeatIndex: 88
+  ExitSocketIndex: 89
+  SeatTransitionVector: 91
+  OverridingSeatDataCount: 92
+
+/Script/FortniteGame.FortAthenaVehicle:MulticastVehicleInputStateUnreliable:
+  ForwardAlpha: 0
+  RightAlpha: 1
+  PitchAlpha: 2
+  LookUpDelta: 3
+  TurnDelta: 4
+  SteerAlpha: 5
+  GravityOffset: 6
+  MovementDir: 7
+  undefined: 8
+
+Valet_SportsCar_Vehicle_C_ClassNetCache:
+  BroadcastCollisionHitAudio: 0
+  Update Damage State: 2
+  VFX_DamageState: 3
+  BroadcastResetWaterIdleTimeEmpty: 5
+  MulticastVehicleInputStateUnreliable: 9
+  ClientBroadcastHitDetection: 20
+
+/Script/FortniteGame.FortPlayerPawn:MulticastUpdateVehicleInputStateReliable:
+  bIgnoreForwardInAir: 0
+  bIsBraking: 1
+  bIsHonking: 2
+  bIsJumping: 3
+  bIsReversing: 4
+  bIsSprinting: 5
+  bMovementModifier0: 6
+  bMovementModifier1: 7
+  bMovementModifier2: 8
+  bUsingGamepad: 9
+  bUsingTrigger: 10
+
+/Game/Abilities/Player/Generic/UtilityItems/B_Grenade_Tower_Athena.B_Grenade_Tower_Athena_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  WeaponData: 20
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+
+/HoverGameplay/Gameplay/ItemDef/B_Hover_Base.B_Hover_Base_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  WeaponData: 20
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+
+/Game/Abilities/Player/Generic/UtilityItems/B_ConsumableSmall_MiniShield_Athena.B_ConsumableSmall_MiniShield_Athena_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  WeaponData: 20
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+
+/Game/Abilities/Player/Generic/UtilityItems/B_ConsumableSmall_MiniShield_Athena.B_ConsumableSmall_MiniShield_Athena_C:Consume Liquid FX:
+  duration: 0
+
+B_ConsumableSmall_MiniShield_Athena_C_ClassNetCache:
+  Consume Liquid FX: 0
+  Reset Liquid FX: 1
+
+/PaprikaConsumables/Gameplay/ShieldRefresh/B_Prj_Paprika_Shields_Tossed.B_Prj_Paprika_Shields_Tossed_C:
+  RemoteRole: 4
+  ReplicatedMovement: 11
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  Team: 17
+  ReplicatedMaxSpeed: 19
+  SyncId: 24
+
+/Game/Environments/Helios/Sets/Estate/Blueprints/Floors/BP_Estate_Floor_B_A_A.BP_Estate_Floor_B_A_A_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  bInstantDeath: 31
+  TextureData: 45
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/Estate/Blueprints/Props/BP_Estate_Chimney_A_B.BP_Estate_Chimney_A_B_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  bInstantDeath: 31
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+
+/Script/VictoryCrownsRuntime.FortGameStateComponent_VictoryCrowns:ClientKillFeedMessage:
+  FortPSA: 0
+  bAdded: 1
+
+VictoryCrownGameStateComponent_C_ClassNetCache:
+  ClientKillFeedMessage: 0
+
+/Game/Building/ActorBlueprints/Containers/Tiered_Chest_Athena.Tiered_Chest_Athena_C:
+  bDestroyed: 28
+  bInstantDeath: 31
+  bDestroyOnPlayerBuildingPlacement: 34
+  ResourceType: 51
+  Health: 64
+  MaxHealth: 65
+  BounceNormal: 77
+  SearchAnimationCount: 78
+
+/Game/Abilities/Player/Generic/UtilityItems/B_ConsumableSmall_MiniShield_Athena.B_ConsumableSmall_MiniShield_Athena_C:Reset Liquid FX:
+  IsFinished: 0
+
+/Game/Environments/Helios/Sets/Estate/Blueprints/Roofs/BP_Estate_Roof_Top_A_A.BP_Estate_Roof_Top_A_A_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  bInstantDeath: 31
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/Estate/Blueprints/Roofs/BP_Estate_Roof_Top_Crn_A_A.BP_Estate_Roof_Top_Crn_A_A_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  bInstantDeath: 31
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+
+/PaprikaConsumables/Gameplay/SlapShot/B_Paprika_SlapShot_Weap.B_Paprika_SlapShot_Weap_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  WeaponData: 20
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+
+/Game/Gadgets/Zipline/Meshes/BP_ZipLine_Athena_Harness_Yellow.BP_ZipLine_Athena_Harness_Yellow_C:
+  RemoteRole: 4
+  RelativeScale3D: 7
+  RotationOffset: 8
+  AttachSocket: 9
+  Role: 13
+  AttachedZipline: 17
+
+/Script/Engine.StaticMeshComponent:
+  AttachParent: 2
+  AttachChildren: 4
+  AttachChildren: 5
+  RelativeLocation: 7
+  RelativeRotation: 8
+  bShouldBeAttached: 14
+
+/Script/Engine.ParticleSystemComponent:
+  AttachParent: 2
+  RelativeRotation: 8
+  bShouldBeAttached: 14
+
+/Game/Environments/Helios/Sets/GlacierHotel/Blueprints/Pillars/BP_GlacierHotel_PillarHalf_D_C_NoSnap.BP_GlacierHotel_PillarHalf_D_C_NoSnap_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+
+/Ascender/Gameplay/Ascender/B_Athena_Zipline_Ascender.B_Athena_Zipline_Ascender_C:PlayerDescendingStarted:
+  Sliding Player: 0
+
+B_Athena_Zipline_Ascender_C_ClassNetCache:
+  PlayerDescendingStarted: 0
+
+/Game/Environments/Helios/Sets/Estate/Blueprints/Walls/Doorway/BP_Estate_Doorway_A_A_A.BP_Estate_Doorway_A_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  ResourceType: 51
+  DoorOpenStyle: 75
+  bDoorOpen: 76
+  bDoorCollisionDisabled: 77
+
+/Game/Environments/Asteria/Foliage/Trees/BorealConifer_PineTree/Blueprint/BP_BorealConifer_PineTree.BP_BorealConifer_PineTree_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/Estate/Blueprints/Floors/BP_Estate_Floor_B_A.BP_Estate_Floor_B_A_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  TextureData: 44
+  TextureData: 45
+  ResourceType: 51
+  Health: 64
+  MaxHealth: 65
+
+/FlexLegendWeaponGameplay/Gameplay/DualSMGs/B_FlexLegend_DualSMGs_Athena.B_FlexLegend_DualSMGs_Athena_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  bIsReloadingWeapon: 17
+  WeaponData: 20
+  LastFireTimeVerified: 23
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+  AmmoCount: 33
+  AppliedAlterations: 42
+  AppliedAlterations: 43
+  RepCounter: 49
+  CueEventType: 50
+  Parameters: 51
+  bIsMuzzleTraceNearWall: 57
+  LastFireHand: 62
+
+/Game/Environments/Asteria/Props/CrateBarrel/Kit_CrateBarrel_Crate_A/Blueprints/Asteria_CrateBarrel_Crate_Large_A.Asteria_CrateBarrel_Crate_Large_A_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  bInstantDeath: 31
+  TextureData: 44
+
+/Game/Athena/SafeZone/SafeZoneIndicator.SafeZoneIndicator_C:
+  PreviousRadius: 15
+  PreviousCenter: 17
+  CurrentPhase: 44
+  Damage: 45
+  PhaseCount: 47
+  TimeRemainingWhenPhasePaused: 52
+
+/Script/Engine.TimelineComponent:
+  bReplicates: 0
+  bIsActive: 1
+  bPlaying: 3
+  PlayRate: 5
+  Position: 6
+
+/Game/Athena/Artemis/Environments/BuildingActors/Fences/Artemis_Fence_WroughtIron_Doorway_A.Artemis_Fence_WroughtIron_Doorway_A_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  Health: 64
+  MaxHealth: 65
+  DoorOpenStyle: 75
+  bDoorOpen: 76
+  bDoorCollisionDisabled: 77
+
+/Game/Environments/Helios/Sets/Estate/Blueprints/Railings/BP_Estate_Railing_B_A.BP_Estate_Railing_B_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  ResourceType: 51
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/Estate/Blueprints/Pillars/BP_Estate_Pillar_A_B_Base.BP_Estate_Pillar_A_B_Base_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/GlacierHotel/GlacierHotel_OrientalRugs_A/Blueprints/BP_GlacierHotel_OrientalRug_F_B.BP_GlacierHotel_OrientalRug_F_B_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Blockout/Blueprints/Walls/Window/Window_A/BP_Blockout_Window_A_A_B.BP_Blockout_Window_A_A_B_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  ResourceType: 51
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/Commerce/Commerce_CoveredProps_A/Blueprints/BP_Commerce_CoveredProp_A_F.BP_Commerce_CoveredProp_A_F_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+BP_Moonflax_FlamingHoop_PersistentFX_C_ClassNetCache:
+  ActivateFXClients: 0
+
+/Game/Abilities/Player/Generic/UtilityItems/B_ConsumableSmall_Medkit_Athena.B_ConsumableSmall_Medkit_Athena_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  WeaponData: 20
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+
+/PaprikaConsumables/Gameplay/MedRefresh/B_Prj_Paprika_Meds_Tossed.B_Prj_Paprika_Meds_Tossed_C:
+  RemoteRole: 4
+  ReplicatedMovement: 11
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  Team: 17
+  ReplicatedMaxSpeed: 19
+  SyncId: 24
+
+/Game/Environments/Asteria/Sets/IndustrialTown/BluePrints/Asteria_IndustrialTown_Wall.Asteria_IndustrialTown_Wall_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Athena/Artemis/Environments/BuildingActors/Fences/Artemis_Fence_WroughtIron_C.Artemis_Fence_WroughtIron_C_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Sets/Estate/Blueprints/Walls/Doorway/BP_Estate_DoubleDoor_A_A_A.BP_Estate_DoubleDoor_A_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  DoorMesh: 73
+  DoubleDoorMesh: 74
+  bDoorOpen: 76
+  bDoorCollisionDisabled: 77
+
+/Game/Athena/SupplyDrops/AthenaSupplyDropBalloon_Generic.AthenaSupplyDropBalloon_Generic_C:
+  bHidden: 1
+  bCanBeDamaged: 3
+  RemoteRole: 4
+  AttachParent: 5
+  LocationOffset: 6
+  RelativeScale3D: 7
+  AttachComponent: 10
+  Role: 13
+  ReplicatedBuildingAttributeSet: 20
+  ReplicatedAbilitySystemComponent: 21
+  bDestroyed: 28
+  bInstantDeath: 31
+
+/Script/FortniteGame.FortHealthBarComponent:
+  bIsActive: 1
+  AttachParent: 2
+  bShouldBeAttached: 14
+
+/JobBoard/Blueprints/SupplyDropGeneric/B_JobBoard_SupplyDrop_MapIconActor.B_JobBoard_SupplyDrop_MapIconActor_C:
+  RemoteRole: 4
+  Role: 13
+
+/JobBoard/Blueprints/SupplyDropGeneric/AthenaSupplyDrop_JobBoardBriefing.AthenaSupplyDrop_JobBoardBriefing_C:
+  RemoteRole: 4
+  ReplicatedMovement: 11
+  Role: 13
+  bDestroyed: 28
+  bInstantDeath: 31
+  Opened: 46
+  BalloonPopped: 47
+  FallSpeed: 48
+  LandingLocation: 49
+  FallHeight: 50
+  FallDirection: 51
+
+/Script/Engine.ChildActorComponent:
+  bReplicates: 0
+  AttachParent: 2
+  bShouldBeAttached: 14
+  ChildActor: 19
+
+/Game/Athena/Apollo/Environments/BuildingActors/Vehicles/Apollo_StandardCar_Junker.Apollo_StandardCar_Junker_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+AthenaSupplyDrop_JobBoardBriefing_C_ClassNetCache:
+  HandleLanding: 0
+  Multicast_ApplyGravityForFall: 2
+
+/Game/Environments/Helios/Foliage/Trees/Helios_Birch/Blueprints/BP_Helios_Birch_Tree_A.BP_Helios_Birch_Tree_A_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Athena/Artemis/Environments/BuildingActors/Divider_Walls/DividerWall_HalfWall_Curved_NoSnap.DividerWall_HalfWall_Curved_NoSnap_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/AnglePatch/AnglePatch_Lamp_A/Blueprints/BP_AnglePatch_Lamp_A_B.BP_AnglePatch_Lamp_A_B_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Rocks/Boulders/Blueprints/Moss/Rock_Boulder_Medium_C_Disp_Moss.Rock_Boulder_Medium_C_Disp_Moss_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/MurkyVoleGameplay/Gameplay/Turret/BP_Athena_MurkyVole_Turret_Attachment.BP_Athena_MurkyVole_Turret_Attachment_C:
+  RemoteRole: 4
+  AttachParent: 5
+  RelativeScale3D: 7
+  AttachComponent: 10
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  CurrentState: 15
+  PreviousState: 16
+  AimRotation_Server: 17
+  TargetActor: 18
+  PreviousTargetActor: 19
+  Target Is Obstructed: 20
+  TargetActorLastKnownLocation: 21
+  PreviousOwner: 22
+  CurrentOwner: 23
+  ScannerRays_StartingScale: 24
+
+/ShieldBubble/Gameplay/ShieldBubbleJr/BGA_Athena_SilverBlazer_Mini.BGA_Athena_SilverBlazer_Mini_C:
+  RemoteRole: 4
+  AttachParent: 5
+  RelativeScale3D: 7
+  RotationOffset: 8
+  AttachComponent: 10
+  Role: 13
+  OwnerPersistentID: 15
+
+BGA_Athena_SilverBlazer_Mini_C_ClassNetCache:
+  PlaySpawnSound: 0
+  RunIn: 1
+  RunOut: 2
+
+/ShieldBubble/Gameplay/ShieldBubbleJr/BGA_Athena_SilverBlazerCore_Mini.BGA_Athena_SilverBlazerCore_Mini_C:
+  bHidden: 1
+  RemoteRole: 4
+  ReplicatedMovement: 11
+  Role: 13
+  bDestroyed: 28
+  bInstantDeath: 31
+  bAttached: 44
+  SpawnedBGA: 45
+
+BGA_Athena_SilverBlazerCore_Mini_C_ClassNetCache:
+  CheckForVehicleAttach: 0
+  Destroyed: 1
+
+/Game/Environments/Helios/Props/AnglePatch/AnglePatch_HoodedStatue_A/Blueprints/BP_AnglePatch_HoodedStatue_A.BP_AnglePatch_HoodedStatue_A_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/PaprikaConsumables/Gameplay/TeamSpray/B_Paprika_TeamSpray_Weap.B_Paprika_TeamSpray_Weap_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  bIsChargingWeapon: 16
+  WeaponData: 20
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+  AmmoCount: 33
+  ChargeStatusPack: 35
+  EnableSprayVFX: 49
+
+/Game/Environments/Helios/Rocks/Common/Blueprints/Moss/Rock_Common_Large_C_Disp_Moss.Rock_Common_Large_C_Disp_Moss_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Athena/Items/Consumables/SilverBlazer/BGA_Athena_SilverBlazerCore.BGA_Athena_SilverBlazerCore_C:Destroyed:
+  DamagedActor: 0
+  DamageCauser: 3
+  HitLocation: 4
+  FHitComponent: 5
+  Momentum: 7
+
+B_FlexLegend_DualSMGs_Athena_C_ClassNetCache:
+  MulticastLWProjectile_EndActiveAbility: 5
+  MulticastProjectileRequestUnreliable: 6
+
+/Game/Environments/Helios/Sets/Estate/Blueprints/Pillars/BP_Estate_Ext_Pillar_A_A.BP_Estate_Ext_Pillar_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/Estate/Blueprints/Pillars/BP_Estate_Pillar_A_A_Base.BP_Estate_Pillar_A_A_Base_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/Estate/Blueprints/Roofs/BP_Estate_Roof_B_C.BP_Estate_Roof_B_C_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 45
+  Health: 64
+  MaxHealth: 65
+
+/Game/Abilities/Player/Generic/UtilityItems/B_ChillBronco_Athena.B_ChillBronco_Athena_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  WeaponData: 20
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+
+/Game/Athena/Items/Consumables/ChillBronco/B_Prj_Athena_ChillBronco.B_Prj_Athena_ChillBronco_C:
+  bHidden: 1
+  RemoteRole: 4
+  ReplicatedMovement: 11
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsBeingKilled: 15
+  bHasExploded: 16
+  Team: 17
+  GravityScale: 20
+  SyncId: 24
+  SimulationStoppingHit: 25
+  PlayerPawn: 28
+
+/Script/FortniteGame.FortGameplayEffectDeliveryActor:BroadcastExplosion:
+  HitResults: 0
+  HitResults: 1
+
+B_Prj_Athena_ChillBronco_C_ClassNetCache:
+  BroadcastExplosion: 0
+
+/Game/Environments/Asteria/Foliage/Trees/Pine/Blueprint/BP_Asteria_PIne_Tree_1.BP_Asteria_PIne_Tree_1_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Athena/Artemis/Environments/BuildingActors/Divider_Walls/Suburban_Wall_Pillar.Suburban_Wall_Pillar_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Athena/SupplyDrops/AthenaSupplyDrop.AthenaSupplyDrop_C:HandleLanding:
+  ImpactResult: 0
+
+/Script/MantisRuntime.FortMantisWeaponComponent:
+  bIsTechniqueActive: 2
+  ActiveTechniqueName: 3
+  ActiveTechniqueIndex: 4
+  ActiveTechniqueConsecutiveBranchesToSelf: 5
+  bIsTechniqueActive: 6
+  ActiveTechniqueName: 7
+  ActiveTechniqueIndex: 8
+  ActiveTechniqueConsecutiveBranchesToSelf: 9
+
+/Script/MantisRuntime.FortAbilityTask_ApplyRootMotionMantisForce:
+  ForceName: 0
+  duration: 4
+  TechniqueMontage: 5
+  WarpInfo: 6
+
+/Game/Environments/Helios/Sets/Estate/Blueprints/Railings/BP_Estate_Ext_Railing_A_A.BP_Estate_Ext_Railing_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Asteria/Props/CrateBarrel/Kit_CrateBarrel_Crate_A/Blueprints/Asteria_CrateBarrel_Crate_Small_A.Asteria_CrateBarrel_Crate_Small_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Train/Cars/HeliosCargoAltCar.HeliosCargoAltCar_C:DestroyLootContainerAudioComponentTwo:
+  HitLocation: 4
+  Momentum: 7
+
+HeliosCargoAltCar_C_ClassNetCache:
+  DestroyLootContainerAudioComponent: 0
+  DestroyLootContainerAudioComponentTwo: 1
+
+/Train/Cars/HeliosCargoAltCar.HeliosCargoAltCar_C:DestroyLootContainerAudioComponent:
+  HitLocation: 4
+  Momentum: 7
+
+/Script/HoverGameplayRuntime.HoverAttributeSet:
+  BaseValue: 10
+  CurrentValue: 11
+  UnclampedBaseValue: 17
+  UnclampedCurrentValue: 18
+
+/VaultingContent/Component/PlayerHurdleComponent.PlayerHurdleComponent_C:
+  Type: 2
+  FacingCornerLocation: 4
+  FacingCornerNormal: 5
+  BackCornerLocation: 6
+  FinalLandingPosition: 7
+  bValid: 8
+
+/Game/Environments/Asteria/Props/Outdoor/Kit_Outdoor_Campfire_A/Blueprints/BP_BGA_Outdoor_Campfire_A.BP_BGA_Outdoor_Campfire_A_C:
+  RemoteRole: 4
+  Role: 13
+  BeenUsed: 45
+  LitRepBool: 50
+  HasBeenLit: 52
+
+/Game/Athena/Items/EnvironmentalItems/FlopperSpawn/BGA_Athena_FlopperSpawn_World.BGA_Athena_FlopperSpawn_World_C:
+  RemoteRole: 4
+  ReplicatedMovement: 11
+  Role: 13
+  FortWaterBody: 44
+  WaterNormalHit: 45
+
+/Game/Environments/Asteria/Props/Fences/ChainLink_Fence/Blueprints/BP_Chainlink_Fence_Door_A_A_A.BP_Chainlink_Fence_Door_A_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 45
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  bDoorOpen: 76
+
+/Game/Environments/Helios/Props/Merc/Merc_DoorBarricade_A/Blueprints/BP_Merc_DoorBarricade_A.BP_Merc_DoorBarricade_A_C:
+  RemoteRole: 4
+  Role: 13
+  DoorOpenStyle: 75
+
+/Game/Athena/Apollo/Environments/BuildingActors/OilRig/Props/Apollo_OilRig_Cart_01.Apollo_OilRig_Cart_01_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/FlexLegend_BossM/Blueprints/ChallengeManager_SimpleBossProgressBar_BossM.ChallengeManager_SimpleBossProgressBar_BossM_C:
+  RemoteRole: 4
+  Role: 13
+  CurrentState: 15
+  PhaseProgressTargets: 17
+  PhaseProgressTargets: 18
+  TotalProgress: 20
+  MusicPhase: 21
+  BossProgress: 22
+  BossIsReadyForFinalFight: 23
+
+/MidMatchRadioTowerGameplay/Gameplay/B_MMObj_RadioTowerGameStateComponent.B_MMObj_RadioTowerGameStateComponent_C:
+  RadioTowerActivationProgress: 3
+  bRepNotifyMarkClosestTerminal: 4
+
+/BattlePassS31_Quests/Items/QuestActors/Story/BP_S31_Story_p04_Pamphlets.BP_S31_Story_p04_Pamphlets_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+
+/BattlePassS31_Quests/Items/QuestActors/Story/BP_S31_Story_p04_Pamphlets_SM_A.BP_S31_Story_p04_Pamphlets_SM_A_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+
+/BattlePassS31_Quests/Items/QuestActors/Story/BP_S31_Story_p04_Pamphlets_SM_B.BP_S31_Story_p04_Pamphlets_SM_B_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+
+/Game/Environments/TechArt/LightCones/BP_LightCone_01_CH5S3_Child.BP_LightCone_01_CH5S3_Child_C:
+  RemoteRole: 4
+  Role: 13
+  StaticMesh: 48
+
+/Game/Environments/Asteria/Props/Coastal/Coastal_Boat/Blueprints/BP_Coastal_Boat_A.BP_Coastal_Boat_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/BattlePassS31_Quests/Items/QuestActors/Story/BP_S31_Story_p04_Pamphlets_SM_D.BP_S31_Story_p04_Pamphlets_SM_D_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+
+/BattlePassS31_Quests/Items/QuestActors/Story/BP_S31_Story_p04_Pamphlets_SM_C.BP_S31_Story_p04_Pamphlets_SM_C_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+
+/MurkyVoleGameplay/Gameplay/Turret/B_Athena_MurkyVole_Turret.B_Athena_MurkyVole_Turret_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  WeaponData: 20
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+  AmmoCount: 33
+
+/AIProgressBar/Blueprints/Components/BP_AIProgressBarPawnComponent.BP_AIProgressBarPawnComponent_C:
+  CurrentChallengeManager: 2
+
+/BasicSUV/Vehicle/Valet_BasicSUV_Vehicle.Valet_BasicSUV_Vehicle_C:
+  RemoteRole: 4
+  ReplicatedMovement: 11
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  CustomOwnerName: 31
+  CustomOwnerAccountId: 33
+  CustomName: 34
+  SquadID: 36
+  TeamID: 37
+  bMoveStickAcceleratesVehicles: 45
+  SurfaceTypeVehicleOn: 67
+  SelfDestructTime: 72
+  MaxTimeExplosion: 73
+  MaxTimeZeroHealth: 74
+  MaxTimeSelfDestructCleanup: 75
+  DamageableParts: 87
+  ConfigIndex: 88
+  BoneName: 89
+  ShapeName: 90
+  Health: 91
+  bConsideredCriticalHit: 92
+  bStayDisabledDuringTireMod: 93
+  TireStates: 111
+  TireStates: 112
+  RechargeableBoostPercent: 120
+  bCanBoost: 121
+  bUsesRechargeableBoost: 122
+  BoostPushForce: 123
+  BoostTopSpeedForceMultiplier: 124
+  BoostTopSpeedMultiplier: 125
+  RechargeableBoostRateOfRegen: 126
+  RechargeableBoostRateOfUse: 127
+  MaxFuel: 128
+  FuelPerSecondDriving: 129
+  FuelPerSecondBoosting: 130
+  WheelRadiusF: 137
+  WheelRadiusB: 138
+  bDamageFriendlyVehicles: 139
+  bDamageOtherVehicles: 140
+  bDamageOwnVehicle: 141
+  bDamageAllowedFromOtherVehicle: 142
+  GravityMultiplier: 143
+  GearInfos: 146
+  GearIndex: 147
+  TopSpeed: 148
+  MinSpeed: 149
+  PushForce: 150
+  RandomSeed: 165
+
+/Game/Environments/Helios/Props/Furniture/Furniture_RusticChair_A/Blueprints/BP_Furniture_RusticChair_B_B.BP_Furniture_RusticChair_B_B_C:
+  RemoteRole: 4
+  Role: 13
+
+/Game/Environments/Helios/Props/Outdoor/Outdoor_SmallPottedPlants_A/Blueprints/BP_Outdoor_SmallPottedPlant_A.BP_Outdoor_SmallPottedPlant_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  ReplicatedDrawScale3D: 63
+
+/Game/Environments/Helios/Props/GreenTown/GreenTown_Standee_A/Blueprints/BP_GreenTown_Standee_B.BP_GreenTown_Standee_B_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+
+/Game/Environments/Helios/Sets/GreenTown/Blueprints/Walls/BP_GreenTown_Window_B_A_A.BP_GreenTown_Window_B_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  ResourceType: 51
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/Outdoor/Outdoor_TrashPiles_A/Blueprints/BP_Outdoor_TrashPile_A.BP_Outdoor_TrashPile_A_C:
+  RemoteRole: 4
+  Role: 13
+
+/Game/Environments/Helios/Props/Outdoor/Outdoor_TrashPiles_A/Blueprints/BP_Outdoor_TrashPile_B.BP_Outdoor_TrashPile_B_C:
+  RemoteRole: 4
+  Role: 13
+
+/Game/Athena/Apollo/Environments/BuildingActors/Storage/Props/Apollo_Storage_Boxes_04.Apollo_Storage_Boxes_04_C:
+  RemoteRole: 4
+  Role: 13
+
+/Game/Environments/Helios/Props/Furniture/Furniture_RusticCoffeeTable_A/Blueprints/BP_Furniture_RusticCoffeeTable_A_A.BP_Furniture_RusticCoffeeTable_A_A_C:
+  RemoteRole: 4
+  Role: 13
+
+/Game/Environments/Helios/Sets/GreenTown/Blueprints/Props/BP_GreenTown_Rug_A_A.BP_GreenTown_Rug_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+
+/Game/Environments/Helios/Props/GreenTown/GreenTown_HeroRug_A/Blueprints/SM_GreenTown_HeroRug_A.SM_GreenTown_HeroRug_A_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+
+/Game/Environments/Helios/Sets/Estate/Blueprints/Stairs/BP_Estate_Stairs_Rail_B_B.BP_Estate_Stairs_Rail_B_B_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 46
+
+/Game/Environments/Helios/Sets/GreenTown/Blueprints/Floors/BP_GreenTown_Floor_Interior_A_A.BP_GreenTown_Floor_Interior_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  ResourceType: 51
+
+/Game/Environments/Helios/Sets/GreenTown/Blueprints/Walls/BP_GreenTown_Wall_Doorway_A_C.BP_GreenTown_Wall_Doorway_A_C_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  ResourceType: 51
+  bDoorOpen: 76
+
+/Game/Environments/Helios/Props/GreenTown/GreenTown_HeroPosters_A/Blueprints/BP_GreenTown_HeroPosters_A.BP_GreenTown_HeroPosters_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Sets/GreenTown/Blueprints/Walls/BP_GreenTown_Wall_Doorway_A_E.BP_GreenTown_Wall_Doorway_A_E_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  Health: 64
+  MaxHealth: 65
+  bDoorOpen: 76
+
+/Game/Environments/Helios/Rocks/Common/Blueprints/Boreal/RockPile_Common_Medium_B_Disp_Bor.RockPile_Common_Medium_B_Disp_Bor_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/GreenTown/Blueprints/Walls/BP_GreenTown_Wall_Interior_Doorway_A_A.BP_GreenTown_Wall_Interior_Doorway_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  ResourceType: 51
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  DoorOpenStyle: 75
+  bDoorOpen: 76
+  bDoorCollisionDisabled: 77
+  bFastOpenRequested: 78
+
+/Game/Environments/Helios/Props/Commerce/Commerce_MarketTable_A/Blueprints/BP_Commerce_MarketTable_A.BP_Commerce_MarketTable_A_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/GreenTown/Blueprints/Walls/BP_GreenTown_Wall_B_A.BP_GreenTown_Wall_B_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  ResourceType: 51
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Sets/Estate/Blueprints/Stairs/BP_Estate_Stairs_Rail_D_B.BP_Estate_Stairs_Rail_D_B_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 46
+  ResourceType: 51
+  Health: 64
+  MaxHealth: 65
+
+/GoldenPOI/Gameplay/SuperDingo/BGA_Athena_SuperDingo_GoldenPOI.BGA_Athena_SuperDingo_GoldenPOI_C:
+  RemoteRole: 4
+  ReplicatedMovement: 11
+  Role: 13
+  HitRotating: 46
+
+/Game/Environments/Helios/Props/Outdoor/Outdoor_CafeFurniture_B/Blueprints/BP_Outdoor_MetalCafeTableSet_J.BP_Outdoor_MetalCafeTableSet_J_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/GreenTown/Blueprints/Walls/BP_GreenTown_Window_Wide_A_A.BP_GreenTown_Window_Wide_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 46
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/GreenTown/Blueprints/Walls/BP_GreenTown_StoreFrontWindow_A_A.BP_GreenTown_StoreFrontWindow_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/GreenTown/Blueprints/Walls/BP_GreenTown_DoorWay_Window_A_A.BP_GreenTown_DoorWay_Window_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  ResourceType: 51
+  bDoorOpen: 76
+
+/Game/Environments/Helios/Sets/GreenTown/Blueprints/Trims/BP_GreenTown_RoofTrim_A_B.BP_GreenTown_RoofTrim_A_B_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/GreenTown/Blueprints/Roofs/CurvedRoof/BP_GreenTown_Roof_Curved_B_A.BP_GreenTown_Roof_Curved_B_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Building/ActorBlueprints/Containers/Tiered_Short_Ammo_3_Parent.Tiered_Short_Ammo_3_Parent_C:
+  RemoteRole: 4
+  Role: 13
+  ForceMetadataRelevant: 23
+  AltMeshIdx: 52
+  ReplicatedLootTier: 74
+
+/Game/Environments/Helios/Sets/GreenTown/Blueprints/Archways/BP_GreenTown_Archway_A_A.BP_GreenTown_Archway_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/GreenTown/Blueprints/Walls/BP_GreenTown_InteriorWall_A_A.BP_GreenTown_InteriorWall_A_A_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  ResourceType: 51
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/AmberForestTown/AmberForestTown_NightStand_A/Blueprints/BP_AmberForestTown_NightStand_A.BP_AmberForestTown_NightStand_A_C:
+  RemoteRole: 4
+  Role: 13
+
+/Game/Environments/Helios/Sets/GreenTown/Blueprints/Stairs/BP_GreenTown_Stairs_C_B.BP_GreenTown_Stairs_C_B_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/GreenTown/Blueprints/Walls/BP_GreenTown_Window_B_A_A_Shutters_A.BP_GreenTown_Window_B_A_A_Shutters_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+
+/Game/Athena/Apollo/Environments/BuildingActors/Suburban/Props/Apollo_Suburban_Sink_02.Apollo_Suburban_Sink_02_C:
+  RemoteRole: 4
+  Role: 13
+
+/Game/Environments/Helios/Sets/GreenTown/Blueprints/Walls/BP_GreenTown_Wall_Doorway_A_D.BP_GreenTown_Wall_Doorway_A_D_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  Health: 64
+  MaxHealth: 65
+  bDoorOpen: 76
+
+/Game/Environments/Helios/Sets/CandiedWalnut/Blueprints/Walls/BP_CandiedWalnut_CellDoorWay.BP_CandiedWalnut_CellDoorWay_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  bDoorOpen: 76
+
+/Game/Environments/Helios/Sets/GreenTown/Blueprints/Archways/BP_GreenTown_Archway_B_B.BP_GreenTown_Archway_B_B_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/GreenTown/Blueprints/Railing/BP_GreenTown_Railing_A_C.BP_GreenTown_Railing_A_C_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/Furniture/Furniture_RusticBed_A/Blueprints/BP_Furniture_RusticBed_A_A.BP_Furniture_RusticBed_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+
+/Game/Athena/Apollo/Environments/BuildingActors/Suburban/Props/Apollo_Suburban_Toilet_01.Apollo_Suburban_Toilet_01_C:
+  RemoteRole: 4
+  Role: 13
+
+/Game/Environments/Helios/Sets/GreenTown/Blueprints/Walls/BP_GreenTown_Wall_Doorway_A_A.BP_GreenTown_Wall_Doorway_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  bDoorOpen: 76
+
+/Game/Environments/Helios/Props/GreenTown/GreenTown_Poster_A/Blueprints/BP_GreenTown_InfoStand_A.BP_GreenTown_InfoStand_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/GreenTown/Blueprints/Railing/BP_GreenTown_Railing_A_B.BP_GreenTown_Railing_A_B_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/GreenTown/Blueprints/Roofs/RoofPeak/BP_GreenTown_Roof_Peak_A_A.BP_GreenTown_Roof_Peak_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/GreenTown/Blueprints/Walls/BP_GreenTown_Tall_Window_A_A.BP_GreenTown_Tall_Window_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 46
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/Fences/Fences_IronFenceA_A/Blueprints/BP_Fences_IronFenceATall_B.BP_Fences_IronFenceATall_B_C:
+  RemoteRole: 4
+  Role: 13
+  DoorOpenStyle: 75
+  bDoorOpen: 76
+  bFastOpenRequested: 78
+
+/Game/Environments/Helios/Sets/GreenTown/Blueprints/Pillars/BP_GreenTown_Metal_Pillar_Bottom_A_A.BP_GreenTown_Metal_Pillar_Bottom_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/GreenTown/Blueprints/Archways/BP_GreenTown_Archway_A_B.BP_GreenTown_Archway_A_B_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 45
+  TextureData: 46
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Script/GameplayAbilities.AbilitySystemComponent:NetMulticast_InvokeGameplayCueExecuted_WithParams:
+  GameplayCueTag: 0
+  PredictionKey: 1
+  GameplayCueParameters: 2
+
+/Game/Environments/Helios/Props/Fences/Fences_IronFenceA_A/Blueprints/BP_Fences_IronFenceATall_A.BP_Fences_IronFenceATall_A_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/Fences/Fences_IronFenceA_A/Blueprints/BP_Fences_IronFenceAArchSupport_A.BP_Fences_IronFenceAArchSupport_A_C:
+  RemoteRole: 4
+  Role: 13
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/Outdoor/Outdoor_CafeFurniture_B/Blueprints/BP_Outdoor_MetalCafeTableSet_K.BP_Outdoor_MetalCafeTableSet_K_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/GreenTown/GreenTown_MobileVendor_A/Blueprints/BP_GreenTown_MobileVendor_C.BP_GreenTown_MobileVendor_C_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Athena/Items/Consumables/SuperDingo/BGA_Athena_Dingo_Parent.BGA_Athena_Dingo_Parent_C:HitTurnMulticast:
+  StartRot: 0
+  EndRot: 1
+  PlayRate: 2
+
+BGA_Athena_SuperDingo_GoldenPOI_C_ClassNetCache:
+  HitTurnMulticast: 2
+
+/Game/Environments/Helios/Props/GreenTown/GreenTown_StreetLight_A/Blueprints/BP_GreenTown_StreetLight_A.BP_GreenTown_StreetLight_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/Commerce/Commerce_HangingLights_A/Blueprints/BP_Commerce_HangingLight_B_GreenVillage.BP_Commerce_HangingLight_B_GreenVillage_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/GreenTown/Blueprints/Walls/BP_GreenTown_DoorWay_Window_B_A.BP_GreenTown_DoorWay_Window_B_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  ResourceType: 51
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  bDoorOpen: 76
+
+/Game/Environments/Helios/Sets/GreenTown/Blueprints/Walls/BP_GreenTown_Window_B_B_A.BP_GreenTown_Window_B_B_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/Outdoor/Outdoor_PierPlanter_A/Blueprints/BP_Outdoor_PierPlanter_D_B.BP_Outdoor_PierPlanter_D_B_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/AnglePatch/AnglePatch_Paintings_A/Blueprints/BP_AnglePatch_Paintings_J.BP_AnglePatch_Paintings_J_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  bInstantDeath: 31
+  TextureData: 44
+
+/Game/Environments/Helios/Sets/GreenTown/Blueprints/Walls/BP_GreenTown_Wall_Doorway_A_B.BP_GreenTown_Wall_Doorway_A_B_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  Health: 64
+  MaxHealth: 65
+  bDoorOpen: 76
+
+/JobBoard/ActorBlueprints/BP_StationProp_JobBoard_Briefing_Weapon.BP_StationProp_JobBoard_Briefing_Weapon_C:
+  RemoteRole: 4
+  Role: 13
+  bIsInitiallyBuilding: 61
+  Health: 64
+  MaxHealth: 65
+  bAlreadyInteractedWith: 77
+  bCheckedState: 79
+
+/Game/Environments/Helios/Props/Gameplay/Gameplay_CashRegister_A/Blueprints/BP_BGA_Gameplay_CashRegister_A.BP_BGA_Gameplay_CashRegister_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+  ReplicatedLootTier: 74
+  bAlreadySearched: 76
+  BounceNormal: 77
+  SearchAnimationCount: 78
+
+/Game/Environments/Helios/Props/GreenTown/GreenTown_PretzelCounters_A/Blueprints/BP_GreenTown_PretzelCounter_B.BP_GreenTown_PretzelCounter_B_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/GreenTown/GreenTown_MobileVendor_A/Blueprints/BP_GreenTown_MobileVendor_A.BP_GreenTown_MobileVendor_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Foliage/Hedges/Blueprints/BP_Helios_Hedge_MazeL.BP_Helios_Hedge_MazeL_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  bInstantDeath: 31
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/Container/Container_SocietyHardCases_A/Blueprints/BP_Container_SocietyHardCase_D.BP_Container_SocietyHardCase_D_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/Estate/Blueprints/Stairs/BP_Estate_Stairs_Rail_B_A.BP_Estate_Stairs_Rail_B_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  ResourceType: 51
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Rocks/Common/Blueprints/Boreal/Rock_Common_Large_A_Disp_Bor.Rock_Common_Large_A_Disp_Bor_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/PaprikaCoreWeapons/Items/Weapons/PaprikaShotgun_Pump/B_Shotgun_Pump_Paprika_Athena.B_Shotgun_Pump_Paprika_Athena_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  WeaponData: 20
+  LastFireTimeVerified: 23
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+  AmmoCount: 33
+  AppliedAlterations: 42
+  AppliedAlterations: 43
+  WeaponModSlots: 45
+  WeaponMod: 46
+  bIsDynamic: 47
+  bIsMuzzleTraceNearWall: 57
+
+/Script/FortniteAI.FortAthenaAlertStateComponent:
+  StealthMeterTarget: 2
+  StealthMeterTargetTime: 3
+
+/Game/Environments/Helios/Rocks/Boulders/Blueprints/Rock_Boulder_Large_B_Disp.Rock_Boulder_Large_B_Disp_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+
+/VehicleServiceStation/Gameplay/ServicePump_AutoRefuel_Repair_B.ServicePump_AutoRefuel_Repair_B_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+  bvehicleoverlap: 82
+
+Valet_BasicSUV_Vehicle_C_ClassNetCache:
+  Update Damage State: 2
+  VFX_DamageState: 3
+  BroadcastResetWaterIdleTimeEmpty: 5
+  MulticastVehicleInputStateUnreliable: 9
+  ClientBroadcastHitDetection: 20
+
+/Valet/BasicCar/Valet_BasicCar_Vehicle.Valet_BasicCar_Vehicle_C:VFX_DamageState:
+  Damage: 0
+
+/Valet/BasicCar/Valet_BasicCar_Vehicle.Valet_BasicCar_Vehicle_C:Update Damage State:
+  Damage: 0
+
+/Game/Environments/Helios/Sets/AnglePatch/BluePrints/Props/BP_AnglePatch_Castle_Turret_Cap_A_A.BP_AnglePatch_Castle_Turret_Cap_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Train/Props/Transit_ArrivalSigns_A/Blueprints/BP_Transit_ArrivalSign_B.BP_Transit_ArrivalSign_B_C:
+  RemoteRole: 4
+  Role: 13
+
+/Train/Sound/BP_TrainStationAudioController.BP_TrainStationAudioController_C:
+  RemoteRole: 4
+  Role: 13
+
+/BattlePassS31_Quests/Items/QuestActors/Story/BP_S31_FFLog.BP_S31_FFLog_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+
+/Game/Environments/Helios/Sets/GreenTown/Blueprints/Railing/Bp_GreenTown_Square_Railing_A_A.Bp_GreenTown_Square_Railing_A_A_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  bInstantDeath: 31
+
+/PaprikaWeaponCases/Gameplay/Actors/PaprikaWeaponCase_Container_AudioAndAV.PaprikaWeaponCase_Container_AudioAndAV_C:
+  RemoteRole: 4
+  Role: 13
+  WeaponCaseContainerArray: 80
+  WeaponCaseContainerArray: 81
+
+/Game/Building/ActorBlueprints/Containers/AlwaysSpawn_RareChest.AlwaysSpawn_RareChest_C:
+  RemoteRole: 4
+  Role: 13
+  ForceMetadataRelevant: 23
+  bDestroyOnPlayerBuildingPlacement: 34
+  StaticMesh: 48
+  AltMeshIdx: 52
+  SearchedMesh: 73
+  ReplicatedLootTier: 74
+  ChosenRandomUpgrade: 75
+  bAlreadySearched: 76
+  BounceNormal: 77
+  SearchAnimationCount: 78
+  SearchingPawn: 79
+
+/Script/GameplayAbilities.AbilitySystemComponent:NetMulticast_InvokeGameplayCueExecuted_FromSpec:
+  Def: 0
+  ModifiedAttributes: 1
+  AttributeName: 2
+  Attribute: 3
+  AttributeOwner: 4
+  TotalMagnitude: 5
+  EffectContext: 7
+  AggregatedSourceTags: 8
+  AggregatedTargetTags: 9
+  Level: 10
+  AbilityLevel: 11
+  PredictionKey: 12
+
+/Script/FortniteGame.FortPhysicsPawn:ClientBroadcastHitDetection:
+  ImpulseInstigator: 0
+  Radius: 1
+  Relevancy: 2
+  HalfPoints: 3
+  DoublePoints: 4
+
+/Game/Building/ActorBlueprints/Stations/BP_StationProp_VendingMachine_E_Mending.BP_StationProp_VendingMachine_E_Mending_C:
+  RemoteRole: 4
+  Role: 13
+  bIsInitiallyBuilding: 61
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/Quest/Quest_SleekGoldBars_A/Asteria_VB_GoldBarSTack_01.Asteria_VB_GoldBarSTack_01_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+BP_TrainStationAudioController_C_ClassNetCache:
+  OnPlayRandomAnnouncement: 0
+
+/Game/Environments/Helios/Props/GreenTown/GreenTown_BuildingSign_A/Blueprints/BP_GreenTown_BuildingSign_B.BP_GreenTown_BuildingSign_B_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/VehicleServiceStation/Gameplay/ServicePump_AutoRefuel_Repair.ServicePump_AutoRefuel_Repair_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+  bvehicleoverlap: 82
+
+/Script/GameplayAbilities.AbilitySystemComponent:NetMulticast_InvokeGameplayCueAdded_WithParams:
+  GameplayCueTag: 0
+  PredictionKey: 1
+  Parameters: 2
+
+/Game/Environments/Helios/Props/GreenTown/GreenTown_BuildingSign_A/Blueprints/BP_GreenTown_BuildingSign_C.BP_GreenTown_BuildingSign_C_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Rocks/Common/Blueprints/BorealRaft/RockPile_Rubble_Small_B_Full.RockPile_Rubble_Small_B_Full_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Rocks/Common/Blueprints/Boreal/Rock_Common_Large_C_Disp_Bor.Rock_Common_Large_C_Disp_Bor_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Foliage/Trees/SessileOak/Blueprint/BP_Tree_Asteria_SessileOak.BP_Tree_Asteria_SessileOak_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Rocks/Common/Blueprints/Boreal/Rock_Common_Medium_D_Disp_Bor.Rock_Common_Medium_D_Disp_Bor_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Sets/MountainVillage/Blueprints/Walls/Doorway/BP_GenericSet_MountainVillage_Doorway_A_A_A.BP_GenericSet_MountainVillage_Doorway_A_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  bDoorOpen: 76
+
+/Game/Environments/Helios/Sets/Estate/Blueprints/Roofs/BP_Estate_Roof_A_A.BP_Estate_Roof_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/MountainVillage/Blueprints/Walls/Doorway/BP_GenericSet_MountainVillage_Doorway_Side_A_A_A.BP_GenericSet_MountainVillage_Doorway_Side_A_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  ResourceType: 51
+  bDoorOpen: 76
+
+/Game/Athena/Apollo/Environments/BuildingActors/Residential/Kitchen/Apollo_Kitchen_Counter_04.Apollo_Kitchen_Counter_04_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+
+/Game/Athena/Apollo/Environments/BuildingActors/Wood/Boardwalk/Walls/Apollo_Boardwalk_QuarterWallS.Apollo_Boardwalk_QuarterWallS_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Athena/Apollo/Environments/BuildingActors/Wood/Boardwalk/Floors/Apollo_Boardwalk_Floor.Apollo_Boardwalk_Floor_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/Estate/Blueprints/Floors/BP_Estate_Floor_A_A.BP_Estate_Floor_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/NeonCity/NeonCity_Kitchen_Islands_A/Blueprints/Asteria_NeonCity_Islands_A_D.Asteria_NeonCity_Islands_A_D_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Building/ActorBlueprints/Containers/FoodBox_Produce_Athena.FoodBox_Produce_Athena_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+  ReplicatedLootTier: 74
+  bAlreadySearched: 76
+  BounceNormal: 77
+  SearchAnimationCount: 78
+
+/Game/Environments/Helios/Rocks/Common/Blueprints/Boreal/Rock_Common_Small_B_Disp_Bor.Rock_Common_Small_B_Disp_Bor_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/GenericSet/Blueprints/Villa/Walls/Doorway/Doorway_Window/BP_GenericSet_Doorway_Window_A_B_A.BP_GenericSet_Doorway_Window_A_B_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  ReplicatedDrawScale3D: 63
+  bDoorOpen: 76
+
+/Script/FortniteGame.BuildingSMActor:NetMulticast_InvokeGameplayCueExecuted_WithParams:
+  GameplayCueTag: 0
+  PredictionKey: 1
+  GameplayCueParameters: 2
+
+BP_Tree_Asteria_SessileOak_C_ClassNetCache:
+  NetMulticast_InvokeGameplayCueExecuted_WithParams: 8
+
+/Game/Environments/Helios/Sets/Estate/Blueprints/Walls/Doorway/BP_Estate_Doorway_Side_A_A_A.BP_Estate_Doorway_Side_A_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 45
+  ReplicatedDrawScale3D: 63
+  bDoorOpen: 76
+
+/Game/Environments/Helios/Rocks/Common/Blueprints/Boreal/Rock_Common_Medium_C_Disp_Bor.Rock_Common_Medium_C_Disp_Bor_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Props/Container/Container_OrchardBarrel_C/Bleprints/BP_Container_OrchardBarrel_C.BP_Container_OrchardBarrel_C_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/GenericSet/Blueprints/Villa/Walls/Doorway/BP_GenericSet_Doorway_A_A_A.BP_GenericSet_Doorway_A_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  bDoorOpen: 76
+
+/Game/Environments/Helios/Rocks/Common/Blueprints/Boreal/Rock_Common_Small_A_Disp_Bor.Rock_Common_Small_A_Disp_Bor_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  bInstantDeath: 31
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/Fences/Wooden_Fence/Blueprints/BP_Wooden_Fence_A_A_NoSnap.BP_Wooden_Fence_A_A_NoSnap_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  bInstantDeath: 31
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/GreenTown/Blueprints/Props/BP_GreenTown_Crate_Large_A.BP_GreenTown_Crate_Large_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/Construction/Construction_FloodLight_A/Blueprints/BP_Construction_FloodLight_B.BP_Construction_FloodLight_B_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Athena/Apollo/Environments/BuildingActors/Suburban/Props/Apollo_Suburban_Wardrobe.Apollo_Suburban_Wardrobe_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  ReplicatedDrawScale3D: 63
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/GreenTown/Blueprints/Props/BP_GreenTown_Crate_Small_A.BP_GreenTown_Crate_Small_A_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Foliage/Trees/HolmOak/Blueprints/BP_Helios_HolmOak_Tree.BP_Helios_HolmOak_Tree_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  bInstantDeath: 31
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Script/FortniteGame.FortWeaponComponent_TargetModeSelector:
+  TargetMode: 2
+
+/Game/Environments/Helios/Rocks/Common/Blueprints/Rock_Common_Medium_C_Disp.Rock_Common_Medium_C_Disp_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Rocks/Common/Blueprints/Rock_Common_Medium_D_Disp.Rock_Common_Medium_D_Disp_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/AshtonGameplay/Gameplay/CaptainAmerica/Shield/Actors/B_Ashton_Shield_Weap.B_Ashton_Shield_Weap_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  WeaponData: 20
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+  AmmoCount: 33
+  AppliedAlterations: 42
+  AppliedAlterations: 43
+  Projectile Replicated: 62
+  HomingTarget: 63
+  bBlockingConfirmed: 64
+
+/Game/Environments/Helios/Rocks/Common/Blueprints/Rock_Common_Large_C_Disp.Rock_Common_Large_C_Disp_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Asteria/Foliage/Trees/Oak/Blueprint/BP_Asteria_Oak_Tree_Medium.BP_Asteria_Oak_Tree_Medium_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Blockout/Blueprints/Railings/BP_Blockout_Railing_A_A.BP_Blockout_Railing_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  Health: 64
+  MaxHealth: 65
+
+/Game/Building/ActorBlueprints/Prop/S_Parking_Spot_Stopper.S_Parking_Spot_Stopper_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/Fences/Wooden_Fence/Blueprints/BP_Wooden_Fence_A_End_A_NoSnap.BP_Wooden_Fence_A_End_A_NoSnap_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  bInstantDeath: 31
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Athena/Artemis/Environments/BuildingActors/Divider_Walls/Suburban_Half_Wall_S.Suburban_Half_Wall_S_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/AshtonGameplay/Gameplay/CaptainAmerica/Shield/Actors/B_Prj_Ashton_Shield.B_Prj_Ashton_Shield_C:
+  bHidden: 1
+  RemoteRole: 4
+  ReplicatedMovement: 11
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsBeingKilled: 15
+  Team: 17
+  GravityScale: 20
+  ResumeSimulationCount: 23
+  PlayerPawn: 27
+  ReturnVelocity: 28
+  PreviousVelocity: 29
+  ReturnToSender: 30
+  IsReturning: 31
+  AudioHitCount: 32
+
+/Game/Athena/Artemis/Environments/BuildingActors/Divider_Walls/Suburban_Quarter_Wall_S.Suburban_Quarter_Wall_S_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Asteria/Props/Industrial/Industrial_Shelving_A/Blueprints/BP_Industrial_Shelving_A.BP_Industrial_Shelving_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/RustBucket/RustBucket_ToolBoxes_A/Blueprints/BP_RustBucket_ToolBox_A.BP_RustBucket_ToolBox_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/BurntTires/Blueprints/Walls/BP_BurntTires_Wall_A_A_A.BP_BurntTires_Wall_A_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/BurntTires/Blueprints/Walls/Window/BP_BurntTires_Window_A_A_B.BP_BurntTires_Window_A_A_B_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Athena/Apollo/Environments/BuildingActors/Commerce/Props/Apollo_Commerce_Counter_04.Apollo_Commerce_Counter_04_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/RustBucket/Blueprints/Walls/BP_RustBucket_Window_A_A_A.BP_RustBucket_Window_A_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Rocks/Common/Blueprints/Rock_Common_Small_A_Disp.Rock_Common_Small_A_Disp_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Athena/Apollo/Environments/BuildingActors/Commerce/Props/Apollo_Commerce_CheckoutCounter_01.Apollo_Commerce_CheckoutCounter_01_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/AshtonGameplay/Gameplay/CaptainAmerica/Shield/Actors/B_Prj_Ashton_Shield.B_Prj_Ashton_Shield_C:GCFeedback:
+  GameplayCueTag: 0
+  Location: 1
+  Normal: 2
+  SourceObject: 3
+
+B_Prj_Ashton_Shield_C_ClassNetCache:
+  CallReturnMovement: 1
+  GCFeedback: 2
+  KillProjectile: 3
+  LaunchHitActor: 4
+  TurnOnRecallFX: 5
+  UpdateTrailFXOnImpact: 6
+
+/AshtonGameplay/Gameplay/CaptainAmerica/Shield/Actors/B_Prj_Ashton_Shield.B_Prj_Ashton_Shield_C:LaunchHitActor:
+  Actor: 0
+
+/Game/Athena/AI/NPCs/Tandem/Base/Pawns/BP_PlayerPawn_Tandem.BP_PlayerPawn_Tandem_C:
+  RemoteRole: 4
+  ReplicatedMovement: 11
+  Role: 13
+  Instigator: 14
+  PlayerState: 16
+  BaseID: 18
+  bServerHasBaseComponent: 20
+  MovementBase: 23
+  ReplayLastTransformUpdateTimeStamp: 27
+  ReplicatedMovementMode: 32
+  bWeaponHolstered: 75
+  bShouldUseCharacterMovementIdleFastPath: 78
+  CurrentMovementStyle: 79
+  PawnUniqueID: 85
+  JumpFlashCountPacked: 132
+  LandingFlashCountPacked: 133
+  LastReplicatedEmoteExecuted: 134
+  EmoteWalkSpeed: 135
+  VocalChords: 139
+  FeedbackAudioComponent: 140
+  bInterruptCurrentLine: 147
+  bCanBeInterrupted: 148
+  bCanQue: 149
+  CurveTable: 167
+  RowName: 168
+  Value: 170
+  CurveTable: 171
+  RowName: 172
+  Value: 174
+  CurveTable: 175
+  RowName: 176
+  Value: 178
+  CurveTable: 179
+  RowName: 180
+  CurveTable: 183
+  RowName: 184
+  Value: 186
+  CurveTable: 187
+  RowName: 188
+  CurveTable: 191
+  RowName: 192
+  Value: 194
+  CurveTable: 195
+  RowName: 196
+  Value: 198
+  CurveTable: 199
+  RowName: 200
+  Value: 202
+  CurveTable: 203
+  RowName: 204
+  Value: 206
+  CurveTable: 207
+  RowName: 208
+  Value: 210
+  CurveTable: 211
+  RowName: 212
+  Value: 214
+  CurveTable: 215
+  RowName: 216
+  Value: 218
+  CurveTable: 219
+  RowName: 220
+  CurveTable: 223
+  RowName: 224
+  FallbackTag: 234
+  RepActiveMovementModeExtension: 239
+  CapsuleRadiusFortPawn: 240
+  CapsuleHalfHeightFortPawn: 241
+  bIsPlayingEmote: 283
+  bCanShowDefaultSkin: 286
+  bDisabledTetheringSupport: 287
+  bIsWaitingForEmoteInteraction: 288
+  bIsInsideSafeZone: 302
+  SkyDiveContrail: 319
+  Glider: 320
+  Pickaxe: 321
+  Character: 322
+  Backpack: 330
+  Dances: 333
+  Dances: 334
+  PawnMontage: 386
+  bPlayBit: 387
+  AccelerationPack: 404
+  RepAnimMontageInfo: 405
+  RepAnimMontageStartSection: 406
+  RemoteViewData32: 420
+  WalkSpeed: 428
+  RunSpeed: 429
+  SprintSpeed: 430
+  FlySpeed: 431
+  CrouchedRunSpeed: 432
+  CrouchedSprintSpeed: 433
+  GravityZScale: 435
+  JumpZVelocity: 436
+  ReplayRepAnimMontageInfo: 439
+  FastReplicationMinimalReplicationTags: 442
+  FastReplicationReplicatedLooseTags: 443
+  EncryptedPawnReplayData: 444
+  bShowMarkerIcon: 447
+
+BP_PlayerPawn_Tandem_C_ClassNetCache:
+  On Multicast Play Voice Sound By Tag: 0
+  ClientObservedStats: 18
+
+/NPCLibrary/Components/NPCConversationComponent.NPCConversationComponent_C:
+  ConversationsActive: 2
+  ConversationEntryTag: 3
+  bCanStartConversation: 27
+  bConversationModeActive: 28
+  ConversationInteractionBoxExtent: 30
+  ConversationInteractionBoxOffset: 31
+  CharacterData: 32
+
+/Game/Environments/Asteria/Props/Coastal/Coastal_Boat_B/Blueprints/BP_Coastal_Boat_B_A.BP_Coastal_Boat_B_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  bAttachmentPlacementBlockedFront: 57
+
+/JobBoard/ActorBlueprints/BP_StationProp_JobBoard_Briefing_SupplyDropGeneric.BP_StationProp_JobBoard_Briefing_SupplyDropGeneric_C:
+  RemoteRole: 4
+  Role: 13
+  bIsInitiallyBuilding: 61
+  Health: 64
+  MaxHealth: 65
+  bCheckedState: 79
+
+/Game/Environments/Helios/Rocks/Common/Blueprints/RustBucket/Rock_Common_Medium_C_Disp_Rust.Rock_Common_Medium_C_Disp_Rust_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Foliage/Trees/Ironwood_Tree/Blueprints/BP_Helios_Ironwood_Tree.BP_Helios_Ironwood_Tree_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Foliage/Trees/Acacia_Tree/Blueprints/BP_Helios_Acacia_Tree.BP_Helios_Acacia_Tree_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/FlamingHoopsGameplay/Gameplay/Actors/BGA_Moonflax_FlamingHoop_Parent.BGA_Moonflax_FlamingHoop_Parent_C:
+  RemoteRole: 4
+  Role: 13
+  EntryActor: 44
+  Forward?: 46
+  EntryActorLocation: 47
+
+/Script/Engine.AudioComponent:
+  bIsActive: 1
+  AttachParent: 2
+  bShouldBeAttached: 14
+  bShouldSnapLocationWhenAttached: 15
+
+/Script/Niagara.NiagaraComponent:
+  bIsActive: 1
+  AttachParent: 2
+  RelativeLocation: 7
+  bShouldBeAttached: 14
+
+/AshtonGameplay/Gameplay/CaptainAmerica/Shield/Actors/BGA_Ashton_Shield_BlockVolume.BGA_Ashton_Shield_BlockVolume_C:
+  RemoteRole: 4
+  AttachParent: 5
+  RelativeScale3D: 7
+  AttachComponent: 10
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bDestroyed: 28
+  bPlayerPlaced: 29
+  bInstantDeath: 31
+  TeamIndex: 37
+  DamageCount: 44
+  bActiveBlocking: 47
+
+/AshtonGameplay/Gameplay/CaptainAmerica/Shield/Actors/B_Ashton_Shield_Weap.B_Ashton_Shield_Weap_C:PlayStateSoundLibraryEvent_Client:
+  GameplayTag: 0
+
+B_Ashton_Shield_Weap_C_ClassNetCache:
+  PlayStateSoundLibraryEvent_Client: 1
+
+/FlexLegendWeaponGameplay/Gameplay/DualSMGs/B_FlexLegend_DualSMGs_UR_Athena.B_FlexLegend_DualSMGs_UR_Athena_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  WeaponData: 20
+  LastFireTimeVerified: 23
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+  AmmoCount: 33
+  AppliedAlterations: 42
+  AppliedAlterations: 43
+  bIsMuzzleTraceNearWall: 57
+  LastFireHand: 62
+
+/GrindRail/Blueprints/GrindVariants/BGA_GrindRail_PatioLights_02.BGA_GrindRail_PatioLights_02_C:
+  RemoteRole: 4
+  Role: 13
+  bDisableBooster: 44
+
+/Game/Environments/Helios/Rocks/Common/Blueprints/RustBucket/Rock_Common_Large_A_Disp_Rust.Rock_Common_Large_A_Disp_Rust_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Athena/Artemis/Maps/Test/Dev/ChrisK/Daisy/BP_Daisy_Launcher.BP_Daisy_Launcher_C:
+  RemoteRole: 4
+  Role: 13
+  IsDisabled: 45
+  PrimeMode: 46
+
+ServicePump_AutoRefuel_Repair_C_ClassNetCache:
+  DeactivateServiceStationFX: 1
+  InitializeServiceStationFX: 2
+  SetServiceStationRefuelBoolean: 3
+  SetServiceStationRepairBoolean: 4
+  SpawnFXOnCompletion: 5
+  UpdateServiceStationFX: 6
+  VehicleFullHealth: 7
+
+/VehicleServiceStation/Gameplay/ServicePump_AutoRefuel_Repair.ServicePump_AutoRefuel_Repair_C:SetServiceStationRepairBoolean:
+  isRepairing: 0
+
+/VehicleServiceStation/Gameplay/ServicePump_AutoRefuel_Repair.ServicePump_AutoRefuel_Repair_C:SpawnFXOnCompletion:
+  ComponentToAttachTo: 0
+  FortAthenaVehicle: 1
+
+/VehicleServiceStation/Gameplay/ServicePump_AutoRefuel_Repair.ServicePump_AutoRefuel_Repair_C:SetServiceStationRefuelBoolean:
+  isRefueling: 0
+
+/Game/Environments/Helios/Props/Commerce/Commerce_RestoredReelsSign_A/Blueprints/BP_Commerce_RestoredReelsSign_A.BP_Commerce_RestoredReelsSign_A_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Cave/Blueprints/Laptop/BP_SpecialEvent_StreamVideo_Cave.BP_SpecialEvent_StreamVideo_Cave_C:
+  RemoteRole: 4
+  ReplicatedMovement: 11
+  Role: 13
+
+/CactusFruits/Gameplay/Actors/BGA_Moonflax_HealingCactus.BGA_Moonflax_HealingCactus_C:
+  RemoteRole: 4
+  Role: 13
+  bWaitingToRegrow: 44
+  CollisionEnabled: 45
+
+/Script/Engine.SceneComponent:
+  AttachChildren: 4
+  AttachChildren: 5
+  RelativeLocation: 7
+  RelativeRotation: 8
+
+/Game/Environments/Helios/Sets/Palace/Blueprints/Walls/BP_Palace_Wall_Str_A_A.BP_Palace_Wall_Str_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Sets/Palace/Blueprints/Trims/BP_Palace_Trim_Str_B_A.BP_Palace_Trim_Str_B_A_C:
+  RemoteRole: 4
+  Role: 13
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Asteria/Foliage/Trees/CypressTree/Blueprints/BP_Tree_Asteria_CypressTree_01.BP_Tree_Asteria_CypressTree_01_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Rocks/Common/Blueprints/RockPile_Common_Medium_B_Disp.RockPile_Common_Medium_B_Disp_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/Palace/Blueprints/Pillars/BP_Palace_Pillar_Top_B_A.BP_Palace_Pillar_Top_B_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/Palace/Blueprints/Roofs/LowRoofs/BP_Palace_Roof_Str_A_A.BP_Palace_Roof_Str_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/Palace/Blueprints/Walls/BP_Palace_Wall_Str_B_A.BP_Palace_Wall_Str_B_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Athena/Apollo/Environments/BuildingActors/Foliage/Apollo_BigBush_Desert.Apollo_BigBush_Desert_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  bInstantDeath: 31
+  ReplicatedDrawScale3D: 63
+
+/Game/Environments/Asteria/Props/Commerce/Commerce_LobbyStall_A/Blueprints/BP_Commerce_LobbyStall_B.BP_Commerce_LobbyStall_B_C:
+  RemoteRole: 4
+  Role: 13
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/Palace/Blueprints/Walls/BP_Palace_Window_A_B.BP_Palace_Window_A_B_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  Health: 64
+  MaxHealth: 65
+
+/Game/Athena/Apollo/Environments/BuildingActors/Coliseum/Props/Coliseum_WallFountain_01.Coliseum_WallFountain_01_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/Palace/Blueprints/Walls/BP_Palace_Wall_Str_B_B.BP_Palace_Wall_Str_B_B_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  Health: 64
+  MaxHealth: 65
+
+/Game/Athena/AI/NPCs/Tandem/Base/Pawns/BP_PlayerPawn_Tandem_Melee.BP_PlayerPawn_Tandem_Melee_C:
+  RemoteRole: 4
+  ReplicatedMovement: 11
+  Role: 13
+  Instigator: 14
+  PlayerState: 16
+  BaseID: 18
+  bServerHasBaseComponent: 20
+  MovementBase: 23
+  ReplayLastTransformUpdateTimeStamp: 27
+  ReplicatedMovementMode: 32
+  bMovingEmote: 52
+  bWeaponHolstered: 75
+  TeleportCounter: 80
+  PawnUniqueID: 85
+  SpawnImmunityTime: 88
+  LastReplicatedEmoteExecuted: 134
+  EmoteWalkSpeed: 135
+  VocalChords: 139
+  FeedbackAudioComponent: 140
+  bInterruptCurrentLine: 147
+  bCanBeInterrupted: 148
+  bCanQue: 149
+  CurveTable: 167
+  RowName: 168
+  Value: 170
+  CurveTable: 171
+  RowName: 172
+  Value: 174
+  CurveTable: 175
+  RowName: 176
+  Value: 178
+  CurveTable: 179
+  RowName: 180
+  CurveTable: 183
+  RowName: 184
+  Value: 186
+  CurveTable: 187
+  RowName: 188
+  CurveTable: 191
+  RowName: 192
+  Value: 194
+  CurveTable: 195
+  RowName: 196
+  Value: 198
+  CurveTable: 199
+  RowName: 200
+  Value: 202
+  CurveTable: 203
+  RowName: 204
+  Value: 206
+  CurveTable: 207
+  RowName: 208
+  Value: 210
+  CurveTable: 211
+  RowName: 212
+  Value: 214
+  CurveTable: 215
+  RowName: 216
+  Value: 218
+  CurveTable: 219
+  RowName: 220
+  CurveTable: 223
+  RowName: 224
+  FallbackTag: 234
+  RepActiveMovementModeExtension: 239
+  CapsuleRadiusFortPawn: 240
+  CapsuleHalfHeightFortPawn: 241
+  bIsPlayingEmote: 283
+  bCanShowDefaultSkin: 286
+  bDisabledTetheringSupport: 287
+  bIsInAnyStorm: 301
+  bIsInsideSafeZone: 302
+  SkyDiveContrail: 319
+  Glider: 320
+  Pickaxe: 321
+  Character: 322
+  Backpack: 330
+  Dances: 333
+  Dances: 334
+  PawnMontage: 386
+  bPlayBit: 387
+  AccelerationPack: 404
+  RepAnimMontageInfo: 405
+  RepAnimMontageStartSection: 406
+  RemoteViewData32: 420
+  WalkSpeed: 428
+  RunSpeed: 429
+  SprintSpeed: 430
+  FlySpeed: 431
+  CrouchedRunSpeed: 432
+  CrouchedSprintSpeed: 433
+  GravityZScale: 435
+  JumpZVelocity: 436
+  ReplayRepAnimMontageInfo: 439
+  SimulatedProxyMinimalReplicationGameplayCues: 441
+  FastReplicationMinimalReplicationTags: 442
+  FastReplicationReplicatedLooseTags: 443
+  EncryptedPawnReplayData: 444
+  bShowMarkerIcon: 447
+
+BP_PlayerPawn_Tandem_Melee_C_ClassNetCache:
+  ClientObservedStats: 18
+  NetMulticast_InvokeGameplayCueAdded_WithParams: 71
+  NetMulticast_InvokeGameplayCueExecuted_FromSpec: 75
+
+/Game/Athena/AI/NPCs/Tandem/Base/Components/NPCLoopStateComponent.NPCLoopStateComponent_C:
+  bSpawnOutsideTheLoop: 2
+
+/Game/Environments/Helios/Foliage/Trees/Dead_Tree/Blueprints/BP_RustBucket_DeadTree_SaltLake_C.BP_RustBucket_DeadTree_SaltLake_C_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Rocks/Common/Blueprints/RustBucket/Rock_Common_Large_C_Disp_Rust.Rock_Common_Large_C_Disp_Rust_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Athena/Items/Gameplay/SilkyBingo/Athena_Prop_SilkyBingo.Athena_Prop_SilkyBingo_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Athena/Apollo/Environments/BuildingActors/Wood/Bridges/Apollo_WoodMines_Beam01_NoSnap.Apollo_WoodMines_Beam01_NoSnap_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/Outdoor/Outdoor_Benches_A/Blueprints/BP_Outdoor_Bench_A.BP_Outdoor_Bench_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/TechArt/LightCones/BP_LightCone_01_CH5S3_Animated.BP_LightCone_01_CH5S3_Animated_C:
+  RemoteRole: 4
+  Role: 13
+  StaticMesh: 48
+  ReplicatedDrawScale3D: 63
+
+/Game/Environments/Asteria/Props/Outdoor/Outdoor_HighTableSet_A/Blueprints/BP_Outdoor_HighTable_A_A.BP_Outdoor_HighTable_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/NeonCity/NeonCity_SushiBar_A/Blueprints/Asteria_NeonCity_SushiBar_A.Asteria_NeonCity_SushiBar_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/GenericSet/Blueprints/Villa/Walls/Window/BP_GenericSet_Window_A_A_B.BP_GenericSet_Window_A_A_B_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/GenericSet/Blueprints/Villa/Walls/BP_GenericSet_LowRoofWall_A_A.BP_GenericSet_LowRoofWall_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  TextureData: 47
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+BGA_Moonflax_FlamingHoop_Parent_C_ClassNetCache:
+  OnHoopPassedThrough: 0
+
+/GrindRail/Blueprints/GrindVariants/BGA_GrindRail_Wire.BGA_GrindRail_Wire_C:
+  RemoteRole: 4
+  Role: 13
+  bDisableBooster: 44
+
+/Game/Environments/Helios/Sets/BurntTires/Blueprints/Props/BP_BurntTires_Tarp_Wall_A_A.BP_BurntTires_Tarp_Wall_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/RustBucket/Blueprints/Girders/BP_RustBucket_Girders_Full_A.BP_RustBucket_Girders_Full_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Sets/RustBucket/Blueprints/Girders/BP_RustBucket_Girders_Full_C.BP_RustBucket_Girders_Full_C_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Sets/RustBucket/Blueprints/Rails/BP_RustBucket_Railings_Full_A.BP_RustBucket_Railings_Full_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/RustBucket/Blueprints/Girders/BP_RustBucket_Girders_Full_B.BP_RustBucket_Girders_Full_B_C:
+  RemoteRole: 4
+  Role: 13
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/RustBucket/Blueprints/Rails/BP_RustBucket_Railings_Full_Cover_A.BP_RustBucket_Railings_Full_Cover_A_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/RustBucket/RustBucket_LargeGrill_A/Blueprints/BP_RustBucket_LargeGrill_A.BP_RustBucket_LargeGrill_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Foliage/Trees/DesertPalm_A/Blueprint/BP_Helios_DesertPalm_A.BP_Helios_DesertPalm_A_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/RustBucket/Blueprints/Girders/BP_RustBucket_Girders_Mid_B.BP_RustBucket_Girders_Mid_B_C:
+  RemoteRole: 4
+  Role: 13
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/RustBucket/RustBucket_CarSeats_A/Blueprints/BP_RustBucket_CarSeat_B.BP_RustBucket_CarSeat_B_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/GenericSet/Blueprints/Villa/Roof/LowRoof/BP_GenericSet_LowRoof_Peak_A_A.BP_GenericSet_LowRoof_Peak_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/RustBucket/Blueprints/Awnings/BP_RustBucket_Awning_A.BP_RustBucket_Awning_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/RustBucket/Blueprints/Walls/BP_RustBucket_Doorway_B_A.BP_RustBucket_Doorway_B_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/Container/Container_Barrel_Oil_A/Blueprints/BP_Containers_Barrel_A_B.BP_Containers_Barrel_A_B_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Asteria/Props/CrateBarrel/Kit_CrateBarrel_Crate_Rustic_B/Blueprints/Asteria_CrateBarrel_Crate_Rustic_B.Asteria_CrateBarrel_Crate_Rustic_B_C:
+  RemoteRole: 4
+  Role: 13
+
+/BladeHazard/Gameplay/Helios_BladeHazard_Side.Helios_BladeHazard_Side_C:
+  RemoteRole: 4
+  Role: 13
+
+/BladeHazard/Gameplay/Helios_BladeHazard_Upright.Helios_BladeHazard_Upright_C:
+  RemoteRole: 4
+  Role: 13
+
+/Game/Environments/Helios/Props/RustBucket/RustBucket_Torches_A/Blueprints/BP_RustBucket_Torch_A.BP_RustBucket_Torch_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/MoonflaxOasisPool/Gameplay/OasisPool/BGA_SuperSilkyWolf_OasisPool.BGA_SuperSilkyWolf_OasisPool_C:
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  bInstantDeath: 31
+
+/Game/Environments/Asteria/Props/Fences/Wooden_Fence/Blueprints/BP_Wooden_Fence_A_D_NoSnap.BP_Wooden_Fence_A_D_NoSnap_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Sets/Farm/BluePrints/Walls/Asteria_Farm_DoorWay_B.Asteria_Farm_DoorWay_B_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Sets/Farm/BluePrints/Props/Asteria_Farm_Barn_Door_Large_A.Asteria_Farm_Barn_Door_Large_A_C:
+  RemoteRole: 4
+  Role: 13
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Sets/GenericSet/Blueprints/Villa/Walls/Window/BP_GenericSet_Window_A_C_B.BP_GenericSet_Window_A_C_B_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  ResourceType: 51
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Blockout/Blueprints/Walls/Doorway/BP_Blockout_Doorway_Side_A_B.BP_Blockout_Doorway_Side_A_B_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  ResourceType: 51
+  bDoorOpen: 76
+
+/Game/Athena/Apollo/Environments/BuildingActors/Farm/Props/Apollo_Farm_Trailer_01.Apollo_Farm_Trailer_01_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/Fences/Wooden_Fence/Blueprints/BP_Wooden_Fence_A_B_NoSnap.BP_Wooden_Fence_A_B_NoSnap_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/Fences/Wooden_Fence/Blueprints/BP_Wooden_Fence_A_C_NoSnap.BP_Wooden_Fence_A_C_NoSnap_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  bInstantDeath: 31
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Rocks/Common/Blueprints/RustBucket/RockPile_Common_Medium_B_Disp_Rust.RockPile_Common_Medium_B_Disp_Rust_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/FirePitHazard/Gameplay/Actors/Helios_FirePitHazardManager.Helios_FirePitHazardManager_C:
+  RemoteRole: 4
+  Role: 13
+
+/Game/Athena/AI/NPCs/Base/BP_PlayerPawn_NonParticipant.BP_PlayerPawn_NonParticipant_C:On Multicast Play Voice Sound By Tag:
+  SoundBankTag: 0
+
+/GrindRail/Blueprints/GrindVariants/BGA_GrindRail_PatioLights.BGA_GrindRail_PatioLights_C:
+  RemoteRole: 4
+  Role: 13
+  bDisableBooster: 44
+
+/Script/Engine.WorldDataLayers:OnDataLayerRuntimeStateChanged:
+  InDataLayer: 0
+  InState: 1
+
+WorldDataLayers_ClassNetCache:
+  OnDataLayerRuntimeStateChanged: 0
+
+/MidMatchRiftPoiGameplay/Gameplay/B_MMObj_RiftPoiManager.B_MMObj_RiftPoiManager_C:
+  RemoteRole: 4
+  Role: 13
+  bDataLayerActivated: 15
+
+/MidMatchRiftPoiGameplay/Gameplay/SpawnRift/B_MMObj_POISpawnRiftIndicator.B_MMObj_POISpawnRiftIndicator_C:
+  RemoteRole: 4
+  Role: 13
+  AnticipationDuration: 15
+  NoBuildSphereRadius: 16
+  DataLayerAsset: 17
+  PrespawnAnticipationDelay: 18
+  AudioLoopParam: 19
+
+/LodeSwanObjectiveGameplay/Gameplay/RiftPoi/B_MMObj_RiftPoiGameStateComponent_LodeSwanObjective.B_MMObj_RiftPoiGameStateComponent_LodeSwanObjective_C:
+  Value: 4
+  CurveTable: 5
+  RowName: 6
+  DataLayerAsset_5_C7D2315146A531F24C9D908AADD6FF25: 8
+  SpawnRotation_9_DBA36B7F46EBAC25DE45F68637FC9510: 9
+
+/Game/Environments/Helios/Props/Container/Container_SocietyHardCases_A/Blueprints/BP_Container_SocietyHardCase_C.BP_Container_SocietyHardCase_C_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/Dining/Dining_FoldingChair_A/Blueprints/BP_Dining_FoldingChair_A.BP_Dining_FoldingChair_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+
+/Game/Abilities/Player/Generic/UtilityItems/B_Grenade_Frag_Athena.B_Grenade_Frag_Athena_C:
+  bHidden: 1
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  WeaponData: 20
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+
+/NPCSpecialists/NPCs/Heavy/Pawn/BP_PlayerPawn_SP_Heavy.BP_PlayerPawn_SP_Heavy_C:
+  bReplicateMovement: 0
+  bTearOff: 2
+  RemoteRole: 4
+  AttachParent: 5
+  LocationOffset: 6
+  RelativeScale3D: 7
+  RotationOffset: 8
+  AttachSocket: 9
+  AttachComponent: 10
+  ReplicatedMovement: 11
+  Role: 13
+  Instigator: 14
+  PlayerState: 16
+  BaseID: 18
+  bRelativeRotation: 19
+  bServerHasBaseComponent: 20
+  BoneName: 22
+  MovementBase: 23
+  Location: 24
+  Rotation: 25
+  ReplayLastTransformUpdateTimeStamp: 27
+  bProxyIsJumpForceApplied: 31
+  ReplicatedMovementMode: 32
+  bIgnoreNextFallingDamage: 47
+  bIsDying: 48
+  bWeaponHolstered: 75
+  bShouldUseCharacterMovementIdleFastPath: 78
+  CurrentMovementStyle: 79
+  TeleportCounter: 80
+  bIsJumping: 84
+  PawnUniqueID: 85
+  CurrentWeapon: 86
+  DeathTags: 87
+  ReplicatedWaterBody: 89
+  JumpFlashCountPacked: 132
+  LandingFlashCountPacked: 133
+  VocalChords: 139
+  FeedbackAudioComponent: 140
+  bInterruptCurrentLine: 147
+  bCanBeInterrupted: 148
+  bCanQue: 149
+  CurveTable: 167
+  RowName: 168
+  Value: 170
+  CurveTable: 171
+  RowName: 172
+  Value: 174
+  CurveTable: 175
+  RowName: 176
+  Value: 178
+  CurveTable: 179
+  RowName: 180
+  CurveTable: 183
+  RowName: 184
+  Value: 186
+  CurveTable: 187
+  RowName: 188
+  CurveTable: 191
+  RowName: 192
+  Value: 194
+  CurveTable: 195
+  RowName: 196
+  Value: 198
+  CurveTable: 199
+  RowName: 200
+  Value: 202
+  CurveTable: 203
+  RowName: 204
+  Value: 206
+  CurveTable: 207
+  RowName: 208
+  Value: 210
+  CurveTable: 211
+  RowName: 212
+  Value: 214
+  CurveTable: 215
+  RowName: 216
+  Value: 218
+  CurveTable: 219
+  RowName: 220
+  CurveTable: 223
+  RowName: 224
+  FallbackTag: 234
+  RepActiveMovementModeExtension: 239
+  CapsuleRadiusFortPawn: 240
+  CapsuleHalfHeightFortPawn: 241
+  bIsTacticalSprinting: 255
+  bIsWaterJump: 256
+  bIsTargeting: 259
+  bIsTargetingConsumableThrow: 260
+  bCanShowDefaultSkin: 286
+  bDisabledTetheringSupport: 287
+  bIsInAnyStorm: 301
+  bIsInsideSafeZone: 302
+  bReachedEnd: 311
+  AuthoritativeValue: 312
+  SocketOffset: 313
+  SkyDiveContrail: 319
+  Glider: 320
+  Pickaxe: 321
+  Character: 322
+  Backpack: 330
+  Dances: 333
+  Dances: 334
+  PawnMontage: 386
+  bPlayBit: 387
+  AccelerationPack: 404
+  RepAnimMontageInfo: 405
+  RepAnimMontageStartSection: 406
+  RemoteViewData32: 420
+  WalkSpeed: 428
+  RunSpeed: 429
+  SprintSpeed: 430
+  FlySpeed: 431
+  CrouchedRunSpeed: 432
+  CrouchedSprintSpeed: 433
+  GravityZScale: 435
+  JumpZVelocity: 436
+  ReplayRepAnimMontageInfo: 439
+  SimulatedProxyActiveGameplayCues: 440
+  SimulatedProxyMinimalReplicationGameplayCues: 441
+  FastReplicationMinimalReplicationTags: 442
+  FastReplicationReplicatedLooseTags: 443
+  EncryptedPawnReplayData: 444
+  bShowMarkerIcon: 447
+  AlertLevel: 461
+
+BP_PlayerPawn_SP_Heavy_C_ClassNetCache:
+  ClientObservedStats: 18
+  NetMulticast_Athena_BatchedDamageCues: 69
+  NetMulticast_InvokeGameplayCueAdded_WithParams: 71
+  NetMulticast_InvokeGameplayCueExecuted_FromSpec: 75
+  NetMulticast_InvokeGameplayCueExecuted_WithParams: 76
+
+/NPCLibrary/Components/NPCConversationComponent_Hireable.NPCConversationComponent_Hireable_C:
+  ConversationEntryTag: 3
+  bCanStartConversation: 27
+  ConversationInteractionBoxExtent: 30
+  ConversationInteractionBoxOffset: 31
+  CharacterData: 32
+
+ServicePump_AutoRefuel_Repair_B_C_ClassNetCache:
+  DeactivateServiceStationFX: 1
+  InitializeServiceStationFX: 2
+  SetServiceStationRefuelBoolean: 3
+  SetServiceStationRepairBoolean: 4
+  SpawnFXOnCompletion: 5
+  UpdateServiceStationFX: 6
+  VehicleFullHealth: 7
+
+B_MMObj_POISpawnRiftIndicator_C_ClassNetCache:
+  NotifyLevelPreSpawn: 0
+
+/MidMatchRiftPoiGameplay/Gameplay/Claim/B_MMObj_POIBannerMapIconActor.B_MMObj_POIBannerMapIconActor_C:
+  RemoteRole: 4
+  Role: 13
+
+/Valet/BasicCar/Valet_BasicCar_Vehicle.Valet_BasicCar_Vehicle_C:BroadcastCollisionHitAudio:
+  OtherActor: 0
+  NormalImpulse: 1
+  ImpactPoint: 2
+  LaunchVector: 3
+
+/Game/Athena/Items/Consumables/Grenade/B_Prj_Athena_FragGrenade.B_Prj_Athena_FragGrenade_C:
+  RemoteRole: 4
+  ReplicatedMovement: 11
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bHasExploded: 16
+  Team: 17
+  GravityScale: 20
+  SyncId: 24
+
+/Game/Environments/Asteria/Props/Container/Container_Barrel_Oil_A/Blueprints/BP_Containers_Barrel_A_C.BP_Containers_Barrel_A_C_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+B_Prj_Athena_FragGrenade_C_ClassNetCache:
+  Held Water Impact: 0
+  Splash: 1
+  BroadcastExplosion: 2
+
+/MidMatchRiftPoiGameplay/Gameplay/RiftPortal/BGA_MMObj_POIRiftPortal.BGA_MMObj_POIRiftPortal_C:
+  RemoteRole: 4
+  ReplicatedMovement: 11
+  Role: 13
+  TeleportLocation: 46
+  OverlapActor: 47
+
+BGA_MMObj_POIRiftPortal_C_ClassNetCache:
+  ResetFX: 3
+
+/MurkyVoleGameplay/Gameplay/GauntletGuns/B_Athena_MurkyVole_GauntletGuns.B_Athena_MurkyVole_GauntletGuns_C:
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsEquippingWeapon: 15
+  WeaponData: 20
+  LastFireTimeVerified: 23
+  A: 24
+  B: 25
+  C: 26
+  D: 27
+  A: 28
+  B: 29
+  C: 30
+  D: 31
+  WeaponLevel: 32
+  AmmoCount: 33
+  AppliedAlterations: 42
+  AppliedAlterations: 43
+  OverheatState: 58
+  TimeOverheatedBegan: 59
+  ActualMissileNumber: 62
+  HandFiring: 63
+
+/Game/Environments/Helios/Sets/Palace/Blueprints/Trims/BP_Palace_Trim_Str_C_A.BP_Palace_Trim_Str_C_A_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  bInstantDeath: 31
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Sets/GenericSet/Blueprints/Villa/Stairs/BP_GenericSet_Stairs_C_B.BP_GenericSet_Stairs_C_B_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Asteria/Sets/LightCastle/BluePrints/Floors/LightCastle_Floor_A.LightCastle_Floor_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/FinalCountdownGameplay/FortAthenaMutator_FinalCountdown.FortAthenaMutator_FinalCountdown_C:MulticastCountdownEventTriggered:
+  Event: 0
+  Location: 1
+  PlayersLeft: 2
+
+FortAthenaMutator_FinalCountdown_C_ClassNetCache:
+  MulticastCountdownEventTriggered: 0
+
+Apollo_BigBush_Desert_C_ClassNetCache:
+  MaterialWobble: 0
+
+/Game/Environments/Helios/Sets/BurntTires/Blueprints/Props/BP_BurntTires_Arch_Corner_Base_B_C_A.BP_BurntTires_Arch_Corner_Base_B_C_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Rocks/Common/Blueprints/RustBucket/Rock_Common_Small_B_Disp_Rust.Rock_Common_Small_B_Disp_Rust_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/MidMatchRiftPoiGameplay/Gameplay/B_MMObj_RiftPoi_Ascender.B_MMObj_RiftPoi_Ascender_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  StartPosition: 44
+  EndPosition: 45
+  bInitialized: 46
+  InitialSplineEndLocation: 47
+  TargetSplineEndLocation: 48
+
+/Game/Environments/Helios/Foliage/Trees/Dead_Tree/Blueprints/BP_RustBucket_DeadLog_SaltLake_B.BP_RustBucket_DeadLog_SaltLake_B_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Foliage/Trees/Dead_Tree/Blueprints/BP_RustBucket_DeadLog_SaltLake_A.BP_RustBucket_DeadLog_SaltLake_A_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Athena/Items/Consumables/Grenade/B_Prj_Athena_Grenade_Base.B_Prj_Athena_Grenade_Base_C:Splash:
+  WaterBody: 0
+  WaterInteractionComponent: 1
+  bIsFirstBody: 2
+
+/Game/Environments/Asteria/Props/Coastal/Coastal_Dinghy_A/Blueprints/BP_Coastal_Dinghy_A.BP_Coastal_Dinghy_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/Container/Container_HardCases_A/Blueprints/BP_Container_HardCase_B.BP_Container_HardCase_B_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/GreenTown/Blueprints/Props/BP_GreenTown_Crate_Medium_A.BP_GreenTown_Crate_Medium_A_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  bInstantDeath: 31
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/Outdoor/Kit_Outdoor_LeanTos_A/Blueprints/BP_Outdoor_LeanTos_B.BP_Outdoor_LeanTos_B_C:
+  RemoteRole: 4
+  Role: 13
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/Dining/Dining_FoldingTable_A/Blueprints/BP_Dining_FoldingTable_A.BP_Dining_FoldingTable_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/Outdoor/Outdoor_DiggingTools_A/Blueprints/BP_Outdoor_SetDiggingTools_B.BP_Outdoor_SetDiggingTools_B_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/Utility/Utility_TableSets_A/Blueprints/BP_Utility_TableSet_A_D.BP_Utility_TableSet_A_D_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/Container/Container_HardCases_A/Blueprints/BP_Container_HardCase_A.BP_Container_HardCase_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+
+/FlamingHoopsGameplay/Assets/Gameplay_BoostRing_A/Blueprints/BP_Gameplay_BoostRingBase_A.BP_Gameplay_BoostRingBase_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/Utility/Utility_TableSets_A/Blueprints/BP_Utility_TableSet_A_B.BP_Utility_TableSet_A_B_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/Gameplay/Gameplay_ResourcePallets_A/Blueprints/BP_Gameplay_ResourcePalletWood_A.BP_Gameplay_ResourcePalletWood_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/Construction/Construction_Loader_A/Blueprints/BP_Construction_Loader_A.BP_Construction_Loader_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/RustBucket/RustBucket_MarketTable_A/Blueprints/BP_RustBucket_MarketTableToolsSet_A.BP_RustBucket_MarketTableToolsSet_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+
+/Game/Building/ActorBlueprints/Containers/Tiered_Safe_Athena_Physics.Tiered_Safe_Athena_Physics_C:
+  RemoteRole: 4
+  ReplicatedMovement: 11
+  Role: 13
+  bIsInitiallyBuilding: 61
+  Health: 64
+  MaxHealth: 65
+  ReplicatedLootTier: 74
+  Rep_WakeUp: 80
+
+/MurkyVoleGameplay/Gameplay/GauntletGuns/B_Prj_Athena_MurkyVole_MissileSwarm_Prediction.B_Prj_Athena_MurkyVole_MissileSwarm_Prediction_C:
+  RemoteRole: 4
+  ReplicatedMovement: 11
+  Owner: 12
+  Role: 13
+  Instigator: 14
+  bIsBeingKilled: 15
+  bHasExploded: 16
+  Team: 17
+  GravityScale: 20
+  SyncId: 24
+  SimulationStoppingHit: 25
+  PawnHitResult: 27
+  FireStartLoc: 28
+
+/Script/MurkyVoleRuntime.FortProjectileMoveComp_DrunkMurkyVole:
+  bIsActive: 1
+  HomingStyle: 2
+  MaxTurnSpeed: 4
+  RampTimeFromMinToMaxTurnSpeed: 5
+  LockTargetDistanceThreshold: 6
+  RandomSeed: 7
+  LockedOnTargetPosition: 10
+  RepIncrement: 20
+  StopLocation: 21
+
+B_Prj_Athena_MurkyVole_MissileSwarm_Prediction_C_ClassNetCache:
+  BroadcastExplosion: 3
+
+B_Athena_MurkyVole_GauntletGuns_C_ClassNetCache:
+  MulticastLWProjectile_EndActiveAbility: 3
+  MulticastProjectileRequestUnreliable: 4
+
+/Game/Environments/Asteria/Props/Garage/Garage_TireChanger_A/Blueprints/BP_Garage_TireChanger_A.BP_Garage_TireChanger_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Asteria/Props/Garage/Garage_OilPan_A/Blueprints/BP_Garage_OilPan_A.BP_Garage_OilPan_A_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Sets/BurntTires/Blueprints/Walls/BP_BurntTires_RoofBrace_A_A_B.BP_BurntTires_RoofBrace_A_A_B_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Sets/RustBucket/Blueprints/Girders/BP_RustBucket_Girders_Mid_A.BP_RustBucket_Girders_Mid_A_C:
+  RemoteRole: 4
+  Role: 13
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Sets/RustBucket/Blueprints/Stairs/BP_RustBucket_Stairs_Rail_A_A.BP_RustBucket_Stairs_Rail_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Sets/RustBucket/Blueprints/Stairs/BP_RustBucket_Stairs_Rail_D_A.BP_RustBucket_Stairs_Rail_D_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+B_FlexLegend_DualSMGs_UR_Athena_C_ClassNetCache:
+  MulticastLWProjectile_EndActiveAbility: 5
+  MulticastProjectileRequestUnreliable: 6
+
+/Game/Environments/Helios/Props/Commerce/Commerce_MarketCanopy_A/Blueprints/BP_Commerce_MarketCanopy_B.BP_Commerce_MarketCanopy_B_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  TextureData: 44
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Props/Grindables/Blueprints/Helios_StringLights_01.Helios_StringLights_01_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/MidMatchRiftPoiGameplay/Gameplay/Claim/BGA_MMObj_POIBanner.BGA_MMObj_POIBanner_C:
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  BannerRingInitialZ: 46
+  Banners: 47
+  Banners: 48
+  ProgressSources: 52
+  ProgressSources: 53
+
+/Game/Environments/Asteria/Props/Outdoor/Outdoor_LawnChairWebbed_A/Blueprints/BP_Outdoor_LawnChairWebbed_A.BP_Outdoor_LawnChairWebbed_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Sets/Palace/Blueprints/Archways/BP_Palace_ArchWay_Top_A_B.BP_Palace_ArchWay_Top_A_B_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  TextureData: 44
+  TextureData: 45
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Props/Outdoor/Outdoor_CafeFurniture_A/Blueprints/BP_Outdoor_WoodCafeChair_A.BP_Outdoor_WoodCafeChair_A_C:
+  RemoteRole: 4
+  Role: 13
+
+/MidMatchRiftPoiGameplay/Gameplay/Claim/BGA_MMObj_POICapturePoint.BGA_MMObj_POICapturePoint_C:
+  RemoteRole: 4
+  Owner: 12
+  Role: 13
+  BannerRef: 44
+  RadiusOverride: 55
+
+/Game/Environments/Helios/Sets/Palace/Blueprints/Walls/BP_Palace_RoofWall_A_A.BP_Palace_RoofWall_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/Commerce/Commerce_TastingRoomBar_A/Blueprints/BP_Commerce_TastingRoomBar_B_B.BP_Commerce_TastingRoomBar_B_B_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+
+/Game/Environments/Helios/Props/Commerce/Commerce_TastingRoomBar_A/Blueprints/BP_Commerce_TastingRoomBar_B_A.BP_Commerce_TastingRoomBar_B_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+
+/Game/Building/ActorBlueprints/Prop/Prop_Racetrack_Barrier_B.Prop_Racetrack_Barrier_B_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Asteria/Props/Outdoor/Outdoor_LawnChair_A/Blueprints/BP_Outdoor_LawnChair_A.BP_Outdoor_LawnChair_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+BP_Outdoor_LawnChair_A_C_ClassNetCache:
+  NetMulticast_InvokeGameplayCueExecuted_WithParams: 8
+
+/Game/Environments/Helios/Sets/Palace/Blueprints/Pillars/BP_Palace_Pillar_Top_A_A.BP_Palace_Pillar_Top_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/SunRoseEnvGameplay/Gameplay/River_Styx_Water/BGA_SuperSilkyWolf_SunRose.BGA_SuperSilkyWolf_SunRose_C:
+  RemoteRole: 4
+  Role: 13
+
+/Train/MidMatchTrainHeist/Gameplay/Actors/BP_TrainStation_MMO_Reset_Checkpoint.BP_TrainStation_MMO_Reset_Checkpoint_C:
+  RemoteRole: 4
+  Role: 13
+  HeliosCargoCar_MMO_Verstion: 44
+
+/Script/SunRoseEnvGameplayRuntime.FortChargingSet_SunroseDash:
+  BaseValue: 0
+  CurrentValue: 1
+  UnclampedCurrentValue: 8
+
+/Game/Environments/Helios/Rocks/SpikeyRocks/Blueprints/SpikeyRamp_LG_A.SpikeyRamp_LG_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Props/Brimstone/Brimstone_Trees/Hades_DeadTree_D/Blueprints/BP_Helios_HadesTree_D.BP_Helios_HadesTree_D_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Props/Brimstone/Brimstone_Trees/Hades_TreeLogs/Blueprints/BP_Helios_HadesLog_B.BP_Helios_HadesLog_B_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Foliage/BrimStone/Blueprints/BP_Brimstone_LargeThorn_A.BP_Brimstone_LargeThorn_A_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Rocks/SpikeyRocks/Blueprints/SpikeyRock_LG_A.SpikeyRock_LG_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Rocks/Common/Blueprints/Brimstone/RockPile_Rubble_A_Disp_Brim.RockPile_Rubble_A_Disp_Brim_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Rocks/Common/Blueprints/Brimstone/Rock_Common_Large_C_Disp_Brim.Rock_Common_Large_C_Disp_Brim_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Props/Brimstone/Brimstone_Crate_A/Blueprints/BP_Brimstone_Crate_A.BP_Brimstone_Crate_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/Palace/Blueprints/Walls/BP_Palace_BrokenWall_A_D.BP_Palace_BrokenWall_A_D_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Props/Brimstone/Brimstone_Trees/Hades_DeadTree_B/Blueprints/BP_Helios_HadesTree_B.BP_Helios_HadesTree_B_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/TechArt/LightCones/BP_LightCone_01_CH5S3_Animated_Raft.BP_LightCone_01_CH5S3_Animated_Raft_C:
+  RemoteRole: 4
+  Role: 13
+  StaticMesh: 48
+
+/Game/Environments/Helios/Props/Brimstone/Brimstone_StatuePedestal_A/Blueprints/BP_Brimstone_StatuePedestal_A.BP_Brimstone_StatuePedestal_A_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/Brimstone/Blueprints/Walls/BP_Brimstone_Wall_A_A.BP_Brimstone_Wall_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/Brimstone/Blueprints/Walls/BP_Brimstone_Cerberus_WallRelief_B_B.BP_Brimstone_Cerberus_WallRelief_B_B_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  Health: 64
+  MaxHealth: 65
+
+/FlexLegend_BossE/Blueprints/ChallengeManager_SimpleBossProgressBar_BossE.ChallengeManager_SimpleBossProgressBar_BossE_C:
+  RemoteRole: 4
+  Role: 13
+  CurrentState: 15
+  PhaseProgressTargets: 17
+  PhaseProgressTargets: 18
+  TotalProgress: 20
+  MusicPhase: 21
+  BossProgress: 22
+  BossIsReadyForFinalFight: 23
+
+/Game/Environments/Helios/Sets/Brimstone/Blueprints/Archways/BP_Brimstone_Doorway_Top_A_A.BP_Brimstone_Doorway_Top_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Sets/Brimstone/Blueprints/Pillars/BP_Brimstone_Pillar_B_A_Btm.BP_Brimstone_Pillar_B_A_Btm_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/Brimstone/Blueprints/Pillars/BP_Brimstone_Pillar_B_A_Mid.BP_Brimstone_Pillar_B_A_Mid_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Sets/Brimstone/Blueprints/Walls/BP_Brimstone_Cerberus_WallRelief_B_A.BP_Brimstone_Cerberus_WallRelief_B_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/Brimstone/Blueprints/Walls/BP_Brimstone_Cerberus_Window_Top_B.BP_Brimstone_Cerberus_Window_Top_B_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/Brimstone/Blueprints/Walls/BP_Brimstone_Cerberus_WallRelief_A_B.BP_Brimstone_Cerberus_WallRelief_A_B_C:
+  RemoteRole: 4
+  Role: 13
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/Brimstone/Blueprints/Archways/BP_Brimstone_Doorway_Btm_A_A.BP_Brimstone_Doorway_Btm_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/Brimstone/Brimstone_Trees/Hades_TreeLogs/Blueprints/BP_Helios_HadesLog_C.BP_Helios_HadesLog_C_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/Brimstone/Blueprints/Stairs/BP_Brimstone_Stair_A_A.BP_Brimstone_Stair_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/Brimstone/Blueprints/Trims/BP_Brimstone_Quarterwall_Str_A_B.BP_Brimstone_Quarterwall_Str_A_B_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/Brimstone/Blueprints/Walls/BP_Brimstone_Cerberus_Gate_A.BP_Brimstone_Cerberus_Gate_A_C:
+  RemoteRole: 4
+  Role: 13
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/Palace/Blueprints/Walls/BP_Palace_Wall_Endcap_A_F.BP_Palace_Wall_Endcap_A_F_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/Brimstone/Blueprints/Floors/BP_Brimstone_BrokenFloor_B_D.BP_Brimstone_BrokenFloor_B_D_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+
+/LaserGameplay/Gameplay/BGA_LaserGrid.BGA_LaserGrid_C:
+  RemoteRole: 4
+  Role: 13
+  PrimaryOutletIndex: 45
+  SecondaryOutletIndex: 46
+  State: 47
+  bEnabled: 53
+
+/BattlePassS31_Quests/Items/QuestActors/FoundQuests/PrisonBreak/BP_S31_Found_PB_Crate.BP_S31_Found_PB_Crate_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+
+/BattlePassS31_Quests/Items/QuestActors/FoundQuests/PrisonBreak/BP_S31_QuestActor_Terminal.BP_S31_QuestActor_Terminal_C:
+  RemoteRole: 4
+  Role: 13
+
+/Game/Environments/Helios/Sets/Brimstone/Blueprints/Walls/BP_Brimstone_Cerberus_Window_Bottom_A.BP_Brimstone_Cerberus_Window_Bottom_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/Brimstone/Blueprints/Walls/BP_Brimstone_Cerberus_Window_Mid_B.BP_Brimstone_Cerberus_Window_Mid_B_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/Brimstone/Blueprints/Roofs/BP_BrimStone_LowRoof_Peak_B_A.BP_BrimStone_LowRoof_Peak_B_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/Brimstone/Blueprints/Trims/BP_Brimstone_Quarterwall_Str_A_Clean.BP_Brimstone_Quarterwall_Str_A_Clean_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/Brimstone/Brimstone_Cell_Bench_A/Blueprints/BP_Brimstone_CellBench_A.BP_Brimstone_CellBench_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/Construction/Construction_GeneratorSmall_A/Blueprints/BP_Construction_GeneratorSmall_A.BP_Construction_GeneratorSmall_A_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  bInstantDeath: 31
+
+/Game/Environments/Helios/Props/Brimstone/Brimstone_WreckedSimpleBoat_A/Blueprints/BP_Brimstone_WreckedSimpleBoat_A.BP_Brimstone_WreckedSimpleBoat_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Rocks/Common/Blueprints/Brimstone/Rock_Common_Large_A_Disp_Brim.Rock_Common_Large_A_Disp_Brim_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+BGA_LaserGrid_C_ClassNetCache:
+  LaserGridConnections: 1
+  LaserGridOutlets: 2
+
+/Script/LaserGameplayRuntime.LaserGridOutletEntry:
+  InstanceIndex: 0
+  State: 1
+
+/Game/Environments/Asteria/Props/Industrial/Industrial_CoveredPallets_A/Blueprints/BP_Industrial_CoveredPallets_B.BP_Industrial_CoveredPallets_B_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/MidMatchWeaponBunkerGameplay/Items/WeaponBunkerDoor/BGA_WeaponBunkerDoor.BGA_WeaponBunkerDoor_C:
+  RemoteRole: 4
+  Role: 13
+  WeaponBunkerDoorState: 44
+
+/Game/Environments/Helios/Sets/FloatMax/Blueprints/Towers/BP_Floatmax_Ext_DoorWay_A_A.BP_Floatmax_Ext_DoorWay_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  ResourceType: 51
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+  DoorOpenStyle: 75
+  bDoorOpen: 76
+  bDoorCollisionDisabled: 77
+  bFastOpenRequested: 78
+
+/Game/Environments/Helios/Props/FloatMax/FloatMax_Fences_A/BluePrints/BP_FloatMax_Fence_Door_A_A.BP_FloatMax_Fence_Door_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  bDoorOpen: 76
+
+/Game/Environments/Helios/Props/Furniture/Furniture_OrnateBookcases_A/Blueprints/BP_Furniture_OrnateBookcaseFull_B_D.BP_Furniture_OrnateBookcaseFull_B_D_C:
+  RemoteRole: 4
+  Role: 13
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/Furniture/Furniture_OrnateServer_A/Blueprints/BP_Furniture_OrnateServer_A_D.BP_Furniture_OrnateServer_A_D_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/Furniture/Furniture_OrnateBookcases_A/Blueprints/BP_Furniture_OrnateBookcaseFull_A_D.BP_Furniture_OrnateBookcaseFull_A_D_C:
+  RemoteRole: 4
+  Role: 13
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/FloatMax/Blueprints/Towers/BP_Floatmax_Ext_Wall_Diag_C_A.BP_Floatmax_Ext_Wall_Diag_C_A_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Sets/FloatMax/Blueprints/Walls/BP_FloatMax_BrokenWall_D_A.BP_FloatMax_BrokenWall_D_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 47
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/PiperShelf/PiperShelf_Curtains_A/Blueprints/BP_PiperShelf_Curtains_A.BP_PiperShelf_Curtains_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/FloatMax/Blueprints/Towers/BP_FloatMax_WindowWall_A_A.BP_FloatMax_WindowWall_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  ResourceType: 51
+  bMirrored: 53
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/FloatMax/Blueprints/Towers/BP_Floatmax_Pillar_A.BP_Floatmax_Pillar_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/AnglePatch/AnglePatch_Paintings_A/Blueprints/BP_AnglePatch_Paintings_C.BP_AnglePatch_Paintings_C_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Athena/Apollo/Environments/BuildingActors/Yacht/Props/Apollo_Yacht_YarnBall_01.Apollo_Yacht_YarnBall_01_C:
+  RemoteRole: 4
+  Role: 13
+
+/Game/Environments/Asteria/Sets/Industrial/Industrial_Catwalk_A/Blueprints/BP_Industrial_CatwalkStairs_R_A.BP_Industrial_CatwalkStairs_R_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Athena/Apollo/Environments/BuildingActors/HuntersHaven/Walls/Apollo_HH_Girder_03.Apollo_HH_Girder_03_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 46
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/FloatMax/Blueprints/Interior/BP_Floatmax_Interior_DoorWay_A.BP_Floatmax_Interior_DoorWay_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 47
+  Health: 64
+  MaxHealth: 65
+  bDoorOpen: 76
+
+/Game/Environments/Helios/Props/FineArt/FineArt_OrnateFrames_A/Blueprints/BP_FineArt_OrnateFrame_E.BP_FineArt_OrnateFrame_E_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/FloatMax/Blueprints/Towers/BP_Floatmax_Ext_Wall_A_A.BP_Floatmax_Ext_Wall_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Blockout/Blueprints/Floors/BP_Blockout_Floor_Diag_A_A.BP_Blockout_Floor_Diag_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  ResourceType: 51
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Sets/FloatMax/Blueprints/Towers/BP_Floatmax_Interior_Tower_Wall_A_A.BP_Floatmax_Interior_Tower_Wall_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  ResourceType: 51
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/FloatMax/Blueprints/Interior/BP_Floatmax_Interior_DoorWay_B.BP_Floatmax_Interior_DoorWay_B_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  ResourceType: 51
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/FloatMax/Blueprints/Towers/BP_Floatmax_InteriorWall_D_A.BP_Floatmax_InteriorWall_D_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  TextureData: 47
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Sets/FloatMax/Blueprints/Towers/BP_Floatmax_Ext_Wall_B_A.BP_Floatmax_Ext_Wall_B_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 45
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Sets/Industrial/Industrial_Catwalk_A/Blueprints/BP_Industrial_CatwalkInner_A.BP_Industrial_CatwalkInner_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/FloatMax/Blueprints/Towers/BP_FloatMax_CellGate_A_A.BP_FloatMax_CellGate_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  ResourceType: 51
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Sets/Industrial/Industrial_Catwalk_A/Blueprints/BP_Industrial_CatwalkHalfRailing_A_B.BP_Industrial_CatwalkHalfRailing_A_B_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Sets/Industrial/Industrial_Catwalk_A/Blueprints/BP_Industrial_CatwalkStraight_B.BP_Industrial_CatwalkStraight_B_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/FloatMax/Blueprints/Walls/BP_FloatMax_BrokenWall_C_A.BP_FloatMax_BrokenWall_C_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/FloatMax/FloatMax_HardCase_A/Blueprints/BP_FloatMax_HardCase_B.BP_FloatMax_HardCase_B_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/Furniture/Furniture_OrnateChair_A/Blueprints/BP_Furniture_OrnateChair_A_D.BP_Furniture_OrnateChair_A_D_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Athena/Apollo/Environments/BuildingActors/HuntersHaven/Walls/Apollo_HH_Girder_Archway.Apollo_HH_Girder_Archway_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 46
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Asteria/Props/LightCastle/LightCastle_Rug_A/Blueprints/Asteria_LightCastle_Rug_A.Asteria_LightCastle_Rug_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  ResourceType: 51
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/FloatMax/Blueprints/Towers/BP_FloatMax_CellGate_A_B.BP_FloatMax_CellGate_A_B_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  ResourceType: 51
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+  DoorOpenStyle: 75
+  bDoorOpen: 76
+  bFastOpenRequested: 78
+
+/Game/Environments/Helios/Props/Furniture/Furniture_OrnateSideTable_A/Blueprints/BP_Furniture_OrnateSideTable_D.BP_Furniture_OrnateSideTable_D_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/LightSource/LightSource_OrnateLamp_A/Blueprints/BP_LightSource_OrnateLamp_Raft.BP_LightSource_OrnateLamp_Raft_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/NeonCity/NeonCity_Bench_A/Blueprints/Asteria_NeonCity_Bench_A.Asteria_NeonCity_Bench_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/Industrial/Industrial_HVAC_A/Blueprints/Asteria_Industrial_HVAC_Vent_B2.Asteria_Industrial_HVAC_Vent_B2_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/FloatMax/Blueprints/Interior/BP_Floatmax_Interior_Dbl_Doorway_A_A.BP_Floatmax_Interior_Dbl_Doorway_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 45
+  TextureData: 46
+  Health: 64
+  MaxHealth: 65
+  bDoorOpen: 76
+
+/Game/Environments/Asteria/Sets/Industrial/Industrial_Catwalk_A/Blueprints/BP_Industrial_CatwalkRailing_A.BP_Industrial_CatwalkRailing_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Sets/Industrial/Industrial_Catwalk_A/Blueprints/BP_Industrial_CatwalkHalfRailing_A.BP_Industrial_CatwalkHalfRailing_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/FloatMax/Blueprints/Skylight/BP_FloatMax_Skylight_B_A.BP_FloatMax_Skylight_B_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/PiperShelf/PiperShelf_CoatRack_A/Blueprints/BP_PiperShelf_CoatRack_A.BP_PiperShelf_CoatRack_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/FloatMax/FloatMax_HardCase_A/Blueprints/BP_FloatMax_HardCase_A.BP_FloatMax_HardCase_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/Furniture/Furniture_BrigTable_A/Blueprints/BP_Furniture_BrigTable_B.BP_Furniture_BrigTable_B_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/Utility/Utility_CockpitConsoles_A/Blueprints/BP_Utility_CockpitConsole_B.BP_Utility_CockpitConsole_B_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/FloatMax/Blueprints/Skylight/BP_FloatMax_Skylight_A_A_A.BP_FloatMax_Skylight_A_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/FineArt/FineArt_OrnateFrames_A/Blueprints/BP_FineArt_OrnateFrame_C.BP_FineArt_OrnateFrame_C_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/Furniture/Furniture_BrigTable_A/Blueprints/BP_Furniture_BrigTable_B_FoodSet_A.BP_Furniture_BrigTable_B_FoodSet_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/FloatMax/Blueprints/Floors/BP_Floatmax_BrokenFloor_B_D.BP_Floatmax_BrokenFloor_B_D_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/Furniture/Furniture_BrigTable_A/Blueprints/BP_Furniture_BrigTable_A.BP_Furniture_BrigTable_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+BP_Palace_BrokenWall_A_D_C_ClassNetCache:
+  NetMulticast_InvokeGameplayCueExecuted_WithParams: 8
+
+/Game/Environments/Asteria/Foliage/Trees/OliveTree/Blueprint/BP_Tree_Asteria_OliveTree.BP_Tree_Asteria_OliveTree_C:
+  RemoteRole: 4
+  Role: 13
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Blockout/Blueprints/Walls/Doorway/BP_Blockout_Doorway_Side_A_A.BP_Blockout_Doorway_Side_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  bDoorOpen: 76
+
+/Game/Building/ActorBlueprints/Wall/Catwalks_Railing_Half.Catwalks_Railing_Half_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/Utility/Utility_Ducts_A/Blueprints/Asteria_Utility_Ducts_J.Asteria_Utility_Ducts_J_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Athena/Apollo/Environments/BuildingActors/Foliage/Apollo_BigBush_ChapCoast.Apollo_BigBush_ChapCoast_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  bInstantDeath: 31
+  ReplicatedDrawScale3D: 63
+
+/Game/Environments/Helios/Props/Furniture/Furniture_BrigBed_A/Blueprints/BP_Furniture_Brigbed_Stacked_A.BP_Furniture_Brigbed_Stacked_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Sets/Industrial/Industrial_Catwalk_A/Blueprints/BP_Industrial_CatwalkStairs_F_C.BP_Industrial_CatwalkStairs_F_C_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/FloatMax/Blueprints/Towers/BP_Floatmax_Ext_Arch_A_A.BP_Floatmax_Ext_Arch_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  ResourceType: 51
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/Industrial/Industrial_CoveredPallets_A/Blueprints/BP_Industrial_CoveredPallets_C.BP_Industrial_CoveredPallets_C_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/FloatMax/Blueprints/Towers/BP_FloatMax_Quarterwall_A_A.BP_FloatMax_Quarterwall_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/FloatMax/Blueprints/Towers/BP_FloatMax_Tower_Window_Front_A_A.BP_FloatMax_Tower_Window_Front_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 45
+  TextureData: 46
+  TextureData: 47
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/FloatMax/Blueprints/Floors/BP_Floatmax_Interior_Floor_A_A.BP_Floatmax_Interior_Floor_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/FloatMax/Blueprints/Towers/BP_Floatmax_InteriorWall_Diag_A_A.BP_Floatmax_InteriorWall_Diag_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  TextureData: 46
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/Kitchen/Kitchen_ProBuffet_A/Blueprints/BP_Kitchen_ProBuffet_A.BP_Kitchen_ProBuffet_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Props/Furniture/Furniture_BrigTable_A/Blueprints/BP_Furniture_BrigLongTable_A.BP_Furniture_BrigLongTable_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/NeonCity/NeonCity_StreetLight_A/Blueprints/Asteria_NeonCity_StreetLight_A_Raft.Asteria_NeonCity_StreetLight_A_Raft_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Athena/Apollo/Environments/BuildingActors/Tinfoil/Props/BP_Tinfoil_Desk_A.BP_Tinfoil_Desk_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Blockout/Blueprints/Walls/BP_Blockout_Diag_Wall_A_A.BP_Blockout_Diag_Wall_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  TextureData: 45
+  Health: 64
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Props/Utility/Utility_CockpitConsoles_A/Blueprints/BP_Utility_CockpitConsole90_A.BP_Utility_CockpitConsole90_A_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/Industrial/Industrial_CratePallet_B/Blueprints/BP_Industrial_CratePallet_B.BP_Industrial_CratePallet_B_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/Gym/Gym_WeightBench_A/Blueprints/BP_Gym_WeightBench_A.BP_Gym_WeightBench_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 44
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/FloatMax/Blueprints/Towers/BP_FloatMax_Quarterwall_A_A_A.BP_FloatMax_Quarterwall_A_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/FloatMax/Blueprints/Towers/BP_FloatMax_Tower_Window_Diag_A_A.BP_FloatMax_Tower_Window_Diag_A_A_C:
+  RemoteRole: 4
+  Role: 13
+  TextureData: 45
+  TextureData: 46
+  bMirrored: 53
+  ReplicatedDrawScale3D: 63
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Helios/Sets/FloatMax/Blueprints/Towers/BP_FloatMax_Tower_Floor_Balcony_A_A.BP_FloatMax_Tower_Floor_Balcony_A_A_C:
+  bHidden: 1
+  RemoteRole: 4
+  Role: 13
+  bDestroyed: 28
+  TextureData: 44
+  MaxHealth: 65
+  EffectContext: 71
+  ProxyGameplayCueDamageMagnitude: 72
+
+/Game/Environments/Helios/Sets/FloatMax/Blueprints/Towers/BP_FloatMax_Tower_Top.BP_FloatMax_Tower_Top_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
+
+/Game/Environments/Asteria/Props/Lair/Lair_Chair_A/Blueprints/BP_Lair_Chair_A.BP_Lair_Chair_A_C:
+  RemoteRole: 4
+  Role: 13
+  Health: 64
+  MaxHealth: 65
