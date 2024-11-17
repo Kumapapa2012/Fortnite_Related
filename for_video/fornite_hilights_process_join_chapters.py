@@ -2,12 +2,25 @@
 # this script supports binary from https://github.com/BtbN/FFmpeg-Builds/releases
 
 import os
+import subprocess
 import re
 import argparse 
 import datetime as dt
 import shutil
+import configparser
+import inspect
 
+# コマンドライン処理
+source_file_path = inspect.getfile(inspect.currentframe())
+parser = argparse.ArgumentParser(
+                    prog='Fortnite Hilight Video processor',
+                    description='Concat Hilights videos produced by Geforce Experience',
+                    epilog='{0} PATH_TO_DIR_WHICH_CONTAINS_ONLY_HILIGHTS_TO_PROCESS'.format(os.path.basename(source_file_path)))
 
+parser.add_argument('dirname')   
+args = parser.parse_args()
+
+# 順序の処理
 def ordinal(n):
     if 11 <= n % 100 <= 13:
         suffix = "th"
@@ -15,43 +28,39 @@ def ordinal(n):
         suffix = {1: "st", 2: "nd", 3: "rd"}.get(n % 10, "th")
     return str(n) + suffix
 
-# ロケール設定
-#import locale
-#locale.setlocale(locale.LC_ALL, '')
+# 環境の処理
+import configparser
+config = configparser.ConfigParser()
+config.read('config.ini')
 
-parser = argparse.ArgumentParser(
-                    prog='Fortnite Hilight Video processor',
-                    description='What the program does',
-                    epilog='Text at the bottom of help')
+pattern_str = config.get('File', 'pattern_Highlights')
+pattern = re.compile(pattern_str)
+print(pattern)
 
-pattern = r'Fortnite (\d{4}\.\d{2}\.\d{2} - \d{2}\.\d{2}\.\d{2}\.\d{2})(\..+)?\.DVR\.mp4'
-parser.add_argument('dirname')   
-args = parser.parse_args()
-
-
-
-files = sorted(os.listdir(args.dirname))
-table=[]
-
-
-# Command line templates
+ffmpeg = config['Video_Process']['ffmpeg_path']
+ffprobe = config['Video_Process']['ffprobe_path']
 # fade in
-cmdtmp1="ffmpeg -i \"{0}\" -vf \"fade=t=in:st=0:d=1\" -y output01.mp4"
-
+ffmpeg_effect = ' '.join([ffmpeg, config['Video_Process']['cmd_effect']])
 # add datetime
-cmdtmp2="ffmpeg -i \"output01.mp4\" -vf \"drawtext=textfile=label.txt:fontsize=64:font=Arial:borderw=5:fontcolor=white:x=(w-text_w)/2:y=(h-300)\" -y \"{0}\""
-
+ffmpeg_text = ' '.join([ffmpeg, config['Video_Process']['cmd_text']])
 # concat
-cmdtmp3="ffmpeg -safe 0 -f concat -i test_flist.txt -c copy -y output_concate_test.mp4"
-
-# concat2 -safe way
-cmdtmp3_safe='ffmpeg -i "{0}" -i "{1}" -filter_complex "[0:v:0][0:a:0][1:v:0][1:a:0]concat=n=2:v=1:a=1[outv][outa]" -map "[outv]" -map "[outa]" -y {2}'
-
+ffmpeg_concat = ' '.join([ffmpeg, config['Video_Process']['cmd_concat']])
 # schene detection
-cmdtmp4="ffmpeg -i output_concate_test.mp4 -vf  \"select=gt(scene\,0.3), scale=640:360,showinfo\" -vsync vfr output/%04d.jpg -f null - 2> ffout.txt"
-# Command line templates
+##ffmpeg_schene_detect = ' '.join([ffmpeg, config['Video_Process']['cmd_schene_detect']])
 
+# Video Duration
+ffprobe_video_duration = ' '.join([ffprobe, config['Video_Process']['cmd_duration_prove']])
 
+# archive
+archive_folder = config['File']['archive_folder']
+os.makedirs(archive_folder, exist_ok=True)
+
+# temp folder to work
+os.makedirs("output", exist_ok=True)
+
+# Highlights の取得
+files = sorted(os.listdir(args.dirname))
+table_Highlights=[]
 filename_tmp="Fortnite-Kills - {0}"
 
 
@@ -59,7 +68,7 @@ filename_tmp="Fortnite-Kills - {0}"
 
 # Check filename timegap so to avoid duplicated scenes.
 prev_hilight_datetime = dt.datetime(1970, 1, 1)
-SAME_VIDEO_THRESHOLD=15
+SAME_VIDEO_THRESHOLD=13
 
 for file in files:
     if not re.match(pattern, os.path.basename(file)):
@@ -82,18 +91,18 @@ for file in files:
     label_text = date_object.strftime("%Y/%m/%d-%X")
 
     if prev_hilight_datetime and date_object - prev_hilight_datetime > dt.timedelta(seconds=SAME_VIDEO_THRESHOLD):
-        table.append((file_name,label_text))
+        table_Highlights.append((file_name,label_text))
         prev_hilight_datetime = date_object
     else:
         #replace the last one to current one
-        table.append((file_name,label_text))  if len(table) == 0 else table.__setitem__(-1, (file_name,label_text))
+        table_Highlights.append((file_name,label_text))  if len(table_Highlights) == 0 else table_Highlights.__setitem__(-1, (file_name,label_text))
         #and keeps prev_hilight_datetime
 
-for entry in table:
+for entry in table_Highlights:
     
     # Phase 1 - Fade-in
 
-    cmd1 = cmdtmp1.format( args.dirname+'\\'+entry[0])
+    cmd1 = ffmpeg_effect.format( args.dirname+'\\'+entry[0])
     print("!! Running " +cmd1)
     os.system(cmd1)
     
@@ -104,62 +113,47 @@ for entry in table:
     with open("label.txt", "w") as file:
         file.write(entry[1])
     # cmd2 = cmdtmp2.format(args.dirname+'\\'+'processed_'+entry[0])
-    cmd2 = cmdtmp2.format('processed_'+entry[0])
+    cmd2 = ffmpeg_text.format('processed_' + entry[0])
     print("!! Running " +cmd2)
     os.system(cmd2)
 
 ########################
 # Concatinate all
 ########################
-pattern_processed = r'processed_Fortnite (\d{4}\.\d{2}\.\d{2} - \d{2}\.\d{2}\.\d{2}\.\d{2})(\..+)?\.DVR\.mp4'
+pattern_processed = re.compile("processed_"+pattern_str)
 
 ## files_processed = sorted(os.listdir(args.dirname))
 files_processed = sorted(os.listdir('.'))
-table = []
+table_Processed = []
 
 for file in files_processed:
     if not re.match(pattern_processed, os.path.basename(file)):
         print("ファイル名は指定されたパターンにマッチしません。: {0}".format(file))
         continue
     #table.append(args.dirname + '\\' + file)
-    table.append(file)
-''' old way
+    table_Processed.append(file)
 # Phase 1 - create a file list
-with open("test_flist.txt", "w") as file:
-    for entry in table:   
+with open("concat_flist.txt", "w") as file:
+    for entry in table_Processed:   
         strtmp="file '{0}'".format(entry)+'\n'
         strtmp=strtmp.replace("\\","\\\\") 
         file.write(strtmp)
 
-# Phase 2 - create a concat video
-cmd3=cmdtmp3
+# Phase 2 - concat videos
+cmd3=ffmpeg_concat
 print(cmd3)
 os.system(cmd3)
-'''
-# make 1st video
-in1 = ""
-for video in table:
-    if in1 == "":
-        in1 = "__start_placeholder_dont_delete.mp4"
-    else:
-        in1 = "concat_temp.mp4"
-    in2 = video
-    out = "output_concate_test.mp4"
-    cmd3 = cmdtmp3_safe.format(in1, in2, out)
-    print(cmd3)
-    os.system(cmd3)
-    shutil.copy(out, "concat_temp.mp4")
-
-
-
 
 
 ########################
 # Wrap up
 ########################
 
+
+
 # Phase 3 - scene detection
-cmd4=cmdtmp4
+'''
+cmd4=ffmpeg_schene_detect
 print(cmd4)
 os.system(cmd4)
 
@@ -171,12 +165,28 @@ with open("ffout.txt", "r") as file:
         # 行を処理（改行文字を削除して表示）
         if re.search(pattern_pts, line):
             pts_times.append(re.findall(pattern_pts, line)[0])
+'''
+
+# Phase 3 - Collect durations
+pts_times = []
+for entry in table_Processed:   
+    cmd4=ffprobe_video_duration + ' "' + entry + '"'
+    result = subprocess.check_output(cmd4,shell=True).decode().strip()
+    pts_times.append(float(result))
+
+#!!!!!
+#exit(0)
 
 scenes = [('0:00:00')]
+ofs=0
 for pts_time in pts_times:
-    seconds=float(pts_time.replace('pts_time:',''))
-    timestamp=dt.timedelta(seconds=int(seconds))
+    # seconds=float(pts_time.replace('pts_time:',''))
+    seconds = pts_time
+    ofs+=round(seconds)
+    timestamp=dt.timedelta(seconds=ofs)
     scenes.append(str(timestamp))
+# Remove the last one
+del scenes[-1]
 
 # wrap up
 dst_fname = filename_tmp.format(dt.datetime.now().strftime("%c"))
@@ -189,7 +199,7 @@ for index,scene in enumerate(scenes):
 
 # copy video file 
 print("copying video file...")
-shutil.copy2("output_concate_test.mp4",args.dirname+"\\"+dst_fname+".mp4")
+shutil.copy2("output_concat.mp4",args.dirname+"\\"+dst_fname+".mp4")
 
 # create comment file
 print("creating video comment...")
@@ -199,5 +209,21 @@ with open('fortnite_kills_comment_template.txt', "r") as file_c1:
     comment_v=comment_v.format(strchapters)
     with open(args.dirname+'\\'+dst_fname+".txt", "w") as file_c2:
         file_c2.write(comment_v)
+
+# clean up 
+print("cleaning up...") 
+print("moving processed videos to archive...")
+for to_move in table_Processed:
+    print("moving {0} to {1}".format(to_move,archive_folder))
+    precheck_file = archive_folder+os.sep+to_move
+    if(os.path.isfile(precheck_file)):
+        os.remove(precheck_file)
+    shutil.move(to_move, archive_folder)
+print("deleting temp files...")
+os.remove("output.mp4")
+os.remove("output_concat.mp4")
+os.remove("label.txt")
+os.remove("concat_flist.txt")
+#os.remove("ffout.txt")
 
 print("Done!!!!!")
