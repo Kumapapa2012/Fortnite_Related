@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "SYlDJS/QJ50NLBym8N7bh0L6ImzMv1c61Oi3V7ug9eWD4ph5jsgteSpOe5PeDlARyOx8Qv9KA7ZJrsr4745xbg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\morim\\Documents\\__kmori_tools\\Youtube_Uploader_Fortnite\\git\\Fortnite_Related\\replay_parser\\_Fortnite.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\morim\\.nuget\\packages\\fortnitereplayreader\\2.2.2\\fortnitereplayreader.2.2.2.nupkg.sha512",
+    "C:\\Users\\morim\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\morim\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\morim\\.nuget\\packages\\oozsharp\\2.2.2\\oozsharp.2.2.2.nupkg.sha512",
+    "C:\\Users\\morim\\.nuget\\packages\\unreal.core\\2.2.2\\unreal.core.2.2.2.nupkg.sha512",
+    "C:\\Users\\morim\\.nuget\\packages\\unreal.encryption\\2.2.2\\unreal.encryption.2.2.2.nupkg.sha512"
+  ],
+  "logs": []
+}
