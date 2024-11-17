@@ -1,0 +1,11 @@
+GeForce Experience の Highlights で生成されたクリップ集
+Fade-in 効果と録画日時をビデオに追加(ffmpeg 使用)
+
+Kill タイムスタンプ
+{0}
+
+GPU：NVIDIA GeForce RTX 4070
+CPU：AMD Ryzen 9 3900XT 12-Core Processor
+メモリ：64 GB RAM (63.93 GB RAM は使用可能です)
+現在の解像度：3840 x 2160, 60Hz
+オペレーティング システム： Windows 11 Pro
