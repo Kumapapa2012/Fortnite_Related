@@ -33,10 +33,19 @@ static string FormNumber(int num)
 }
 
 const int TIME_OSSFET = -5;
+var replayFile = "C:\\Users\\morim\\Documents\\_Fortnite\\UnsavedReplay-2024.09.07-03.30.12.replay";
 var myEpicId = "4679c513a0614c889148f61ec69aa749";
 
+// override replayFile and myEpicId
+if(args.Length > 0 ){
+    replayFile = args[0];
+    Console.WriteLine("replayFile has been overridden by cmdline");
+    if(args.Length > 1 ) {
+        myEpicId = args[1];
+        Console.WriteLine("myEpicId has been overridden by cmdline");
+    }
+}
 
-var replayFile = "C:\\Users\\morim\\Documents\\_Fortnite\\UnsavedReplay-2024.09.07-03.30.12.replay";
 var reader = new ReplayReader();
 var replay = reader.ReadReplay(replayFile);
 var myKills = replay.Eliminations.Where(c => c.Eliminator == myEpicId.ToUpper()).ToList();

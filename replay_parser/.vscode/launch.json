@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "_Fortnite Debug",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/bin/Debug/net9.0/_Fortnite.dll",
+            "args": [
+                "C:\\Users\\morim\\AppData\\Local\\FortniteGame\\Saved\\Demos\\UnsavedReplay-2024.11.20-22.32.40.replay", 
+                "4679c513a0614c889148f61ec69aa749"
+            ],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        }
+    ]
+}

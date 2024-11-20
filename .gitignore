@@ -2,3 +2,7 @@
 *.mp4
 *.obj
 *.exe
+*.dll
+*.replay
+bin/
+obj/

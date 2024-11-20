@@ -1,8 +1,5 @@
 /Script/FortniteGame.FortPickupAthena
   bReplicateMovement
-  LocationOffset
-  RelativeScale3D
-  RotationOffset
   ReplicatedMovement
   Owner
   ServerImpactSoundFlash
@@ -44,27 +41,38 @@
   TossState
   PawnWhoDroppedPickup
 NetworkGameplayTagNodeIndex
+  Abilities.Activities.Demobomb.Armed
   Abilities.Generic.Athena.ZipLine
-  Abilities.Generic.Athena.ZipLine.ZiplineSmashImmune
-  Abilities.Generic.M80
-  Abilities.Knockback.DoNotOcclude
+  Abilities.Generic.DangerGrape
   Abilities.Weapons.Melee
-  Ability.Athena.ZeroPoint.AbilityActive
   Ability.CancelOnImpulse
   Ability.DamageSource.Melee
+  Ability.DamageSource.Ranged
+  Ability.FlexLegend.BossD.BigBall
+  Ability.FlexLegend.BossD.BigBall.Cooldown
   Ability.FlexLegend.BossD.CustomIntroPrevent
+  Ability.FlexLegend.BossD.DiveKick.Cooldown
   Ability.FlexLegend.BossE.CustomIntroPrevent
-  Ability.FlexLegend.BossE.DiamondSkin.Activated
-  Ability.FlexLegend.BossE.DiamondSkin.Cooldown
-  Ability.FlexLegend.BossE.DiamondSkin.DamageReduction
+  Ability.FlexLegend.BossE.DiamondSkin.Prevent
   Ability.FlexLegend.BossM.IntroFinished
+  Ability.FlexLegendMedallions.ShieldSiphon
+  Ability.HighTower.Power.Date.ArcaneBlast
+  Ability.HighTower.Power.Date.BallLightning
+  Ability.HighTower.Power.Date.ChainLightning
+  Ability.HighTower.Power.Tomato.RepulsorCannon
   Ability.Melee.Basic
+  Ability.Melee.PreventBlock
+  Ability.Melee.PreventSecondary
   Ability.NetMovementPrioritized
   Ability.NetMovementPrioritized.NotAlwaysRelevant
+  Ability.SourdoughBread.AtPersonalLimit
+  Ability.Specialist.Medic.Heal.Cooldown
   AISpawnerData.Type.Boss.FlexLegend.BossD
   AISpawnerData.Type.Boss.FlexLegend.BossE
   AISpawnerData.Type.Boss.FlexLegend.BossM
   AISpawnerData.Type.Boss.FlexLegend.BossMClone
+  AISpawnerData.Type.Boss.FNM.31.Billy
+  AISpawnerData.Type.Boss.FNM.31.PumpkinBoss
   AISpawnerData.Type.FlexLegend.Minion.Base
   AISpawnerData.Type.FlexLegend.Minion.Elite
   AISpawnerData.Type.MMObj.RadioTowerGuard.Boss
@@ -73,61 +81,46 @@ NetworkGameplayTagNodeIndex
   AISpawnerData.Type.Specialist.Medic.TriageTrooper
   AISpawnerData.Type.Specialist.Scout.SeleneCobra
   AISpawnerData.Type.Specialist.Supply.LionSoldier
+  AISpawnerData.Type.Tandem.BikeMold
   AISpawnerData.Type.Tandem.BrightDisk
+  AISpawnerData.Type.Tandem.BucketKick
   AISpawnerData.Type.Tandem.CeremonialGuardFencer
+  AISpawnerData.Type.Tandem.DarkVogue
   AISpawnerData.Type.Tandem.HerbHutch
+  AISpawnerData.Type.Tandem.KoboLobo
   AISpawnerData.Type.Tandem.MoosePorch
+  AISpawnerData.Type.Tandem.PeelyBone
   AISpawnerData.Type.Tandem.PillowMill
+  AISpawnerData.Type.Tandem.PrivateJet
   AISpawnerData.Type.Tandem.QuickBurst
   AISpawnerData.Type.Tandem.ShiverFlame
+  AISpawnerData.Type.Tandem.ShrimpStroll
   AISpawnerData.Type.Tandem.SnapFreeze
   AISpawnerData.Type.Tandem.SpeedyPeas
-  AISpawnerData.Type.Tandem.TroutWrist
   AmmoType.Light
   AmmoType.Medium
   AmmoType.Shells
+  Animation.CharacterParts.HideFX.Feet
   Animation.CharacterParts.HideFX.Hands
-  Asset.Hover.FuelRegen
+  Athena.Achievements.RecentlyOpenedSupplyDrop
   Athena.Achievements.SlurpySwampShields
   Athena.AI.Hidden
-  Athena.AI.IS.Attractor
   Athena.AI.NoiseMaker
-  Athena.Faction.ColdDay
-  Athena.Faction.Deimos
-  Athena.Faction.Dev.Dev1
-  Athena.Faction.Dev.Dev2
-  Athena.Faction.Dev.Dev3
-  Athena.Faction.FirePetal
+  Athena.AI.SpeechBubbles.FlexLegend.BossD.OnBallAttack
+  Athena.AI.SpeechBubbles.FlexLegend.BossD.OnKick
+  Athena.AI.SpeechBubbles.FlexLegend.BossD.OnShieldsBroken
+  Athena.AI.SpeechBubbles.FlexLegend.BossD.PlayerInProximity
   Athena.Faction.FlexLegend.BossD
   Athena.Faction.FlexLegend.BossE
   Athena.Faction.FlexLegend.BossM
-  Athena.Faction.FlexLegend.Friendly
   Athena.Faction.FlexLegend.Hostile
   Athena.Faction.FlexLegend.Neutral
+  Athena.Faction.FNM
   Athena.Faction.GameParticipant
   Athena.Faction.Generic.Friendly
   Athena.Faction.Generic.Hostile
   Athena.Faction.Generic.Neutral
-  Athena.Faction.Greenhouse
-  Athena.Faction.Jungle.Hostile
-  Athena.Faction.Jungle.Neutral
-  Athena.Faction.MMObj.RadioTowerGuard
-  Athena.Faction.MoonFlax
-  Athena.Faction.Mother
-  Athena.Faction.MotherBirdParticipant
-  Athena.Faction.MotherGround
-  Athena.Faction.Paprika
-  Athena.Faction.PhysicsObjects
-  Athena.Faction.Seven
-  Athena.Faction.Wildlife.Amphibious.Smackie
-  Athena.Faction.Wildlife.Aquatic.Shark
-  Athena.Faction.Wildlife.Special.Whiff
-  Athena.Faction.Zombie
-  Athena.Gameplay.Status.BlockCarryDBNO
   Athena.Gameplay.Status.Cloaked
-  Athena.Gameplay.Status.Converted
-  Athena.Gameplay.Status.Converter
-  Athena.Gameplay.Status.Converter.HasHiredNPC
   Athena.Gameplay.Status.ForceDBNO
   Athena.Gameplay.Status.ForceSkipDBNO
   Athena.Gameplay.Status.LeashPaused
@@ -137,8 +130,6 @@ NetworkGameplayTagNodeIndex
   Athena.HUD.Pickup.ShowTotalAmmo
   Athena.IsAPhoebe
   Athena.Item.Utility
-  Athena.ItemAction.Secondary.Throw
-  Athena.ItemAction.Throw
   Athena.Location.POI.AbandonedMansion
   Athena.Location.POI.AbandonedRuins
   Athena.Location.POI.Arena
@@ -158,7 +149,6 @@ NetworkGameplayTagNodeIndex
   Athena.Location.UnNamedPOI.AbandonedVilla
   Athena.Location.UnNamedPOI.ArchOlympus
   Athena.Location.UnNamedPOI.BeachHouses
-  Athena.Location.UnNamedPOI.Bunker
   Athena.Location.UnNamedPOI.CharonsCrossing
   Athena.Location.UnNamedPOI.CliffHouse
   Athena.Location.UnNamedPOI.CostalAirstrip
@@ -166,6 +156,7 @@ NetworkGameplayTagNodeIndex
   Athena.Location.UnnamedPOI.CrashedAirplane
   Athena.Location.UnNamedPOI.DigSite.01
   Athena.Location.UnNamedPOI.DigSite.02
+  Athena.Location.UnNamedPOI.DigSite.03
   Athena.Location.UnNamedPOI.DigSite.04
   Athena.Location.UnNamedPOI.DigSite.05
   Athena.Location.UnNamedPOI.DigSite.06
@@ -189,7 +180,6 @@ NetworkGameplayTagNodeIndex
   Athena.Location.UnNamedPOI.JankyardHouse
   Athena.Location.UnNamedPOI.LlamaFarm
   Athena.Location.UnNamedPOI.Logo
-  Athena.Location.UnNamedPOI.MiniMarket
   Athena.Location.UnNamedPOI.ModStation.01
   Athena.Location.UnNamedPOI.ModStation.02
   Athena.Location.UnNamedPOI.ModStation.03
@@ -211,11 +201,10 @@ NetworkGameplayTagNodeIndex
   Athena.Location.UnNamedPOI.ServantQuarter
   Athena.Location.UnNamedPOI.SocietyCemetery
   Athena.Location.UnNamedPOI.SouthTunnel
-  Athena.Location.UnNamedPOI.Stage.01
+  Athena.Location.UnNamedPOI.Statue
   Athena.Location.UnNamedPOI.SummitTemple
   Athena.Location.UnNamedPOI.TrainStation.01
   Athena.Location.UnNamedPOI.TrainStation.02
-  Athena.Location.UnNamedPOI.TrainStation.03
   Athena.Location.UnNamedPOI.TrainStation.04
   Athena.Location.UnNamedPOI.TrainStation.05
   Athena.Location.UnNamedPOI.TrainStation.06
@@ -223,43 +212,50 @@ NetworkGameplayTagNodeIndex
   Athena.Location.UnNamedPOI.WaterPump
   Athena.Location.UnNamedPOI.WindMill.01
   Athena.Location.UnNamedPOI.WindMill.02
-  Athena.Location.UnNamedPOI.WindTurbines
   Athena.Location.UnNamedPOI.WoodedIsle
   Athena.Location.UnNamedPOI.YardDock
   Athena.Phoebe.Escape
   Athena.Player.ClamberingBlocked
+  Athena.Player.WindsplineBlocked
   Athena.POIText.Sideways
   Athena.Quest.ShieldBubble.WithinBubbleArea
-  Athena.Quests.Ability.Thrown.ExplosiveGrenade
+  Athena.Quests.Ability.HighTower.Power.Date.BallLightning
+  Athena.Quests.Ability.HighTower.Power.Date.ChainLightning
+  Athena.Quests.Ability.HighTower.Power.Tomato.RepulsorCannon
+  Athena.Quests.BouncedUmbrellaRecently
+  Athena.Quests.HighTower.Power.Date
+  Athena.Quests.HighTower.TomatoAssault
   Athena.Quests.MirrorTagAdd
   Athena.Quests.MirrorTagRemove
+  Athena.Quests.Paprika.GravBerry.Active
   Athena.Quests.Paprika.TeamSpray.Active
+  Athena.Quests.PostSupplyDropInteract
   Athena.Quests.Vehicle.SportsCar.Whiplash
   Athena.Status.AimAssistIgnored
-  Athena.Valet.ExplodeDamage
   Athena.Vehicle.OnEntry.ReleaseBalloons
   Athena.Vehicle.SpecialActor
-  Athena.Vehicle.Valet
   Athena.Vehicle.Valet.SportsCar
+  Augment.Category.Medallion
   Bacchus.Harvest.Pickaxe
   Bacchus.Shoot.AR.Auto
   Bacchus.Shoot.Pistol.Auto
   Bacchus.Shoot.Shotgun.PumpAction
   Bacchus.Shoot.Shotgun.Tactical
   Bacchus.Shoot.SMG.Auto
-  Bacchus.Throw.Grenade.Explosive
-  Building.GameplayActor
-  Building.Type.Gameplay
-  Building.Type.Prop.HealingCactus
+  Building.Resource.Stone
+  Building.Resource.Wood
+  Building.Type.All.Floor
+  Building.Type.All.Wall
+  Building.Type.Prop
   Building.Type.Prop.Hiding.Teleporter
+  Building.Type.Prop.Wall
   ChapWorm.Ability.Melee.Blocked
   ChapWorm.Ability.Pounce
   ChapWorm.Ability.Pounce.TillLand
-  ChapWorm.Ability.SuperSprint.Threshold
   ChapWorm.ApplyOverpowerStatus
   ChapWorm.Damage.Melee
   ChapWorm.Damage.Pounce
-  ChapWorm.Damage.Pounce.Default
+  ChapWorm.Damage.Pounce.Overpower
   ChapWorm.Item.Equipped
   ChapWorm.Item.Inventory
   ChapWorm.KineticEnergy.Charging
@@ -270,258 +266,66 @@ NetworkGameplayTagNodeIndex
   ChapWorm.Player.OP
   ChapWorm.Player.Weapon.Equipped
   ChapWorm.Pounce.Targeting
+  CharacterPart.CameraDefault
   Clambering.State.Inactive
-  Clambering.State.LedgeMoving
   Clambering.State.Targeting
   Class.IsCommando
-  Conversation.Entry.HerbHutch
-  Conversation.Entry.MadCommander
-  Conversation.Entry.PillowMill
-  Conversation.Entry.TroutWrist
+  Conversation.Entry.TriageTrooper
+  Cosmetics.Character.Modification.HidesHead
   Cosmetics.OverrideWrapBehavior.DoNotOverride
-  Cosmetics.Pickaxe.DonutPlate
-  Cosmetics.Pickaxe.OneHanded
   Cosmetics.QuestsMetaData.Achievements.Umbrella
-  Cosmetics.QuestsMetaData.Awakening.HightowerSquash
   Cosmetics.QuestsMetaData.Outfit.AnglePatch.Lodge
-  Cosmetics.QuestsMetaData.Outfit.Cosmos
+  Cosmetics.QuestsMetaData.Outfit.Bites
   Cosmetics.QuestsMetaData.Outfit.Donut
-  Cosmetics.QuestsMetaData.Outfit.RebirthMedic
+  Cosmetics.QuestsMetaData.Outfit.Embers
+  Cosmetics.QuestsMetaData.Outfit.middlesock
+  Cosmetics.QuestsMetaData.Outfit.ProfessorPup
+  Cosmetics.QuestsMetaData.Outfit.Turtleneck
   Cosmetics.UserFacingFlags.BuiltInEmote
-  Cosmetics.Variant.Channel.ClothingColor
-  Cosmetics.Variant.Channel.Emissive
   Cosmetics.Variant.Channel.FigureDetailsLevel
-  Cosmetics.Variant.Channel.Hair
-  Cosmetics.Variant.Channel.JerseyColor
   Cosmetics.Variant.Channel.Material
   Cosmetics.Variant.Channel.Mesh
-  Cosmetics.Variant.Channel.Numeric
   Cosmetics.Variant.Channel.Particle
   Cosmetics.Variant.Channel.Parts
-  Cosmetics.Variant.Channel.Pattern
-  Cosmetics.Variant.Channel.PetTemperament
-  Cosmetics.Variant.Channel.ProfileBanner
   Cosmetics.Variant.Channel.ProfileLoadout
   Cosmetics.Variant.Channel.Progressive
   Cosmetics.Variant.Channel.Ranked
-  Cosmetics.Variant.Channel.RichColor
-  Cosmetics.Variant.Channel.RichColor2
-  Cosmetics.Variant.Channel.RichColor3
-  Cosmetics.Variant.Channel.RichColor4
-  Cosmetics.Variant.Channel.RichColor5
-  Cosmetics.Variant.Channel.RichColor6
   Cosmetics.Variant.Channel.Slot.0
-  Cosmetics.Variant.Channel.Slot.1
-  Cosmetics.Variant.Channel.Slot.2
-  Cosmetics.Variant.Channel.Slot.3
-  Cosmetics.Variant.Channel.Slot.4
-  Cosmetics.Variant.Channel.Slot.5
-  Cosmetics.Variant.Channel.Slot.6
-  Cosmetics.Variant.Channel.Slot.7
-  Cosmetics.Variant.Channel.Slot.8
   Cosmetics.Variant.Channel.Sparks.Instrument.Material
   Cosmetics.Variant.Channel.TagDriven
   Cosmetics.Variant.Channel.Vehicle.Body.Color
-  Cosmetics.Variant.Channel.Vehicle.Body.Color.Tier1
-  Cosmetics.Variant.Channel.Vehicle.Body.Color.Tier2
   Cosmetics.Variant.Channel.Vehicle.Painted
-  Cosmetics.Variant.Channel.Vehicle.Painted.Tier1
-  Cosmetics.Variant.Channel.Vehicle.Painted.Tier2
   Cosmetics.Variant.Channel.Vehicle.Skin.Color
-  Cosmetics.Variant.Channel.Vehicle.Tier
-  Cosmetics.Variant.Property.Color.001
-  Cosmetics.Variant.Property.Color.005
-  Cosmetics.Variant.Property.Color.Argentina
-  Cosmetics.Variant.Property.Color.Australia
-  Cosmetics.Variant.Property.Color.Belgium
-  Cosmetics.Variant.Property.Color.Brazil
-  Cosmetics.Variant.Property.Color.Canada
-  Cosmetics.Variant.Property.Color.Colombia
-  Cosmetics.Variant.Property.Color.Denmark
-  Cosmetics.Variant.Property.Color.Egypt
-  Cosmetics.Variant.Property.Color.England
-  Cosmetics.Variant.Property.Color.Fortnite
-  Cosmetics.Variant.Property.Color.France
-  Cosmetics.Variant.Property.Color.Germany
-  Cosmetics.Variant.Property.Color.Iceland
-  Cosmetics.Variant.Property.Color.Ireland
-  Cosmetics.Variant.Property.Color.Italy
-  Cosmetics.Variant.Property.Color.Japan
-  Cosmetics.Variant.Property.Color.Korea
-  Cosmetics.Variant.Property.Color.Mexico
-  Cosmetics.Variant.Property.Color.Netherlands
-  Cosmetics.Variant.Property.Color.NewZealand
-  Cosmetics.Variant.Property.Color.Nigeria
-  Cosmetics.Variant.Property.Color.Norway
-  Cosmetics.Variant.Property.Color.Poland
-  Cosmetics.Variant.Property.Color.Portugal
-  Cosmetics.Variant.Property.Color.Russia
-  Cosmetics.Variant.Property.Color.Saudi
-  Cosmetics.Variant.Property.Color.Spain
-  Cosmetics.Variant.Property.Color.Sweden
-  Cosmetics.Variant.Property.Color.Switzerland
-  Cosmetics.Variant.Property.Color.Terkey
-  Cosmetics.Variant.Property.Color.Uruguay
-  Cosmetics.Variant.Property.Color.USA
   Cosmetics.Variant.Property.Emissive0
   Cosmetics.Variant.Property.Emissive1
-  Cosmetics.Variant.Property.Emissive2
-  Cosmetics.Variant.Property.Emissive3
-  Cosmetics.Variant.Property.Emissive4
-  Cosmetics.Variant.Property.Emissive5
   Cosmetics.Variant.Property.Emote.CharacterGroup1
   Cosmetics.Variant.Property.FigureDetailsLevel.Signature
   Cosmetics.Variant.Property.FigureDetailsLevel.Simple
-  Cosmetics.Variant.Property.ItemTexture
   Cosmetics.Variant.Property.Mat0
   Cosmetics.Variant.Property.Mat1
-  Cosmetics.Variant.Property.Mat12
   Cosmetics.Variant.Property.Mat2
   Cosmetics.Variant.Property.Mat3
   Cosmetics.Variant.Property.Mat4
-  Cosmetics.Variant.Property.Mat5
-  Cosmetics.Variant.Property.Mat6
-  Cosmetics.Variant.Property.Mat7
-  Cosmetics.Variant.Property.Numeric
-  Cosmetics.Variant.Property.Numeric.0
-  Cosmetics.Variant.Property.Numeric.1
-  Cosmetics.Variant.Property.Numeric.10
-  Cosmetics.Variant.Property.Numeric.11
-  Cosmetics.Variant.Property.Numeric.12
-  Cosmetics.Variant.Property.Numeric.13
-  Cosmetics.Variant.Property.Numeric.14
-  Cosmetics.Variant.Property.Numeric.15
-  Cosmetics.Variant.Property.Numeric.16
-  Cosmetics.Variant.Property.Numeric.17
-  Cosmetics.Variant.Property.Numeric.18
-  Cosmetics.Variant.Property.Numeric.19
-  Cosmetics.Variant.Property.Numeric.2
-  Cosmetics.Variant.Property.Numeric.20
-  Cosmetics.Variant.Property.Numeric.21
-  Cosmetics.Variant.Property.Numeric.22
-  Cosmetics.Variant.Property.Numeric.23
-  Cosmetics.Variant.Property.Numeric.24
-  Cosmetics.Variant.Property.Numeric.25
-  Cosmetics.Variant.Property.Numeric.26
-  Cosmetics.Variant.Property.Numeric.27
-  Cosmetics.Variant.Property.Numeric.28
-  Cosmetics.Variant.Property.Numeric.29
-  Cosmetics.Variant.Property.Numeric.3
-  Cosmetics.Variant.Property.Numeric.30
-  Cosmetics.Variant.Property.Numeric.31
-  Cosmetics.Variant.Property.Numeric.32
-  Cosmetics.Variant.Property.Numeric.33
-  Cosmetics.Variant.Property.Numeric.34
-  Cosmetics.Variant.Property.Numeric.35
-  Cosmetics.Variant.Property.Numeric.36
-  Cosmetics.Variant.Property.Numeric.37
-  Cosmetics.Variant.Property.Numeric.38
-  Cosmetics.Variant.Property.Numeric.39
-  Cosmetics.Variant.Property.Numeric.4
-  Cosmetics.Variant.Property.Numeric.40
-  Cosmetics.Variant.Property.Numeric.41
-  Cosmetics.Variant.Property.Numeric.42
-  Cosmetics.Variant.Property.Numeric.43
-  Cosmetics.Variant.Property.Numeric.44
-  Cosmetics.Variant.Property.Numeric.45
-  Cosmetics.Variant.Property.Numeric.46
-  Cosmetics.Variant.Property.Numeric.47
-  Cosmetics.Variant.Property.Numeric.48
-  Cosmetics.Variant.Property.Numeric.49
-  Cosmetics.Variant.Property.Numeric.5
-  Cosmetics.Variant.Property.Numeric.50
-  Cosmetics.Variant.Property.Numeric.51
-  Cosmetics.Variant.Property.Numeric.52
-  Cosmetics.Variant.Property.Numeric.53
-  Cosmetics.Variant.Property.Numeric.54
-  Cosmetics.Variant.Property.Numeric.55
-  Cosmetics.Variant.Property.Numeric.56
-  Cosmetics.Variant.Property.Numeric.57
-  Cosmetics.Variant.Property.Numeric.58
-  Cosmetics.Variant.Property.Numeric.59
-  Cosmetics.Variant.Property.Numeric.6
-  Cosmetics.Variant.Property.Numeric.60
-  Cosmetics.Variant.Property.Numeric.61
-  Cosmetics.Variant.Property.Numeric.62
-  Cosmetics.Variant.Property.Numeric.63
-  Cosmetics.Variant.Property.Numeric.64
-  Cosmetics.Variant.Property.Numeric.65
-  Cosmetics.Variant.Property.Numeric.66
-  Cosmetics.Variant.Property.Numeric.67
-  Cosmetics.Variant.Property.Numeric.68
-  Cosmetics.Variant.Property.Numeric.69
-  Cosmetics.Variant.Property.Numeric.7
-  Cosmetics.Variant.Property.Numeric.70
-  Cosmetics.Variant.Property.Numeric.71
-  Cosmetics.Variant.Property.Numeric.72
-  Cosmetics.Variant.Property.Numeric.73
-  Cosmetics.Variant.Property.Numeric.74
-  Cosmetics.Variant.Property.Numeric.75
-  Cosmetics.Variant.Property.Numeric.76
-  Cosmetics.Variant.Property.Numeric.77
-  Cosmetics.Variant.Property.Numeric.78
-  Cosmetics.Variant.Property.Numeric.79
-  Cosmetics.Variant.Property.Numeric.8
-  Cosmetics.Variant.Property.Numeric.80
-  Cosmetics.Variant.Property.Numeric.81
-  Cosmetics.Variant.Property.Numeric.82
-  Cosmetics.Variant.Property.Numeric.83
-  Cosmetics.Variant.Property.Numeric.84
-  Cosmetics.Variant.Property.Numeric.85
-  Cosmetics.Variant.Property.Numeric.86
-  Cosmetics.Variant.Property.Numeric.87
-  Cosmetics.Variant.Property.Numeric.88
-  Cosmetics.Variant.Property.Numeric.89
-  Cosmetics.Variant.Property.Numeric.9
-  Cosmetics.Variant.Property.Numeric.90
-  Cosmetics.Variant.Property.Numeric.91
-  Cosmetics.Variant.Property.Numeric.92
-  Cosmetics.Variant.Property.Numeric.93
-  Cosmetics.Variant.Property.Numeric.94
-  Cosmetics.Variant.Property.Numeric.95
-  Cosmetics.Variant.Property.Numeric.96
-  Cosmetics.Variant.Property.Numeric.97
-  Cosmetics.Variant.Property.Numeric.98
-  Cosmetics.Variant.Property.Numeric.99
   Cosmetics.Variant.Property.Particle0
   Cosmetics.Variant.Property.Particle1
   Cosmetics.Variant.Property.Particle2
-  Cosmetics.Variant.Property.Particle3
-  Cosmetics.Variant.Property.ProfileBanner
+  Cosmetics.Variant.Property.Particle4
   Cosmetics.Variant.Property.ProfileLoadout
-  Cosmetics.Variant.Property.Ranked
   Cosmetics.Variant.Property.Ranked.0
-  Cosmetics.Variant.Property.Ranked.1
-  Cosmetics.Variant.Property.Ranked.2
   Cosmetics.Variant.Property.Ranked.3
-  Cosmetics.Variant.Property.Ranked.4
-  Cosmetics.Variant.Property.Ranked.5
-  Cosmetics.Variant.Property.Ranked.6
-  Cosmetics.Variant.Property.Ranked.7
   Cosmetics.Variant.Property.RichColor
   Cosmetics.Variant.Property.Stage0
   Cosmetics.Variant.Property.Stage1
-  Cosmetics.Variant.Property.Stage10
-  Cosmetics.Variant.Property.Stage11
-  Cosmetics.Variant.Property.Stage12
-  Cosmetics.Variant.Property.Stage13
   Cosmetics.Variant.Property.Stage2
-  Cosmetics.Variant.Property.Stage21
   Cosmetics.Variant.Property.Stage3
   Cosmetics.Variant.Property.Stage4
   Cosmetics.Variant.Property.Stage5
-  Cosmetics.Variant.Property.Stage6
-  Cosmetics.Variant.Property.Stage7
-  Cosmetics.Variant.Property.Stage8
-  Cosmetics.Variant.Property.Stage9
-  Cosmetics.Variant.Property.Vehicle.Painted.BurntSienna
   Cosmetics.Variant.Property.Vehicle.Painted.Cobalt
-  Cosmetics.Variant.Property.Vehicle.Painted.Lime
+  Cosmetics.Variant.Property.Vehicle.Painted.Crimson
+  Cosmetics.Variant.Property.Vehicle.Painted.Grey
   Cosmetics.Variant.Property.Vehicle.Painted.None
   Cosmetics.Variant.Property.Vehicle.Painted.Orange
-  Cosmetics.Variant.Property.Vehicle.Painted.Pink
-  Cosmetics.Variant.Property.Vehicle.Tier.Tier1
-  Cosmetics.Variant.Property.Vehicle.Tier.Tier2
+  Cosmetics.Variant.Property.Vehicle.Painted.Saffron
   Cosmetics.Wrap.DoNotApplyOnPickups
   Curie.Material.Flesh
   Curie.Material.FleshNoFire
@@ -542,44 +346,40 @@ NetworkGameplayTagNodeIndex
   Curie.State.ElementInteraction.Fire
   Curie.State.ElementInteraction.Water
   Curie.State.FullyIgnited
-  Event.Damage.Died
+  DualMesh.CameraDefault
+  Event.Ability.SourdoughBread.Destroyed
+  Event.Athena.Chainsaw.BlockRefueling
+  Event.Athena.Chainsaw.ScooterAttackPending
+  Event.Athena.Chainsaw.ScooterBlockedByObstacle
   Fallbacks.NPC.Tandem
-  Gameplay.Action.Ashton.Shield.Charge
   Gameplay.Action.Attacking.Melee
   Gameplay.Action.Attacking.Ranged
-  Gameplay.Action.Pawn.OnTrain
-  Gameplay.Action.Player.Ascender.Ascending
   Gameplay.Action.Player.Ascender.Descending
   Gameplay.Action.Player.AthenaInValet
   Gameplay.Action.Player.AthenaInVehicle
   Gameplay.Action.Player.BlockBuildMode
   Gameplay.Action.Player.BlockEditMode
-  Gameplay.Action.Player.BlockMove.Backward
-  Gameplay.Action.Player.BlockMove.Forward
-  Gameplay.Action.Player.BlockMove.Left
-  Gameplay.Action.Player.BlockMove.Right
-  Gameplay.Action.Player.BlockPickup
+  Gameplay.Action.Player.Chainsaw.Combo
   Gameplay.Action.Player.CornFieldMovement
   Gameplay.Action.Player.CreativeMoveTool.Block
   Gameplay.Action.Player.Crouch
   Gameplay.Action.Player.DBNOAthena
   Gameplay.Action.Player.Emote.Dance
   Gameplay.Action.Player.Heavy
+  Gameplay.Action.Player.Hurdle.Hurdling
   Gameplay.Action.Player.InBushProp
-  Gameplay.Action.Player.InteractSearch
   Gameplay.Action.Player.InteractUse.ForceAllowPickups
-  Gameplay.Action.Player.InWindup
-  Gameplay.Action.Player.Jetpack
+  Gameplay.Action.Player.Launched
   Gameplay.Action.Player.Light
   Gameplay.Action.Player.Mantis.Attack
   Gameplay.Action.Player.Medium
   Gameplay.Action.Player.PreventJump
+  Gameplay.Action.Player.PreventLaunch
   Gameplay.Action.Player.PreventMove
   Gameplay.Action.Player.PreventReload
   Gameplay.Action.Player.Reload
   Gameplay.Action.Player.Sprint
   Gameplay.Action.Player.SprintJumping
-  Gameplay.Action.Player.SurfaceSwimming
   Gameplay.Action.Player.TacticalSprint
   Gameplay.Action.Player.ThrowConsumable
   Gameplay.Athena.ActivePower.Leap
@@ -588,8 +388,10 @@ NetworkGameplayTagNodeIndex
   Gameplay.ClearMovingPlatformBaseInAir
   Gameplay.Damage
   Gameplay.Damage.AllowReceiveZeroDamageHit
-  Gameplay.Damage.BallisticShield.Bash
+  Gameplay.Damage.Chainsaw.Combo
+  Gameplay.Damage.Chainsaw.ScooterAttack
   Gameplay.Damage.DBNOBleedOut
+  Gameplay.Damage.Energy.Explosive
   Gameplay.Damage.Environment
   Gameplay.Damage.Environment.ExcludedFromStormSurge
   Gameplay.Damage.Environment.Falling
@@ -603,6 +405,7 @@ NetworkGameplayTagNodeIndex
   Gameplay.Damage.Physical.Energy
   Gameplay.Damage.Physical.Explosive
   Gameplay.Damage.Physical.Explosive.MurkyVole.MissileSwarm
+  Gameplay.Damage.Physical.Explosive.SourDoughBread
   Gameplay.Damage.Physical.Impact
   Gameplay.Damage.Vehicle
   Gameplay.Damaged.Health
@@ -615,82 +418,85 @@ NetworkGameplayTagNodeIndex
   Gameplay.Effect.Instant
   Gameplay.Effect.InstantDeath
   Gameplay.Effect.Negative
-  Gameplay.Effect.Override.AllowFriendlyFire
   Gameplay.Effect.Periodic
   Gameplay.Effect.PersistOnDeath
   Gameplay.ImprovedDBNO.DoNotInteract
   Gameplay.InsideSafeZone
   Gameplay.Interact.ValidateLongInteract
-  Gameplay.Melee.Block
+  Gameplay.Status.AllowChanneledActionDuringMovement
   Gameplay.Status.Athena.InCursorMode
   Gameplay.Status.AutoPickupDisabled
   Gameplay.Status.BlocksAutoFire
   Gameplay.Status.DBNO
-  Gameplay.Status.DBNOBeingRevived
-  Gameplay.Status.DisableCrouch
-  Gameplay.Status.DisablePickup
   Gameplay.Status.DisablePrimaryFire
   Gameplay.Status.DisableRepair
   Gameplay.Status.DisableSliding
   Gameplay.Status.DisableSprint
   Gameplay.Status.DisableSwimSprintCancel
-  Gameplay.Status.DisableSwitchQuickbar
-  Gameplay.Status.EMP.Applied
   Gameplay.Status.HealthRegenBlocked.RecentlyDamaged
   Gameplay.Status.HidingProp.BlockEnter
   Gameplay.Status.HidingProp.BlockInteract
   Gameplay.Status.ImmuneFallingDamage
+  Gameplay.Status.ImmuneFallingDamage.TillLand
   Gameplay.Status.InGoldenPoi
-  Gameplay.Status.InVehicle.Seat.Open
   Gameplay.Status.InVehicle.Seat.Roofed
   Gameplay.Status.IsTargeting
   Gameplay.Status.Knockback
+  Gameplay.Status.LaserGameplay.IsMarked
   Gameplay.Status.OnSnow
+  Gameplay.Status.Rift.Skydiving
   Gameplay.Status.Sand.PreventApplication
   Gameplay.Status.Sand.Surface
   Gameplay.Status.ShieldRegenBlocked.RecentlyDamaged
-  Gameplay.Status.StormSickness
-  Gameplay.Status.SunRose.SilkyWolf.Active
   Gameplay.Status.ThermalVision
-  Gameplay.Status.Underwater
+  Gameplay.Status.TrapImmune.Floor
   Gameplay.Status.Vehicle.HidePawnWeapon
   Gameplay.Status.Vehicle.IsAtServiceStation
   Gameplay.Status.Vehicle.IsInAir
   Gameplay.Status.Vehicle.IsOccupied
   Gameplay.Status.WasTargetingWhenBulletFired
-  GameplayCue.Abilities.Activation.DBNOResurrect.Athena
-  GameplayCue.Abilities.Ascender.Ascending
   GameplayCue.Abilities.Ascender.AttachVFX
   GameplayCue.Abilities.Ascender.Descending
+  GameplayCue.Abilities.Zipline.AttachVFX
   GameplayCue.Abilities.Zipline.LowGrav.Looping
   GameplayCue.Ashton.Shield.Block.Damaged
   GameplayCue.Ashton.Shield.Block.Impacted
+  GameplayCue.Ashton.Shield.Hit.Environment
   GameplayCue.Ashton.Shield.Hit.Pawn
-  GameplayCue.Ashton.Shield.Player.Bash
   GameplayCue.Ashton.Shield.Player.Blocking
   GameplayCue.Ashton.Shield.Player.StaggerBuilt
   GameplayCue.Ashton.Shield.Throw.Launch.SFX
   GameplayCue.Ashton.Shield.Throw.Launch.SFX.Foley
   GameplayCue.Ashton.Shield.Throw.Launch.VFX
   GameplayCue.Ashton.Shield.Throw.Return
+  GameplayCue.Athena.BarnTowel.ActiveThrust
+  GameplayCue.Athena.BarnTowel.Bonk
+  GameplayCue.Athena.BarnTowel.Flying
+  GameplayCue.Athena.BarnTowel.FlyLoop
+  GameplayCue.Athena.BarnTowel.LandImpact
+  GameplayCue.Athena.BarnTowel.SmashedThroughSomething
+  GameplayCue.Athena.BarnTowel.SmashingThings
+  GameplayCue.Athena.BarnTowel.WindingUpThrust
   GameplayCue.Athena.ChillBronco.Throw
   GameplayCue.Athena.ChillBronco.Throw.Cook
-  GameplayCue.Athena.Consumable.Health
   GameplayCue.Athena.Consumable.Throw.Cook.Generic
   GameplayCue.Athena.Consumable.Throw.FragGrenade
   GameplayCue.Athena.DamageImmunity.Loop
   GameplayCue.Athena.DBNOBleed
   GameplayCue.Athena.Energy.ConstantRegen.ChapWorm.Claws
+  GameplayCue.Athena.EnvItem.Slurp
   GameplayCue.Athena.Equipping
+  GameplayCue.Athena.FallDamageImmunity
   GameplayCue.Athena.ForagedItem.LowGravRock.Liftoff
-  GameplayCue.Athena.Health.HealUsed
-  GameplayCue.Athena.Item.SuperDingo.Hit
-  GameplayCue.Athena.Item.SuperDingo.Spawned.AmbientSound
+  GameplayCue.Athena.ForagedItem.Rift.Teleport
+  GameplayCue.Athena.HidingProp.Collision
+  GameplayCue.Athena.HidingProp.Portapotty.Exit
+  GameplayCue.Athena.HidingProp.Portapotty.Exitplayer
+  GameplayCue.Athena.HidingProp.PropTeleporting
+  GameplayCue.Athena.HidingProp.Teleporter.Enter
+  GameplayCue.Athena.HidingProp.Teleporting
+  GameplayCue.Athena.HidingProp.Wobble
   GameplayCue.Athena.MedConsumable.SoundIndicator
-  GameplayCue.Athena.MurkyVole.Jets.Dashing
-  GameplayCue.Athena.MurkyVole.Jets.EndedInAir
-  GameplayCue.Athena.MurkyVole.Jets.FuelRegen
-  GameplayCue.Athena.MurkyVole.Jets.Hovering
   GameplayCue.Athena.MurkyVole.MissileSwarm.Fire
   GameplayCue.Athena.MurkyVole.Turret.Fire
   GameplayCue.Athena.MurkyVole.Turret.TargetAcquired
@@ -699,16 +505,20 @@ NetworkGameplayTagNodeIndex
   GameplayCue.Athena.MurkyVole.Turret.WindUp
   GameplayCue.Athena.OutsideSafeZoneDamage
   GameplayCue.Athena.Player.AutumnBushMovement
-  GameplayCue.Athena.Player.BeingRevivedFromDBNO
   GameplayCue.Athena.Player.BigBushMovement
   GameplayCue.Athena.Player.ColdBreath.V2
   GameplayCue.Athena.Player.Cucumber.Active
   GameplayCue.Athena.Player.Sliding.SlideImpulse
+  GameplayCue.Athena.Player.Sliding.SlideImpulse.Instigator
   GameplayCue.Athena.Player.Sliding.SlideImpulse.VelocityMet
   GameplayCue.Athena.Player.SnowFlakes.Niagara
   GameplayCue.Athena.Player.Surface.Sand
   GameplayCue.Athena.Player.Surface.Snow
   GameplayCue.Athena.Player.TomatoSprinkle.Sprint.DoorBash.Impact
+  GameplayCue.Athena.PowerUpScythe.Primary.Impact
+  GameplayCue.Athena.Prop.SilkyBingo.Heal
+  GameplayCue.Athena.SourdoughBread.Death.Combat
+  GameplayCue.Athena.SourdoughBread.Death.NonCombat
   GameplayCue.Athena.SunRose.SilkyWolf.Active
   GameplayCue.Athena.SunRose.SilkyWolf.Dash
   GameplayCue.Athena.SunRose.SilkyWolf.Ready
@@ -718,44 +528,72 @@ NetworkGameplayTagNodeIndex
   GameplayCue.Athena.VictoryCrown.CrownWearer.Ambient
   GameplayCue.Athena.VictoryCrown.CrownWearer.Drop
   GameplayCue.Athena.VictoryCrown.CrownWearer.Flare
+  GameplayCue.Athena.WitchBroom.TakeOff
+  GameplayCue.BarnTowel.WarmUp
+  GameplayCue.BarnTowelArmory.Drop.Freefall
+  GameplayCue.BarnTowelArmory.Drop.Thrusters
+  GameplayCue.BarnTowelArmory.Drop.ThrustersAdditional
+  GameplayCue.Chainsaw.Equipped
+  GameplayCue.Chainsaw.Idle
+  GameplayCue.Chainsaw.JumpAttack.Active
+  GameplayCue.Chainsaw.JumpAttack.PredictLand
+  GameplayCue.Chainsaw.JumpAttack.Slam
+  GameplayCue.Chainsaw.MeleeHitSomething.Combo.Swing1
+  GameplayCue.Chainsaw.MeleeHitSomething.Combo.Swing2
+  GameplayCue.Chainsaw.MeleeHitSomething.Combo.Swing3
+  GameplayCue.Chainsaw.ScooterBlockedByObstacle
+  GameplayCue.Chainsaw.Scootering
+  GameplayCue.Chainsaw.Scootering.StartJump
+  GameplayCue.Chainsaw.Sprinting
   GameplayCue.ChapWorm.KineticEnergy.BoostedCharging
   GameplayCue.ChapWorm.KineticEnergy.Charging
   GameplayCue.ChapWorm.KineticEnergy.Maxed
-  GameplayCue.ChapWorm.Melee.Hit.1
-  GameplayCue.ChapWorm.Melee.Hit.2
-  GameplayCue.ChapWorm.Melee.Hit.3
-  GameplayCue.ChapWorm.Melee.Hit.4
   GameplayCue.ChapWorm.Overpower.Activate
-  GameplayCue.ChapWorm.Pounce.Impact.Default
+  GameplayCue.ChapWorm.Overpower.Refresh
   GameplayCue.ChapWorm.Pounce.Impact.TargetSelection.Fail
-  GameplayCue.ChapWorm.Pounce.Impact.TargetSelection.Success
   GameplayCue.ChapWorm.Pounce.ImpactActivate.Default
-  GameplayCue.ChapWorm.Pounce.ImpactActivate.Overpower
-  GameplayCue.ChapWorm.SuperSprint.Threshold
-  GameplayCue.Daisy.Geyser.Launch
-  GameplayCue.Daisy.Geyser.Prime
+  GameplayCue.Creative.Melee.Hit1
+  GameplayCue.Creative.Melee.Hit2
+  GameplayCue.Creative.Melee.Hit3
   GameplayCue.Damage.Overshielded
   GameplayCue.Damage.Physical
   GameplayCue.Damage.Physical.Ballistic
   GameplayCue.Damage.Shielded
   GameplayCue.FlexLegendMedallion.TDM.Cloak.Loop
-  GameplayCue.FlexLegends.BossE.WeakPoint.Activated
-  GameplayCue.HealingCactus.SlurpApplied
-  GameplayCue.HealingCactus.SlurpExplosion
+  GameplayCue.FlexLegends.BossD.DiveKick.Jumping
+  GameplayCue.FlexLegends.BossD.DiveKick.Kicking
+  GameplayCue.FlexLegends.BossD.DiveKick.Landed
+  GameplayCue.FlexLegends.BossD.DiveKick.Start
+  GameplayCue.HighTower.Date.BallLightning.Fire
+  GameplayCue.HighTower.Date.BallLightning.PrefireLoop
+  GameplayCue.HighTower.Date.ChainLightning.AuraTrails
+  GameplayCue.HighTower.Tomato.RepulsorCannon.PlayerHit
+  GameplayCue.HighTower.Tomato.Repulsors.AuraTrails
   GameplayCue.Impact.Physical.Melee.Mantis
-  GameplayCue.Moonflax.FlamingHoops.Shake
-  GameplayCue.Moonflax.FlamingHoops.VehiclePassThrough
+  GameplayCue.MeleeMantis.Primary.Damage.Environment
+  GameplayCue.MeleeMantis.Primary.JumpAttack.Fall
+  GameplayCue.MurkyVoleArmory.Drop.Freefall
   GameplayCue.NPC.Interactive.Glitch.Heavy
   GameplayCue.NPC.Interactive.Glitch.Light
   GameplayCue.Overshield.Destroyed
   GameplayCue.Paprika.GravBerry.Applied
+  GameplayCue.Paprika.GravBerry.Explode
   GameplayCue.Paprika.TeamSpray.SprayLoop
   GameplayCue.Player.FlareGun.Reveal
   GameplayCue.PlayerAugments.Augment.Triggered.LightWeight
+  GameplayCue.POIBanner.Captured
+  GameplayCue.POIBanner.Empty
+  GameplayCue.POIBanner.Player.Capturing
+  GameplayCue.POIBanner.Uncontested
   GameplayCue.Shield.Destroyed
   GameplayCue.Shield.PotionConsumed
   GameplayCue.Shield.Regen
   GameplayCue.Shield.RegenBurst
+  GameplayCue.SourdoughBread.Ambient
+  GameplayCue.SourdoughBread.Attacking
+  GameplayCue.SourdoughBread.FuseStarted
+  GameplayCue.SourdoughBread.Tracking
+  GameplayCue.StrawTurn.FuseRep
   GameplayCue.Vehicle.Heal.Looping
   GameplayCue.Vehicle.ServiceStation.Heal
   GameplayCue.Vehicle.ServiceStation.Heal.Loop
@@ -763,6 +601,9 @@ NetworkGameplayTagNodeIndex
   GameplayCue.VehicleCosmetics.MeshSwap.Looping
   GameplayCue.Weapons.Activation
   GameplayCue.Weapons.ChargeUp
+  GameplayCue.WiseOtter.Unibeam.Beam
+  GameplayCue.WiseOtter.Unibeam.ChargeUp
+  GameplayCue.WiseOtter.Unibeam.StructureHit
   GameplayCue.WM.ThermalOptic.PostProcess
   GameplayEffect.Vehicle.Valet
   Granted.Abilities.VictoryCrown.CrownWearer
@@ -772,45 +613,81 @@ NetworkGameplayTagNodeIndex
   Granted.Ashton.Shield.Unusable
   Granted.Athena.Ability.TomatoSprinkle.Sprinting
   Granted.Athena.ADS.AllowInAir
+  Granted.Athena.Animation.UseNoWeaponPoseWhenHolstered
+  Granted.Athena.BarnTowel.BlockAttackActivations
+  Granted.Athena.BarnTowel.DoingTakeOff
+  Granted.Athena.BarnTowel.Equipped
+  Granted.Athena.BarnTowel.Flying
+  Granted.Athena.BarnTowel.ForceFall.OutOfFuel
+  Granted.Athena.BarnTowel.Hovering
+  Granted.Athena.BarnTowel.LowFrictionLanding
+  Granted.Athena.BarnTowel.SmashingThings
+  Granted.Athena.BarnTowel.UnibeamUnavailable
+  Granted.Athena.BarnTowel.WindingUpThrust
+  Granted.Athena.BlockingDamage
+  Granted.Athena.Chainsaw.BlockScootering
+  Granted.Athena.Chainsaw.BlockScootering.FromScooterAttack
+  Granted.Athena.Chainsaw.DoAttackFromSpecial
+  Granted.Athena.Chainsaw.Equipped
+  Granted.Athena.Chainsaw.FallingIntoScooter
+  Granted.Athena.Chainsaw.HoldingScooterButton
+  Granted.Athena.Chainsaw.Scootering
+  Granted.Athena.Chainsaw.ShouldDoAutoScooterAttack
   Granted.Athena.Chrono.Cloak.Active
   Granted.Athena.ClamberAndDoorBash.PreventHolster
   Granted.Athena.Converted.HireNPC
   Granted.Athena.Energy.ConstantRegen
   Granted.Athena.EnvItem.HidingProp.BlockEntrance
+  Granted.Athena.EnvItem.HidingProp.ContainsPlayer
+  Granted.Athena.EnvItem.HidingProp.GettingInProp
+  Granted.Athena.EnvItem.HidingProp.HidingInProp
+  Granted.Athena.EnvItem.HidingProp.RecentlyExitedProp
+  Granted.Athena.EnvItem.HidingProp.Teleporter.Teleporting
+  Granted.Athena.EnvItem.Launcher.Tire.Launch
+  Granted.Athena.EnvItem.Sentry.Turret.Hidden
+  Granted.Athena.EnvItem.Slurp
   Granted.Athena.FlexLegendMedallions.Cloak.Active
   Granted.Athena.FlexLegendMedallions.Cloak.Exit
   Granted.Athena.FlexLegendMedallions.Cloak.HolsterWeapon
   Granted.Athena.GrindRails.BlockAndCancelGrinding
+  Granted.Athena.GrindRails.BlockSprintingAndHolstering
+  Granted.Athena.GrindRails.IsGrinding
   Granted.Athena.GrindRails.SkipEquipAnimOnUnholster
-  Granted.Athena.HidingProp.SmashImmune
+  Granted.Athena.HumbleMop.Wheel.Rolling
   Granted.Athena.Item.AppleSun.BlockJumpToDeploy
   Granted.Athena.Item.MedConsumable.Channeling
+  Granted.Athena.JobBoard.Duel.ListeningForSquadReboot
+  Granted.Athena.JobBoardExperimental.Instigator
   Granted.Athena.JobBoardExperimental.QuestActive
   Granted.Athena.Listener.BuiltInEmote
-  Granted.Athena.MurkyVole.InInventory.HoverJets
   Granted.Athena.MurkyVole.InInventory.MissileSwarm
   Granted.Athena.MurkyVole.InInventory.Turret
   Granted.Athena.MurkyVole.MissileSwarm.AmmoManager
   Granted.Athena.MurkyVole.Turret.Deactivated
   Granted.Athena.Power.ActivePower.IsActive
+  Granted.Athena.Power.LeapGlider.Generic.Active
   Granted.Athena.Quest.AfterDashing10s
   Granted.Athena.Quest.Sliding
+  Granted.Athena.RocketRam.State.WindingUp
+  Granted.Athena.SourdoughBread.Tracker
   Granted.Athena.SunRose.SilkyWolf.Cooldown.Dash
   Granted.Athena.SunRose.SilkyWolf.DashCharge
   Granted.Athena.SunRose.SilkyWolf.DashCommitted
-  Granted.Athena.SunRose.SilkyWolf.InWater
+  Granted.Athena.SunRose.Wings.Landing.LowFriction
   Granted.Athena.TacOvershield.Recharging
   Granted.Athena.TacticalSprint.AllowPrimaryFire
   Granted.Athena.TacticalSprint.AllowSecondaryFire
   Granted.Athena.TacticalSprint.PreventHolster
   Granted.Cooldown.Ashton.Shield.Throw
+  Granted.Cooldown.Athena.LeapGlider.Generic.Cancel
   Granted.Cooldown.Athena.MurkyVole.MissileSwarm
-  Granted.HealingCactus.AppliedSlurp
-  Granted.Hover.Active
-  Granted.Hover.Ascend
-  Granted.Hover.Boost
-  Granted.Hover.Dash.Cooldown
-  Granted.Hover.InInventory
+  Granted.Cooldown.Athena.WitchBroom.Generic
+  Granted.Cooldown.BarnTowel
+  Granted.Cooldown.HighTower.Date.BallLightning
+  Granted.Cooldown.HighTower.Tomato.RepulsorCannon
+  Granted.HighTower.Power.Date.ChainLightning.Equipped
+  Granted.HighTower.Power.Tomato.Combo.Equipped
+  Granted.HighTower.Power.Tomato.Combo.InInventory
   Granted.ItemEquipped.Melee.Harvest
   Granted.PA.Muster.BlockPartyTimeBalloonSpawn
   Granted.Quests.Ability.VOPlaying
@@ -818,34 +695,42 @@ NetworkGameplayTagNodeIndex
   Granted.TakedownMedallion.HasMedallion
   Granted.TakedownMedallion.IsHolding.CrouchCloak
   Granted.TakedownMedallion.IsHolding.RadiusMarking
+  Granted.TakedownMedallion.IsHolding.ShieldSiphon
   Granted.TakedownMedallion.RemoveCrouchedCloakOnSecondaryPressed
   Granted.TakedownMedallion.Tracking
+  Granted.WiseOtter.Item.Overheating
   Homebase.Class.IsCommando
   Homebase.Class.IsCommando.Infantryman
+  HUD.PreferredSlotType.Launcher
   HUD.PreferredSlotType.SMG
   HUD.PreferredSlotType.Utility
   Item.Consumable.ChillBronco
-  Item.Consumable.Grenade
-  Item.Gadget.Hover.WarMachine
   Item.Power.AshtonGameplay.Shield
-  Item.SkipSingletonCheck
+  Item.Power.HighTower.Date.Combo
+  Item.Power.WiseOtter.Combo
+  Item.Power.WiseOtter.Combo.Unibeam
+  Item.Resource.Gold
   Item.SortsRight
+  Item.Weapon.Melee
   Item.Weapon.Melee.ChapWorm
   Item.Weapon.Ranged.Assault.Burst.FlexLegend
-  Item.Weapon.Ranged.Assault.Combat.MoonFlax
   Item.Weapon.Ranged.Assault.DPS.Paprika
+  Item.Weapon.Ranged.Assault.HT.StarkAR
   Item.Weapon.Ranged.MurkyVole.Arsenal
   Item.Weapon.Ranged.MurkyVole.Turret
   Item.Weapon.Ranged.Pistol.CorePistol.Paprika
   Item.Weapon.Ranged.Pistol.FlexLegend
   Item.Weapon.Ranged.Shotgun.FlexLegend
   Item.Weapon.Ranged.Shotgun.Pump.Paprika
+  Item.Weapon.Ranged.Shotgun.Stake
   item.weapon.ranged.shotgun.TripleBarrel.SunRose
-  Item.Weapon.Ranged.SMG.Burst.Paprika
   Item.Weapon.Ranged.SMG.Dual.FlexLegend
   Item.Weapon.Ranged.SMG.Dual.FlexLegend.Mythic
   Item.Weapon.Ranged.SMG.Standard.Paprika
+  Item.Weapon.Ranged.Thrown
   ItemStateValue.ConstObject.NameModifer
+  MeleeManager.Weapon.Creative
+  MeleeManager.Weapon.Type.Sword
   ModSetBucket.Assault.DPS
   ModSetBucket.Assault.StrikerBurst
   ModSetBucket.Pistol.Auto
@@ -855,21 +740,19 @@ NetworkGameplayTagNodeIndex
   ModSetBucket.Shotgun.FlexLegend
   ModSetBucket.Shotgun.SunRose
   ModSetBucket.SMG.Auto
+  MovementMode.Custom.Chainsaw
   MovementMode.Custom.Dash
   MovementMode.Driving
   MovementMode.Falling
-  MovementMode.Hover
-  MovementMode.Hovering.MurkeyVoleGameplay
-  MovementMode.Hovering.MurkeyVoleGameplay.HoverJets
+  MovementMode.Flying.BarnTowel
   MovementMode.Parachuting
-  MovementMode.Passenger
   MovementMode.Skydiving
   MovementMode.Sliding
   MovementMode.Sliding.BlockOriginalGA
-  MovementMode.SurfaceSwimming
   MovementMode.SynchedAction
-  MovementMode.SynchedAction.Clamber
+  MovementMode.SynchedAction.Hurdle
   MovementMode.TacSprint.StaminaDrain.Pause
+  None
   NPC.EnemyType.Pawn
   npc.status.noduel
   NPC.Status.NoHire
@@ -880,34 +763,39 @@ NetworkGameplayTagNodeIndex
   Pawn.Athena.NonParticipant
   Pawn.Athena.NPC
   Pawn.Athena.NPC.Mang.Boss
-  Pawn.Athena.NPC.Sound.Voice.Quest.Greeting
   Pawn.Athena.NPC.Tandem
   Pawn.Athena.Player
+  Pawn.HidePlayerPawn.Default
+  Pawn.HidePlayerPawn.HidingProp
   Phoebe.AIState.Patrolling
   phoebe.items.assault_rifle
   phoebe.items.burst_assault_rifle
   phoebe.items.DualSMG
-  phoebe.items.Grenade.Grenade
+  phoebe.items.hightower.date
+  phoebe.items.hightower.tomato
   phoebe.items.pickaxe
   phoebe.items.pistol
   phoebe.items.pump_shotgun
+  phoebe.items.resource
   phoebe.items.ShotgunBreach
   phoebe.items.smg
   phoebe.items.tactical_shotgun
   phoebe.weapon.melee
+  phoebe.weapon.ranged.ashtonshield
+  phoebe.weapon.ranged.hightower.date
+  phoebe.weapon.ranged.hightower.tomato
   phoebe.weapon.ranged.pistol
   phoebe.weapon.ranged.rifle
   phoebe.weapon.ranged.shotgun
   phoebe.weapon.ranged.smg
-  phoebe.weapon.throwable.grenade
   phoebe.weapon.trait.fullauto
   phoebe.weapon.trait.noaccuracy
+  PhysicsObject
   PhysicsObject.BuoyancyData.Box.Chest
   PhysicsObject.ImpactDamageData.Average
   PhysicsObject.PhysData.Metal
   PhysicsObject.Preset.Box
   Quest.Metadata.IsGliding
-  Quest.Metadata.SquadHasConvertedPawn
   Rarity.Common
   Rarity.Mythic
   Rarity.Rare
@@ -916,11 +804,14 @@ NetworkGameplayTagNodeIndex
   Rarity.VeryRare
   Riding.Player.BlockRiding
   skill.sniper.headshotbuff
-  SoundLibrary.Ashton.Shield.Charge.Intro
   Source.FortAbilitySet
   SpecialActor.FlexLegend.BossD
   SpecialActor.FlexLegend.BossE
   SpecialActor.FlexLegend.BossM
+  SpecialActor.FlexLegendsENV.ArmoryStand.BarnTowelActive
+  SpecialActor.FlexLegendsENV.ArmoryStand.BarnTowelClaimed
+  SpecialActor.FlexLegendsENV.ArmoryStand.MurkyVoleActive
+  SpecialActor.FlexLegendsENV.ArmoryStand.MurkyVoleClaimed
   SpecialActor.MMObj.RadioTower.Keycard.Pickup
   SpecialActor.MMObj.RadioTower.Terminal
   SpecialActor.MMObj.RadioTowerGameplay.Guard.Boss
@@ -928,16 +819,15 @@ NetworkGameplayTagNodeIndex
   SpecialActor.MMObj.WeaponBunker.MapIcon.Opening
   SpecialActor.TakedownMedallion.Pickup
   SpecialActor.VictoryCrown.Pickup
+  Status.LowGravity.Paprika.GravBerry
   Status.LowGravity.Paprika.TeamSpray
-  Trait.Explosive
   Trait.FrontVehicleDamageImmunity
+  Trait.HighTower.Power.Type.Primary
+  Trait.Power.Type.Primary
   Trait.Restoration.Health
   Trait.Restoration.Shields
-  Trait.Shield.Damageable
   Vehicle.Archetype.SportsCar
   Vehicle.Archetype.SUV
-  Vehicle.Fuel.Electric
-  Vehicle.Seat.ForceCrouch
   Vehicle.TerrainType.Land
   Vehicle.Valet.BasicSUV
   Weapon.Gauntlet
@@ -948,11 +838,10 @@ NetworkGameplayTagNodeIndex
   weapon.ranged
   weapon.ranged.assault
   weapon.ranged.assault.standard
-  Weapon.Ranged.Grenade.Standard
-  Weapon.ranged.heavy.grenade
   weapon.ranged.pistol
   weapon.ranged.shotgun
   Weapon.ranged.Shotgun.Break
+  Weapon.Ranged.Shotgun.Stake
   Weapon.Ranged.Shotgun.Tactical
   Weapon.Ranged.SMG
   WeaponMod.Applied.Foregrip
@@ -973,6 +862,7 @@ NetworkGameplayTagNodeIndex
   WeaponMods.PassiveComponent
 /Game/Athena/PlayerPawn_Athena.PlayerPawn_Athena_C
   bReplicateMovement
+  bHidden
   bTearOff
   bCanBeDamaged
   AttachParent
@@ -1018,6 +908,8 @@ NetworkGameplayTagNodeIndex
   CurrentWeapon
   SpawnImmunityTime
   ReplicatedWaterBody
+  GravityFloorGravityScalar
+  bReplicatedIsInVortex
   LastReplicatedEmoteExecuted
   bInterruptCurrentLine
   bCanBeInterrupted
@@ -1026,7 +918,6 @@ NetworkGameplayTagNodeIndex
   bIsSprinting
   bIsWaterJump
   bIsWaterSprintBoost
-  bIsWaterSprintBoostPending
   bIsTargeting
   bIsSkydiving
   bIsParachuteOpen
@@ -1034,8 +925,10 @@ NetworkGameplayTagNodeIndex
   bIsSkydivingFromBus
   bIsSkydivingFromLaunchPad
   bIsProxySimulationTimedOut
+  bInGliderRedeploy
   bStartedInteractSearch
   bIsPlayingEmote
+  bIsWaitingForEmoteInteraction
   bIsInAnyStorm
   bIsInsideSafeZone
   Zipline
@@ -1059,7 +952,6 @@ NetworkGameplayTagNodeIndex
   AccelerationPack
   RepAnimMontageStartSection
   bNetMovementPrioritized
-  PetState
   RemoteViewData32
   WalkSpeed
   RunSpeed
@@ -1067,6 +959,10 @@ NetworkGameplayTagNodeIndex
   CrouchedSprintSpeed
   EncryptedPawnReplayData
 PlayerPawn_Athena_C_ClassNetCache
+  NetMulticast_InvokeGameplayCueAdded_WithParams
+  NetMulticast_InvokeGameplayCueExecuted_FromSpec
+  NetMulticast_InvokeGameplayCueExecuted_WithParams
+BP_PlayerPawn_Athena_Phoebe_C_ClassNetCache
   NetMulticast_InvokeGameplayCueAdded_WithParams
   NetMulticast_InvokeGameplayCueExecuted_FromSpec
   NetMulticast_InvokeGameplayCueExecuted_WithParams
@@ -1088,6 +984,7 @@ FortInventory_ClassNetCache
   GameplayState
   GameSessionId
   ServerGameplayTagIndexHash
+  TotalPlayerStructures
   bSkyTubesShuttingDown
   bSkyTubesDisabled
   ServerChangelistNumber
@@ -1115,7 +1012,6 @@ FortInventory_ClassNetCache
   UtcTimeStartedMatch
   WinningPlayerState
   WinningTeam
-  SpectateAPartyMemberAvailable
   ActiveTeamNums
   ActiveTeamNums
   PlayerBotsLeft
@@ -1128,16 +1024,13 @@ FortInventory_ClassNetCache
   StormCNDamageVulnerabilityLevel2
   StormCNDamageVulnerabilityLevel3
   bEnabled
+  bConnectedToRoot
   GameServerNodeType
 /Script/FortniteGame.ActiveGameplayModifier
   ModifierDef
 Athena_GameState_C_ClassNetCache
   CurrentPlaylistInfo
   ActiveGameplayModifiers
-BP_PlayerPawn_Athena_Phoebe_C_ClassNetCache
-  NetMulticast_InvokeGameplayCueAdded_WithParams
-  NetMulticast_InvokeGameplayCueExecuted_FromSpec
-  NetMulticast_InvokeGameplayCueExecuted_WithParams
 /Script/FortniteGame.FortPlayerStateAthena
   bOnlySpectator
   bIsABot
@@ -1189,20 +1082,6 @@ BP_PlayerPawn_Athena_Phoebe_C_ClassNetCache
   GameplayCueTag
 /Script/FortniteGame.FortPawn:NetMulticast_InvokeGameplayCueExecuted_WithParams
   GameplayCueTag
-/Valet/SportsCar/Valet_SportsCar_Vehicle.Valet_SportsCar_Vehicle_C
-  ReplicatedMovement
-  Health
-  Location
-/Game/Building/ActorBlueprints/Containers/Tiered_Ammo_Athena.Tiered_Ammo_Athena_C
-  bHidden
-  ForceMetadataRelevant
-  StaticMesh
-  AltMeshIdx
-  SearchedMesh
-  ReplicatedLootTier
-  ChosenRandomUpgrade
-  bAlreadySearched
-  SearchingPawn
 /Game/Building/ActorBlueprints/Containers/Tiered_Chest_Athena.Tiered_Chest_Athena_C
   bHidden
   ForceMetadataRelevant
@@ -1213,6 +1092,21 @@ BP_PlayerPawn_Athena_Phoebe_C_ClassNetCache
   ChosenRandomUpgrade
   bAlreadySearched
   SearchingPawn
+/Game/Building/ActorBlueprints/Containers/Tiered_Ammo_Athena.Tiered_Ammo_Athena_C
+  bHidden
+  ForceMetadataRelevant
+  StaticMesh
+  AltMeshIdx
+  SearchedMesh
+  ReplicatedLootTier
+  ChosenRandomUpgrade
+  bAlreadySearched
+  SearchingPawn
+/Valet/SportsCar/Valet_SportsCar_Vehicle.Valet_SportsCar_Vehicle_C
+  ReplicatedMovement
+  Location
+  Health
+  Location
 /Game/Athena/SafeZone/SafeZoneIndicator.SafeZoneIndicator_C
   NextRadius
   NextCenter
