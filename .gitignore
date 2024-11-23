@@ -4,5 +4,5 @@
 *.exe
 *.dll
 *.replay
-bin/
-obj/
+replay_parser/bin/
+replay_parser/obj/
