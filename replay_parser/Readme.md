@@ -15,7 +15,8 @@ _Fortnite.exe <Replay_File_Path> <Epic_Id> <Offset>
 
 
 ## Output
-``` 1st : 02:29
+```
+ 1st : 02:29
  2nd : 03:17
  3rd : 04:12
  4th : 06:59
