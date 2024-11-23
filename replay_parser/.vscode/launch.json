@@ -6,10 +6,11 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/bin/Debug/net9.0/_Fortnite.dll",
+            "program": "${workspaceFolder}/bin/Debug/net9.0/win-x64/_Fortnite.dll",
             "args": [
-                "C:\\Users\\morim\\AppData\\Local\\FortniteGame\\Saved\\Demos\\UnsavedReplay-2024.11.20-22.32.40.replay", 
-                "4679c513a0614c889148f61ec69aa749"
+                "C:\\Users\\morim\\AppData\\Local\\FortniteGame\\Saved\\Demos\\UnsavedReplay-2024.11.23-09.32.00.replay", 
+                "4679c513a0614c889148f61ec69aa749",
+                "-5"
             ],
             "cwd": "${workspaceFolder}",
             "console": "integratedTerminal",

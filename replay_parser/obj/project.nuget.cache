@@ -1,15 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "f2mrNu6yeDk=",
+  "dgSpecHash": "9Iv4rBqOxwo=",
   "success": true,
   "projectFilePath": "C:\\Users\\morim\\Documents\\__kmori_tools\\Youtube_Uploader_Fortnite\\git\\Fortnite_Related\\replay_parser\\_Fortnite.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\morim\\.nuget\\packages\\fortnitereplayreader\\2.2.2\\fortnitereplayreader.2.2.2.nupkg.sha512",
     "C:\\Users\\morim\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0\\microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512",
     "C:\\Users\\morim\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.0\\microsoft.extensions.logging.abstractions.9.0.0.nupkg.sha512",
+    "C:\\Users\\morim\\.nuget\\packages\\microsoft.net.illink.tasks\\9.0.0\\microsoft.net.illink.tasks.9.0.0.nupkg.sha512",
     "C:\\Users\\morim\\.nuget\\packages\\oozsharp\\2.2.2\\oozsharp.2.2.2.nupkg.sha512",
     "C:\\Users\\morim\\.nuget\\packages\\unreal.core\\2.4.0\\unreal.core.2.4.0.nupkg.sha512",
-    "C:\\Users\\morim\\.nuget\\packages\\unreal.encryption\\2.2.2\\unreal.encryption.2.2.2.nupkg.sha512"
+    "C:\\Users\\morim\\.nuget\\packages\\unreal.encryption\\2.2.2\\unreal.encryption.2.2.2.nupkg.sha512",
+    "C:\\Users\\morim\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\9.0.0\\microsoft.netcore.app.runtime.win-x64.9.0.0.nupkg.sha512",
+    "C:\\Users\\morim\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\9.0.0\\microsoft.windowsdesktop.app.runtime.win-x64.9.0.0.nupkg.sha512",
+    "C:\\Users\\morim\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\9.0.0\\microsoft.aspnetcore.app.runtime.win-x64.9.0.0.nupkg.sha512"
   ],
   "logs": []
 }
