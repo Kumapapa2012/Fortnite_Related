@@ -4,5 +4,10 @@
 *.exe
 *.dll
 *.replay
-replay_parser/bin/
-replay_parser/obj/
+*.nuget.dgspec.json
+*.nuget.cache
+Content
+Scripts
+fonts
+**/bin/
+**/obj/

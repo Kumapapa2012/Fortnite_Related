@@ -8,9 +8,10 @@
             "preLaunchTask": "build",
             "program": "${workspaceFolder}/bin/Debug/net9.0/win-x64/_Fortnite.dll",
             "args": [
-                "C:\\Users\\morim\\AppData\\Local\\FortniteGame\\Saved\\Demos\\UnsavedReplay-2024.11.23-09.32.00.replay", 
+                "C:\\Users\\morim\\AppData\\Local\\FortniteGame\\Saved\\Demos\\UnsavedReplay-2024.11.23-23.15.58.replay", 
                 "4679c513a0614c889148f61ec69aa749",
-                "-5"
+                "-5",
+                "replayData.json"
             ],
             "cwd": "${workspaceFolder}",
             "console": "integratedTerminal",
