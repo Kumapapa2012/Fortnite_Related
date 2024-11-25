@@ -13,7 +13,6 @@ _Fortnite.exe <Replay_File_Path> <Epic_Id> <Offset>
 ### Offset : Adds specified seconds to actual kill timing
 ("-5")
 
-
 ## Output
 ```
  1st : 02:29
@@ -29,8 +28,16 @@ _Fortnite.exe <Replay_File_Path> <Epic_Id> <Offset>
 11th : 22:36
 12th : 23:06
 ```
+
+## Build
+1. Clone the repo
+2. Open the folder cloned with vscode
+3. Run debugger using F5 to get Debug build.
+4. Run "dotnet publish --configuration Release" in built-in Terminal to get Release Build
+Only .net 9.0, win-x64 target is in this project. If you need binary for  other target, add what you want by yourself.
+
 ## References
-FortniteReplayReader 
+- FortniteReplayReader
 https://www.nuget.org/packages/FortniteReplayReader
-Unreal.core
+- Unreal.core
 https://www.nuget.org/packages/Unreal.Core
