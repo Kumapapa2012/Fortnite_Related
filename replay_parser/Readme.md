@@ -33,7 +33,9 @@ _Fortnite.exe <Replay_File_Path> <Epic_Id> <Offset>
 1. Clone the repo
 2. Open the folder cloned with vscode
 3. Run debugger using F5 to get Debug build.
-4. Run "dotnet publish --configuration Release" in built-in Terminal to get Release Build
+4. Run "dotnet publish --configuration Release" in built-in Terminal to get Release Build.
+
+   
 Only .net 9.0, win-x64 target is in this project. If you need binary for  other target, add what you want by yourself.
 
 ## References
